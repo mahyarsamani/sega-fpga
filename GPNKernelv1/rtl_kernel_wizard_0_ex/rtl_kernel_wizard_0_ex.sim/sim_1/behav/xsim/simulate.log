@@ -1,0 +1,137 @@
+Time resolution is 1 ps
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.DDRVIP.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP0.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP1.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP10.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP11.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP12.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP13.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP14.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP15.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP2.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP3.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP4.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP5.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP6.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP7.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP8.inst
+XilinxAXIVIP: Found at Path: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP9.inst
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_0.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_0.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_0.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_1.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_1.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_1.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_2.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_2.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_2.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_3.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_3.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_3.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_4.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_4.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_4.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_5.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_5.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_5.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_6.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_6.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_6.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_7.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_7.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_7.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_8.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_8.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_8.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_9.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_9.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_9.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_10.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_10.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_10.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_11.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_11.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_11.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_12.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_12.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_12.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_13.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_13.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_13.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_14.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_14.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_14.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_15.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_15.u_PE_IPs_wrapper.PE_IPs_i.History.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top_kernel.kernel.GPN.Processing_Element_15.u_PE_IPs_wrapper.PE_IPs_i.Tracker.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Loaded Vertices
+Loaded Edges
+Loaded Results
+Amount of Vertices Per Frontier
+Frontier0 = 0 | Frontier1 = 347 | Frontier2 = 1171 | Frontier3 = 1740
+Frontier4 = 515 | Frontier5 = 55 | FrontierNU = 210
+Sent FirstMessage = 0000000000000000
+Sent MemoryOffset0 = 00000000
+Sent MemoryOffset1 = 00000001
+Sent MemoryOffset2 = 00000002
+Sent MemoryOffset3 = 00000003
+Sent MemoryOffset4 = 00000004
+Sent MemoryOffset5 = 00000004
+Sent MemoryOffset6 = 00000004
+Sent MemoryOffset7 = 00000004
+Sent MemoryOffset8 = 00000004
+Sent MemoryOffset9 = 00000004
+Sent MemoryOffset10 = 00000004
+Sent MemoryOffset11 = 00000004
+Sent MemoryOffset12 = 00000004
+Sent MemoryOffset13 = 00000004
+Sent MemoryOffset14 = 00000004
+Sent MemoryOffset15 = 00000004
+Sent MemoryOffset16 = 00000004
+Sent TotalEdgeSize = 000000ac
+Started Kernel
+Loading Vertices
+Loading Edges
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_0.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_1.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_2.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_3.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_4.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_5.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_6.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_7.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_8.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_9.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_10.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_11.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_12.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_13.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_14.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+blk_mem_gen_v8_4_5 collision detected at time: 618333, Instance: tb_top_kernel.kernel.GPN.Processing_Element_15.u_PE_IPs_wrapper.PE_IPs_i.Cache.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 1, B read address: 1
+Finished Loading Vertices
+Finished Loading Edges
+Wait For Graph Done
+$stop called at time : 1200608333 ps : File "/home/austin01/vivado/rtl_kernel_wizard_0_ex/data_results_kernel.sv" Line 135
+$stop called at time : 1200611666 ps : File "/home/austin01/vivado/rtl_kernel_wizard_0_ex/data_results_kernel.sv" Line 135
+$stop called at time : 1200615 ns : File "/home/austin01/vivado/rtl_kernel_wizard_0_ex/data_results_kernel.sv" Line 135
+$stop called at time : 1200618333 ps : File "/home/austin01/vivado/rtl_kernel_wizard_0_ex/data_results_kernel.sv" Line 135
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Warning: AXI4_ERRS_RLAST_ALL_DONE_EOS: All outstanding read bursts must have completed a the end of the simulation.
+Time: 1200618333 ps  Iteration: 0  Process: /tb_top_kernel/kernel/inst_MemoryInterfacesVIP/MemoryInterfacesVIP_i/HBMVIP1/inst/IF/PC/Always3109_2091  Scope: tb_top_kernel.kernel.inst_MemoryInterfacesVIP.MemoryInterfacesVIP_i.HBMVIP1.inst.IF.PC.arm_amba4_pc_msg_err  File: /home/austin01/Xilinx/Vivado/2022.1/data/xilinx_vip/hdl/axi_vip_axi4pc.sv Line: 725
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+INFO: xsimkernel Simulation Memory Usage: 8381260 KB (Peak: 8381260 KB), Simulation CPU Usage: 4624720 ms

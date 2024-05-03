@@ -1,0 +1,121 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/bd/MemoryInterfacesVIP/ip/MemoryInterfacesVIP_smartconnect_0_0/bd_0/sim/bd_d1ca.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_d1ca
+INFO: [VRFC 10-311] analyzing module clk_map_imp_1L801ER
+INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_F56Z94
+INFO: [VRFC 10-311] analyzing module m00_nodes_imp_SH5YAC
+INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_1EFCH6J
+INFO: [VRFC 10-311] analyzing module s00_nodes_imp_18ECRTT
+INFO: [VRFC 10-311] analyzing module s01_entry_pipeline_imp_CZJNSF
+INFO: [VRFC 10-311] analyzing module s01_nodes_imp_GXS0WN
+INFO: [VRFC 10-311] analyzing module s02_entry_pipeline_imp_OGPFKI
+INFO: [VRFC 10-311] analyzing module s02_nodes_imp_I5FNF0
+INFO: [VRFC 10-311] analyzing module s03_entry_pipeline_imp_1I78YX2
+INFO: [VRFC 10-311] analyzing module s03_nodes_imp_1P5GT2Y
+INFO: [VRFC 10-311] analyzing module s04_entry_pipeline_imp_1EGRXBC
+INFO: [VRFC 10-311] analyzing module s04_nodes_imp_1FIHPTM
+INFO: [VRFC 10-311] analyzing module s05_entry_pipeline_imp_CX6IF0
+INFO: [VRFC 10-311] analyzing module s05_nodes_imp_A64N0S
+INFO: [VRFC 10-311] analyzing module s06_entry_pipeline_imp_OJNNNL
+INFO: [VRFC 10-311] analyzing module s06_nodes_imp_OMQWRB
+INFO: [VRFC 10-311] analyzing module s07_entry_pipeline_imp_1I3ZHW5
+INFO: [VRFC 10-311] analyzing module s07_nodes_imp_1IVNEAP
+INFO: [VRFC 10-311] analyzing module s08_entry_pipeline_imp_1E84A1P
+INFO: [VRFC 10-311] analyzing module s08_nodes_imp_14VZ0EV
+INFO: [VRFC 10-311] analyzing module s09_entry_pipeline_imp_CW5SSP
+INFO: [VRFC 10-311] analyzing module s09_nodes_imp_3Z2S9T
+INFO: [VRFC 10-311] analyzing module s10_entry_pipeline_imp_ELCQFW
+INFO: [VRFC 10-311] analyzing module s10_nodes_imp_77P62X
+INFO: [VRFC 10-311] analyzing module s11_entry_pipeline_imp_1CT87WO
+INFO: [VRFC 10-311] analyzing module s11_nodes_imp_10VVS73
+INFO: [VRFC 10-311] analyzing module s12_entry_pipeline_imp_1O84V1X
+INFO: [VRFC 10-311] analyzing module s12_nodes_imp_1WYV1D0
+INFO: [VRFC 10-311] analyzing module s13_entry_pipeline_imp_IG4T7L
+INFO: [VRFC 10-311] analyzing module s13_nodes_imp_S727YQ
+INFO: [VRFC 10-311] analyzing module s14_entry_pipeline_imp_EN3233
+INFO: [VRFC 10-311] analyzing module s14_nodes_imp_38XZM
+INFO: [VRFC 10-311] analyzing module s15_entry_pipeline_imp_1CR6NBV
+INFO: [VRFC 10-311] analyzing module s15_nodes_imp_17NUD0K
+INFO: [VRFC 10-311] analyzing module switchboards_imp_1KL7QWL
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/bd/MemoryInterfacesVIP/ip/MemoryInterfacesVIP_smartconnect_0_0/sim/MemoryInterfacesVIP_smartconnect_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemoryInterfacesVIP_smartconnect_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/bd/MemoryInterfacesVIP/sim/MemoryInterfacesVIP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemoryInterfacesVIP
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/ip/ResultsFIFO/ResultsFIFO_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ResultsFIFO
+INFO: [VRFC 10-311] analyzing module ResultsFIFO_builtin_extdepth
+INFO: [VRFC 10-311] analyzing module ResultsFIFO_builtin_extdepth_0
+INFO: [VRFC 10-311] analyzing module ResultsFIFO_builtin_extdepth_1
+INFO: [VRFC 10-311] analyzing module ResultsFIFO_builtin_extdepth_2
+INFO: [VRFC 10-311] analyzing module ResultsFIFO_builtin_prim
+INFO: [VRFC 10-311] analyzing module ResultsFIFO_builtin_prim_3
+INFO: [VRFC 10-311] analyzing module ResultsFIFO_builtin_prim_4
+INFO: [VRFC 10-311] analyzing module ResultsFIFO_builtin_prim_5
+INFO: [VRFC 10-311] analyzing module ResultsFIFO_builtin_top
+INFO: [VRFC 10-311] analyzing module ResultsFIFO_fifo_generator_top
+INFO: [VRFC 10-311] analyzing module ResultsFIFO_fifo_generator_v13_2_7
+INFO: [VRFC 10-311] analyzing module ResultsFIFO_fifo_generator_v13_2_7_builtin
+INFO: [VRFC 10-311] analyzing module ResultsFIFO_fifo_generator_v13_2_7_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/ip/LoadEdgesFIFO/LoadEdgesFIFO_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_extdepth
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_extdepth_0
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_extdepth_1
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_extdepth_2
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_extdepth_3
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_extdepth_4
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_extdepth_5
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_extdepth_6
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_prim
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_prim_10
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_prim_11
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_prim_12
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_prim_13
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_prim_7
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_prim_8
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_prim_9
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_builtin_top
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_fifo_generator_top
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_fifo_generator_v13_2_7
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_fifo_generator_v13_2_7_builtin
+INFO: [VRFC 10-311] analyzing module LoadEdgesFIFO_fifo_generator_v13_2_7_synth
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/ip/LoadVerticesFIFO/LoadVerticesFIFO_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LoadVerticesFIFO
+INFO: [VRFC 10-311] analyzing module LoadVerticesFIFO_builtin_extdepth
+INFO: [VRFC 10-311] analyzing module LoadVerticesFIFO_builtin_extdepth_0
+INFO: [VRFC 10-311] analyzing module LoadVerticesFIFO_builtin_extdepth_1
+INFO: [VRFC 10-311] analyzing module LoadVerticesFIFO_builtin_extdepth_2
+INFO: [VRFC 10-311] analyzing module LoadVerticesFIFO_builtin_prim
+INFO: [VRFC 10-311] analyzing module LoadVerticesFIFO_builtin_prim_3
+INFO: [VRFC 10-311] analyzing module LoadVerticesFIFO_builtin_prim_4
+INFO: [VRFC 10-311] analyzing module LoadVerticesFIFO_builtin_prim_5
+INFO: [VRFC 10-311] analyzing module LoadVerticesFIFO_builtin_top
+INFO: [VRFC 10-311] analyzing module LoadVerticesFIFO_fifo_generator_top
+INFO: [VRFC 10-311] analyzing module LoadVerticesFIFO_fifo_generator_v13_2_7
+INFO: [VRFC 10-311] analyzing module LoadVerticesFIFO_fifo_generator_v13_2_7_builtin
+INFO: [VRFC 10-311] analyzing module LoadVerticesFIFO_fifo_generator_v13_2_7_synth
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/GPN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPN
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/MGU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MGU
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/MPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPU
+INFO: [VRFC 10-311] analyzing module ReductionEngine
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sim_1/bd/MemoryInterfacesVIP/hdl/MemoryInterfacesVIP_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemoryInterfacesVIP_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/PE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/hdl/PE_IPs_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE_IPs_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/VMU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VMU
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/hdl/VMU_FIFOs_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VMU_FIFOs_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rtl_kernel_wizard_0_control_s_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.sim/sim_1/behav/xsim/glbl.v:6]

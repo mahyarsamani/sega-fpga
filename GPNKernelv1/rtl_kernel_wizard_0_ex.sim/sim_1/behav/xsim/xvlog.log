@@ -1,8 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/data_results_kernel.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module data_results_kernel
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/kernel.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module kernel
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/tb_top_kernel.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_top_kernel
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
