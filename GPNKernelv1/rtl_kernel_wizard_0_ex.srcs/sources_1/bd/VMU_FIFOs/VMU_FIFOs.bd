@@ -1,0 +1,247 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x45F19872A311D965",
+      "device": "xcu280-fsvh2892-2L-e",
+      "gen_directory": "../../../../rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs",
+      "name": "VMU_FIFOs",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "WriteBuffer": "",
+      "ReadBuffer": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset"
+          },
+          "CLK_DOMAIN": {
+            "value": "VMU_FIFOs_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "250000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "sleep": {
+        "direction": "I"
+      },
+      "WriteBuffer_Write": {
+        "direction": "I"
+      },
+      "WriteBuffer_Read": {
+        "direction": "I"
+      },
+      "WriteBuffer_WriteData": {
+        "type": "data",
+        "direction": "I",
+        "left": "255",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "WriteBuffer_ReadData": {
+        "type": "data",
+        "direction": "O",
+        "left": "255",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ReadBuffer_WriteData": {
+        "direction": "I",
+        "left": "255",
+        "right": "0"
+      },
+      "ReadBuffer_Write": {
+        "direction": "I"
+      },
+      "ReadBuffer_Read": {
+        "direction": "I"
+      },
+      "ReadBuffer_ReadData": {
+        "direction": "O",
+        "left": "255",
+        "right": "0"
+      },
+      "ReadBuffer_Empty": {
+        "direction": "O"
+      },
+      "WriteBuffer_Empty": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "WriteBuffer": {
+        "vlnv": "xilinx.com:ip:fifo_generator:13.2",
+        "xci_name": "VMU_FIFOs_fifo_generator_0_0",
+        "xci_path": "ip/VMU_FIFOs_fifo_generator_0_0/VMU_FIFOs_fifo_generator_0_0.xci",
+        "inst_hier_path": "WriteBuffer",
+        "parameters": {
+          "Input_Data_Width": {
+            "value": "256"
+          },
+          "Input_Depth": {
+            "value": "512"
+          },
+          "Performance_Options": {
+            "value": "First_Word_Fall_Through"
+          },
+          "Use_Embedded_Registers": {
+            "value": "true"
+          },
+          "dynamic_power_saving": {
+            "value": "true"
+          }
+        }
+      },
+      "ReadBuffer": {
+        "vlnv": "xilinx.com:ip:fifo_generator:13.2",
+        "xci_name": "VMU_FIFOs_WriteBuffer_0",
+        "xci_path": "ip/VMU_FIFOs_WriteBuffer_0/VMU_FIFOs_WriteBuffer_0.xci",
+        "inst_hier_path": "ReadBuffer",
+        "parameters": {
+          "Input_Data_Width": {
+            "value": "256"
+          },
+          "Input_Depth": {
+            "value": "512"
+          },
+          "Performance_Options": {
+            "value": "First_Word_Fall_Through"
+          },
+          "Use_Embedded_Registers": {
+            "value": "true"
+          },
+          "dynamic_power_saving": {
+            "value": "true"
+          }
+        }
+      }
+    },
+    "nets": {
+      "ReadBuffer_Read_1": {
+        "ports": [
+          "ReadBuffer_Read",
+          "ReadBuffer/rd_en"
+        ]
+      },
+      "ReadBuffer_WriteData_1": {
+        "ports": [
+          "ReadBuffer_WriteData",
+          "ReadBuffer/din"
+        ]
+      },
+      "ReadBuffer_Write_1": {
+        "ports": [
+          "ReadBuffer_Write",
+          "ReadBuffer/wr_en"
+        ]
+      },
+      "ReadBuffer_dout": {
+        "ports": [
+          "ReadBuffer/dout",
+          "ReadBuffer_ReadData"
+        ]
+      },
+      "ReadBuffer_empty1": {
+        "ports": [
+          "ReadBuffer/empty",
+          "ReadBuffer_Empty"
+        ]
+      },
+      "WriteBuffer_empty1": {
+        "ports": [
+          "WriteBuffer/empty",
+          "WriteBuffer_Empty"
+        ]
+      },
+      "WriteData_FIFO_din_1": {
+        "ports": [
+          "WriteBuffer_WriteData",
+          "WriteBuffer/din"
+        ]
+      },
+      "WriteData_FIFO_dout1": {
+        "ports": [
+          "WriteBuffer/dout",
+          "WriteBuffer_ReadData"
+        ]
+      },
+      "WriteData_FIFO_read_1": {
+        "ports": [
+          "WriteBuffer_Read",
+          "WriteBuffer/rd_en"
+        ]
+      },
+      "WriteData_FIFO_write_1": {
+        "ports": [
+          "WriteBuffer_Write",
+          "WriteBuffer/wr_en"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "WriteBuffer/clk",
+          "ReadBuffer/clk"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "WriteBuffer/srst",
+          "ReadBuffer/srst"
+        ]
+      },
+      "sleep_1": {
+        "ports": [
+          "sleep",
+          "WriteBuffer/sleep",
+          "ReadBuffer/sleep"
+        ]
+      }
+    }
+  }
+}

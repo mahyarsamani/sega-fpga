@@ -1,0 +1,762 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Mar 27 22:47:46 2024
+# Process ID: 4118718
+# Current directory: /home/austin01/vivado/rtl_kernel_wizard_0_ex
+# Command line: vivado -notrace -source /home/austin01/vivado/PE_Kernel/PE_Kernel.gen/sources_1/ip/rtl_kernel_wizard_0/rtl_kernel_wizard_0_ex.tcl
+# Log file: /home/austin01/vivado/rtl_kernel_wizard_0_ex/vivado.log
+# Journal file: /home/austin01/vivado/rtl_kernel_wizard_0_ex/vivado.jou
+# Running On: COE-CS-crystal, OS: Linux, CPU Frequency: 3845.424 MHz, CPU Physical cores: 10, Host memory: 67103 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /home/austin01/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /home/austin01/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /home/austin01/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /home/austin01/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /home/austin01/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /home/austin01/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+source /home/austin01/vivado/PE_Kernel/PE_Kernel.gen/sources_1/ip/rtl_kernel_wizard_0/rtl_kernel_wizard_0_ex.tcl -notrace
+INFO: [open_example_project] Creating new example project...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/austin01/Xilinx/Vivado/2022.1/data/ip'.
+create_project: Time (s): cpu = 00:00:26 ; elapsed = 00:02:08 . Memory (MB): peak = 7621.109 ; gain = 74.074 ; free physical = 27645 ; free virtual = 58784
+INFO: [open_example_project] Loading IP Catalog...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/austin01/vivado/axi_engine'.
+INFO: [open_example_project] Importing original IP ...
+INFO: [open_example_project] Generating the example project IP ...
+INFO: [IP_Flow 19-1706] Not generating 'Instantiation Template' target for IP 'rtl_kernel_wizard_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'rtl_kernel_wizard_0'. Target already exists and is up to date.
+INFO: [open_example_project] Adding example synthesis HDL files ...
+INFO: [open_example_project] Adding example synthesis miscellaneous files ...
+INFO: [open_example_project] Adding example XDC files ...
+INFO: [open_example_project] Adding simulation HDL files ...
+INFO: [open_example_project] Sourcing example extension scripts ...
+INFO: [open_example_project] Sourcing extension script: tcl/examples_scriptext.tcl
+WARNING: [Vivado 12-3672] The is_managed property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+WARNING: [Vivado 12-3670] The generate_synth_checkpoint property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+WARNING: [IP_Flow 19-4832] The IP name 'control_rtl_kernel_wizard_0_vip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+Setting xsim.simulate.xsim.more_options to -sv_seed 1
+Setting modelsim.simulate.vsim.more_options to -sv_seed 1
+Setting questa.simulate.vsim.more_options to -sv_seed 1
+Setting ies.simulate.ncsim.more_options to -SVSEED 1
+Setting xcelium.simulate.xmsim.more_options to -SVSEED 1
+Setting vcs.simulate.vcs.more_options to +ntb_random_seed=1
+Setting riviera.simulate.asim.more_options to -sv_seed 1
+INFO: [open_example_project] Sourcing extension script: tcl/examples_scriptext_bd.tcl
+INFO: [open_example_project] Rebuilding top IP...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'control_rtl_kernel_wizard_0_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'control_rtl_kernel_wizard_0_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'control_rtl_kernel_wizard_0_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'control_rtl_kernel_wizard_0_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axishbmin_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axishbmin_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axishbmin_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'axishbmin_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axisddrin_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axisddrin_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axisddrin_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'axisddrin_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axishbmout_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axishbmout_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axishbmout_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'axishbmout_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axisddrout_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axisddrout_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axisddrout_vip'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'axisddrout_vip'...
+INFO: [SIM-utils-72] Using boost library from '/home/austin01/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/control_rtl_kernel_wizard_0_vip/xsim/control_rtl_kernel_wizard_0_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/control_rtl_kernel_wizard_0_vip/modelsim/control_rtl_kernel_wizard_0_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/control_rtl_kernel_wizard_0_vip/questa/control_rtl_kernel_wizard_0_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/control_rtl_kernel_wizard_0_vip/xcelium/control_rtl_kernel_wizard_0_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/control_rtl_kernel_wizard_0_vip/vcs/control_rtl_kernel_wizard_0_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/control_rtl_kernel_wizard_0_vip/riviera/control_rtl_kernel_wizard_0_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/control_rtl_kernel_wizard_0_vip/activehdl/control_rtl_kernel_wizard_0_vip.sh'
+INFO: [SIM-utils-72] Using boost library from '/home/austin01/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axishbmin_vip/xsim/axishbmin_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axishbmin_vip/modelsim/axishbmin_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axishbmin_vip/questa/axishbmin_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axishbmin_vip/xcelium/axishbmin_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axishbmin_vip/vcs/axishbmin_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axishbmin_vip/riviera/axishbmin_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axishbmin_vip/activehdl/axishbmin_vip.sh'
+INFO: [SIM-utils-72] Using boost library from '/home/austin01/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axisddrin_vip/xsim/axisddrin_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axisddrin_vip/modelsim/axisddrin_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axisddrin_vip/questa/axisddrin_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axisddrin_vip/xcelium/axisddrin_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axisddrin_vip/vcs/axisddrin_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axisddrin_vip/riviera/axisddrin_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axisddrin_vip/activehdl/axisddrin_vip.sh'
+INFO: [SIM-utils-72] Using boost library from '/home/austin01/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axishbmout_vip/xsim/axishbmout_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axishbmout_vip/modelsim/axishbmout_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axishbmout_vip/questa/axishbmout_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axishbmout_vip/xcelium/axishbmout_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axishbmout_vip/vcs/axishbmout_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axishbmout_vip/riviera/axishbmout_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axishbmout_vip/activehdl/axishbmout_vip.sh'
+INFO: [SIM-utils-72] Using boost library from '/home/austin01/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axisddrout_vip/xsim/axisddrout_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axisddrout_vip/modelsim/axisddrout_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axisddrout_vip/questa/axisddrout_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axisddrout_vip/xcelium/axisddrout_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axisddrout_vip/vcs/axisddrout_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axisddrout_vip/riviera/axisddrout_vip.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts/axisddrout_vip/activehdl/axisddrout_vip.sh'
+export_ip_user_files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 7696.391 ; gain = 0.000 ; free physical = 27447 ; free virtual = 58615
+INFO: [open_example_project] Open Example Project completed
+update_compile_order -fileset sources_1
+add_files -norecurse {/home/austin01/vivado/rtl_kernel_wizard_0_ex/MPU.v /home/austin01/vivado/rtl_kernel_wizard_0_ex/MGU.v /home/austin01/vivado/rtl_kernel_wizard_0_ex/VMU.v /home/austin01/vivado/rtl_kernel_wizard_0_ex/top.v /home/austin01/vivado/rtl_kernel_wizard_0_ex/write_engine.v /home/austin01/vivado/rtl_kernel_wizard_0_ex/read_engine.v /home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v /home/austin01/vivado/rtl_kernel_wizard_0_ex/axi_engine.v}
+update_compile_order -fileset sources_1
+create_bd_design "PE_IPs"
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd> 
+create_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 7820.441 ; gain = 0.000 ; free physical = 28273 ; free virtual = 59508
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+create_bd_cell: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 7871.121 ; gain = 0.000 ; free physical = 28245 ; free virtual = 59483
+endgroup
+copy_bd_objs /  [get_bd_cells {blk_mem_gen_0}]
+copy_bd_objs /  [get_bd_cells {blk_mem_gen_0}]
+set_property name Tracker [get_bd_cells blk_mem_gen_0]
+set_property name Cache [get_bd_cells blk_mem_gen_1]
+set_property name WorkHistory [get_bd_cells blk_mem_gen_2]
+set_property name History [get_bd_cells WorkHistory]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.PRIM_type_to_Implement {URAM} CONFIG.Enable_32bit_Address {true} CONFIG.Use_Byte_Write_Enable {true} CONFIG.Byte_Size {8} CONFIG.Primitive {2kx9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {72} CONFIG.Read_Width_A {72} CONFIG.Write_Width_B {72} CONFIG.Read_Width_B {72} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Use_RSTA_Pin {true} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells Tracker]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.PRIM_type_to_Implement {URAM} CONFIG.Enable_32bit_Address {true} CONFIG.Use_Byte_Write_Enable {true} CONFIG.Byte_Size {8} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {256} CONFIG.Write_Depth_A {1024} CONFIG.Read_Width_A {256} CONFIG.Write_Width_B {256} CONFIG.Read_Width_B {256} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Use_RSTA_Pin {true} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells Cache]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.PRIM_type_to_Implement {URAM} CONFIG.Enable_32bit_Address {true} CONFIG.Use_Byte_Write_Enable {true} CONFIG.Byte_Size {8} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {64} CONFIG.Write_Depth_A {1024} CONFIG.Read_Width_A {64} CONFIG.Write_Width_B {64} CONFIG.Read_Width_B {64} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Use_RSTA_Pin {true} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells History]
+create_bd_port -dir I -type rst BRAM_reset
+set_property CONFIG.POLARITY ACTIVE_HIGH [get_bd_ports BRAM_reset]
+connect_bd_net [get_bd_ports BRAM_reset] [get_bd_pins Tracker/rsta]
+WARNING: [BD 41-1306] The connection to interface pin </Tracker/rsta> is being overridden by the user with net <BRAM_reset_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells Tracker]
+WARNING: [BD 41-1684] Pin /Tracker/rsta is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_nets BRAM_reset_1]
+endgroup
+delete_bd_objs [get_bd_ports BRAM_reset]
+set_property location {1 134 56} [get_bd_cells Cache]
+set_property location {1 124 304} [get_bd_cells History]
+create_bd_port -dir I BRAM_enable
+/BRAM_enable
+create_bd_port -dir I Tracker_wrenable
+/Tracker_wrenable
+create_bd_port -dir I Cache_wrenable
+/Cache_wrenable
+create_bd_port -dir I History_wrenable
+/History_wrenable
+create_bd_port -dir I -from 12 -to 0Tracker_addr
+ERROR: [Common 17-161] Invalid option value '0Tracker_addr' specified for 'to'.
+create_bd_port -dir I -from 12 -to 0 Tracker_addr
+/Tracker_addr
+create_bd_port -dir I -from 71 -to 0 -type data Tracker_din
+/Tracker_din
+create_bd_port -dir O -from 71 -to 0 -type data Tracker_dout
+/Tracker_dout
+connect_bd_net [get_bd_ports Tracker_addr] [get_bd_pins Tracker/addra]
+WARNING: [BD 41-1306] The connection to interface pin </Tracker/addra> is being overridden by the user with net <Tracker_addr_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+connect_bd_net [get_bd_ports Tracker_dout] [get_bd_pins Tracker/douta]
+WARNING: [BD 41-1306] The connection to interface pin </Tracker/douta> is being overridden by the user with net <Tracker_douta>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+connect_bd_net [get_bd_ports BRAM_enable] [get_bd_pins Tracker/ena]
+WARNING: [BD 41-1306] The connection to interface pin </Tracker/ena> is being overridden by the user with net <BRAM_enable_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+connect_bd_net [get_bd_ports Tracker_wrenable] [get_bd_pins Tracker/wea]
+WARNING: [BD 41-1306] The connection to interface pin </Tracker/wea> is being overridden by the user with net <Tracker_wrenable_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+connect_bd_net [get_bd_ports Tracker_din] [get_bd_pins Tracker/dina]
+WARNING: [BD 41-1306] The connection to interface pin </Tracker/dina> is being overridden by the user with net <Tracker_din_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Write_Width_A {216} CONFIG.Read_Width_A {216} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {216} CONFIG.Read_Width_B {216} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells Cache]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Write_Width_A {51} CONFIG.Read_Width_A {51} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {51} CONFIG.Read_Width_B {51} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells History]
+connect_bd_net [get_bd_ports BRAM_enable] [get_bd_pins Cache/ena]
+WARNING: [BD 41-1306] The connection to interface pin </Cache/ena> is being overridden by the user with net </BRAM_enable_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+connect_bd_net [get_bd_ports BRAM_enable] [get_bd_pins History/ena]
+WARNING: [BD 41-1306] The connection to interface pin </History/ena> is being overridden by the user with net </BRAM_enable_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+create_bd_port -dir I -type clk -freq_hz 250000000 clk
+connect_bd_net [get_bd_ports clk] [get_bd_pins Tracker/clka]
+WARNING: [BD 41-1306] The connection to interface pin </Tracker/clka> is being overridden by the user with net <clk_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+set_property location {-48 22} [get_bd_ports clk]
+connect_bd_net [get_bd_ports clk] [get_bd_pins Cache/clka]
+WARNING: [BD 41-1306] The connection to interface pin </Cache/clka> is being overridden by the user with net </clk_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+connect_bd_net [get_bd_ports clk] [get_bd_pins History/clka]
+WARNING: [BD 41-1306] The connection to interface pin </History/clka> is being overridden by the user with net </clk_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+create_bd_port -dir I -from 9 -to 0 Cache_addr
+/Cache_addr
+create_bd_port -dir I -from 215 -to 0 Cache_din
+/Cache_din
+create_bd_port -dir I Cache_wrenable
+ERROR: [BD 41-79] Exec TCL: Specified object '/Cache_wrenable' already exists. Please use a different name
+ERROR: [Common 17-39] 'create_bd_port' failed due to earlier errors.
+create_bd_port -dir O -from 215 -to 0 Cache_dout
+/Cache_dout
+connect_bd_net [get_bd_ports Cache_addr] [get_bd_pins Cache/addra]
+WARNING: [BD 41-1306] The connection to interface pin </Cache/addra> is being overridden by the user with net <Cache_addr_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+connect_bd_net [get_bd_ports Cache_wrenable] [get_bd_pins Cache/wea]
+WARNING: [BD 41-1306] The connection to interface pin </Cache/wea> is being overridden by the user with net <Cache_wrenable_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+connect_bd_net [get_bd_ports Cache_din] [get_bd_pins Cache/dina]
+WARNING: [BD 41-1306] The connection to interface pin </Cache/dina> is being overridden by the user with net <Cache_din_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+connect_bd_net [get_bd_ports Cache_dout] [get_bd_pins Cache/douta]
+WARNING: [BD 41-1306] The connection to interface pin </Cache/douta> is being overridden by the user with net <Cache_douta>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+create_bd_port -dir O -from 215 -to 0 History_dout
+/History_dout
+create_bd_port -dir I -from 9 -to 0 History_addr
+/History_addr
+create_bd_port -dir I -from 50 -to 0 History_din
+/History_din
+set_property LEFT 50 [get_bd_ports /History_dout]
+connect_bd_net [get_bd_ports History_addr] [get_bd_pins History/addra]
+WARNING: [BD 41-1306] The connection to interface pin </History/addra> is being overridden by the user with net <History_addr_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+connect_bd_net [get_bd_ports History_wrenable] [get_bd_pins History/wea]
+WARNING: [BD 41-1306] The connection to interface pin </History/wea> is being overridden by the user with net <History_wrenable_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+connect_bd_net [get_bd_ports History_din] [get_bd_pins History/dina]
+WARNING: [BD 41-1306] The connection to interface pin </History/dina> is being overridden by the user with net <History_din_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+connect_bd_net [get_bd_ports History_dout] [get_bd_pins History/douta]
+WARNING: [BD 41-1306] The connection to interface pin </History/douta> is being overridden by the user with net <History_douta>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd> 
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/ui/bd_aea4082.ui> 
+delete_bd_objs [get_bd_nets Cache_douta] [get_bd_ports Cache_dout]
+delete_bd_objs [get_bd_nets History_douta] [get_bd_ports History_dout]
+create_bd_port -dir O -from 50 -to 0 -type data History_dout
+/History_dout
+create_bd_port -dir O -from 215 -to 0 -type data Cache_dout
+/Cache_dout
+connect_bd_net [get_bd_ports Cache_dout] [get_bd_pins Cache/douta]
+WARNING: [BD 41-1306] The connection to interface pin </Cache/douta> is being overridden by the user with net <Cache_douta>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+connect_bd_net [get_bd_ports History_dout] [get_bd_pins History/douta]
+WARNING: [BD 41-1306] The connection to interface pin </History/douta> is being overridden by the user with net <History_douta>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd> 
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/ui/bd_aea4082.ui> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.2 fifo_generator_0
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+create_bd_cell: Time (s): cpu = 00:00:00.5 ; elapsed = 00:00:10 . Memory (MB): peak = 7991.176 ; gain = 0.000 ; free physical = 29648 ; free virtual = 60923
+endgroup
+set_property -dict [list CONFIG.Input_Data_Width {64} CONFIG.Output_Data_Width {64} CONFIG.Valid_Flag {true} CONFIG.Full_Threshold_Assert_Value {1022} CONFIG.Full_Threshold_Negate_Value {1021}] [get_bd_cells fifo_generator_0]
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+set_property name Msg_FIFO_Out [get_bd_cells fifo_generator_0]
+copy_bd_objs /  [get_bd_cells {Msg_FIFO_Out}]
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /Msg_FIFO_Out1Executing the post_config_ip from bd
+set_property name Msg_FIFO_In [get_bd_cells Msg_FIFO_Out1]
+connect_bd_net [get_bd_ports clk] [get_bd_pins Msg_FIFO_In/clk]
+connect_bd_net [get_bd_ports clk] [get_bd_pins Msg_FIFO_Out/clk]
+create_bd_port -dir I -type rst reset
+set_property CONFIG.POLARITY ACTIVE_HIGH [get_bd_ports reset]
+connect_bd_net [get_bd_ports reset] [get_bd_pins Msg_FIFO_In/srst]
+connect_bd_net [get_bd_ports reset] [get_bd_pins Msg_FIFO_Out/srst]
+copy_bd_objs /  [get_bd_cells {Msg_FIFO_In}]
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /Msg_FIFO_In1Executing the post_config_ip from bd
+copy_bd_objs /  [get_bd_cells {Msg_FIFO_In}]
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /Msg_FIFO_In2Executing the post_config_ip from bd
+set_property name AV_FIFO [get_bd_cells Msg_FIFO_In1]
+set_property name AVM_FIFO [get_bd_cells Msg_FIFO_In2]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk (250 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins AV_FIFO/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk (250 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins AVM_FIFO/clk]
+endgroup
+connect_bd_net [get_bd_ports reset] [get_bd_pins AVM_FIFO/srst]
+connect_bd_net [get_bd_ports reset] [get_bd_pins AV_FIFO/srst]
+startgroup
+set_property -dict [list CONFIG.Input_Data_Width {94} CONFIG.Output_Data_Width {94} CONFIG.Programmable_Full_Type {Single_Programmable_Full_Threshold_Constant} CONFIG.Full_Threshold_Assert_Value {958} CONFIG.Full_Threshold_Negate_Value {957}] [get_bd_cells AVM_FIFO]
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /AVM_FIFOExecuting the post_config_ip from bd
+endgroup
+startgroup
+set_property -dict [list CONFIG.Input_Data_Width {33} CONFIG.Input_Depth {512} CONFIG.Output_Data_Width {33} CONFIG.Output_Depth {512} CONFIG.Data_Count_Width {9} CONFIG.Write_Data_Count_Width {9} CONFIG.Read_Data_Count_Width {9} CONFIG.Full_Threshold_Assert_Value {511} CONFIG.Full_Threshold_Negate_Value {510}] [get_bd_cells AV_FIFO]
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /AV_FIFOExecuting the post_config_ip from bd
+endgroup
+create_bd_port -dir I -from 63 -to 0 -type data Msg_FIFO_Out_din
+/Msg_FIFO_Out_din
+create_bd_port -dir O -from 63 -to 0 -type data Msg_FIFO_Out_dout
+/Msg_FIFO_Out_dout
+create_bd_port -dir I Msg_FIFO_Out_write
+/Msg_FIFO_Out_write
+create_bd_port -dir I Msg_FIFO_Out_read
+/Msg_FIFO_Out_read
+create_bd_port -dir O Msg_FIFO_Out_empty
+/Msg_FIFO_Out_empty
+create_bd_port -dir O Msg_FIFO_Out_full
+/Msg_FIFO_Out_full
+create_bd_port -dir I -from 63 -to 0 -type data Msg_FIFO_In_din
+/Msg_FIFO_In_din
+create_bd_port -dir O -from 63 -to 0 -type data Msg_FIFO_In_dout
+/Msg_FIFO_In_dout
+create_bd_port -dir I Msg_FIFO_In_write
+/Msg_FIFO_In_write
+create_bd_port -dir I Msg_FIFO_In_read
+/Msg_FIFO_In_read
+create_bd_port -dir O Msg_FIFO_In_empty
+/Msg_FIFO_In_empty
+create_bd_port -dir O Msg_FIFO_In_full
+/Msg_FIFO_In_full
+create_bd_port -dir I -from 93 -to 0 -type data AVM_FIFO_din
+/AVM_FIFO_din
+create_bd_port -dir O -from 93 -to 0 -type data AVM_FIFO_dout
+/AVM_FIFO_dout
+create_bd_port -dir I AVM_FIFO_write
+/AVM_FIFO_write
+create_bd_port -dir I AVM_FIFO_read
+/AVM_FIFO_read
+create_bd_port -dir O AVM_FIFO_empty
+/AVM_FIFO_empty
+create_bd_port -dir O AVM_FIFO_full
+/AVM_FIFO_full
+create_bd_port -dir I -from 32 -to 0 -type data AV_FIFO_din
+/AV_FIFO_din
+create_bd_port -dir O -from 32 -to 0 -type data AV_FIFO_dout
+/AV_FIFO_dout
+create_bd_port -dir I AV_FIFO_write
+/AV_FIFO_write
+create_bd_port -dir I AV_FIFO_read
+/AV_FIFO_read
+create_bd_port -dir O AV_FIFO_empty
+/AV_FIFO_empty
+create_bd_port -dir O AV_FIFO_full
+/AV_FIFO_full
+connect_bd_net [get_bd_ports Msg_FIFO_Out_din] [get_bd_pins Msg_FIFO_Out/din]
+WARNING: [BD 41-1306] The connection to interface pin </Msg_FIFO_Out/din> is being overridden by the user with net <Msg_FIFO_Out_din_1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+connect_bd_net [get_bd_ports AVM_FIFO_write] [get_bd_pins Msg_FIFO_Out/wr_en]
+WARNING: [BD 41-1306] The connection to interface pin </Msg_FIFO_Out/wr_en> is being overridden by the user with net <AVM_FIFO_write_1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_ports AVM_FIFO_write] [get_bd_pins Msg_FIFO_Out/wr_en]'
+connect_bd_net [get_bd_ports Msg_FIFO_Out_write] [get_bd_pins Msg_FIFO_Out/wr_en]
+WARNING: [BD 41-1306] The connection to interface pin </Msg_FIFO_Out/wr_en> is being overridden by the user with net <Msg_FIFO_Out_write_1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+connect_bd_net [get_bd_ports Msg_FIFO_Out_read] [get_bd_pins Msg_FIFO_Out/rd_en]
+WARNING: [BD 41-1306] The connection to interface pin </Msg_FIFO_Out/rd_en> is being overridden by the user with net <Msg_FIFO_Out_read_1>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+connect_bd_net [get_bd_ports Msg_FIFO_Out_dout] [get_bd_pins Msg_FIFO_Out/dout]
+WARNING: [BD 41-1306] The connection to interface pin </Msg_FIFO_Out/dout> is being overridden by the user with net <Msg_FIFO_Out_dout1>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+connect_bd_net [get_bd_ports Msg_FIFO_Out_full] [get_bd_pins Msg_FIFO_Out/full]
+WARNING: [BD 41-1306] The connection to interface pin </Msg_FIFO_Out/full> is being overridden by the user with net <Msg_FIFO_Out_full1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+connect_bd_net [get_bd_ports Msg_FIFO_Out_empty] [get_bd_pins Msg_FIFO_Out/empty]
+WARNING: [BD 41-1306] The connection to interface pin </Msg_FIFO_Out/empty> is being overridden by the user with net <Msg_FIFO_Out_empty1>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+set_property location {1 92 388} [get_bd_cells AVM_FIFO]
+connect_bd_net [get_bd_ports AVM_FIFO_empty] [get_bd_pins AVM_FIFO/empty]
+WARNING: [BD 41-1306] The connection to interface pin </AVM_FIFO/empty> is being overridden by the user with net <AVM_FIFO_empty1>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+connect_bd_net [get_bd_ports AVM_FIFO_dout] [get_bd_pins AVM_FIFO/dout]
+WARNING: [BD 41-1306] The connection to interface pin </AVM_FIFO/dout> is being overridden by the user with net <AVM_FIFO_dout1>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+connect_bd_net [get_bd_ports AVM_FIFO_read] [get_bd_pins AVM_FIFO/rd_en]
+WARNING: [BD 41-1306] The connection to interface pin </AVM_FIFO/rd_en> is being overridden by the user with net <AVM_FIFO_read_1>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+connect_bd_net [get_bd_ports AVM_FIFO_full] [get_bd_pins AVM_FIFO/prog_full]
+connect_bd_net [get_bd_ports AVM_FIFO_din] [get_bd_pins AVM_FIFO/din]
+WARNING: [BD 41-1306] The connection to interface pin </AVM_FIFO/din> is being overridden by the user with net <AVM_FIFO_din_1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+connect_bd_net [get_bd_ports AVM_FIFO_write] [get_bd_pins AVM_FIFO/wr_en]
+WARNING: [BD 41-1306] The connection to interface pin </AVM_FIFO/wr_en> is being overridden by the user with net <AVM_FIFO_write_1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+create_bd_port -dir O AV_FIFO_readvalid
+/AV_FIFO_readvalid
+create_bd_port -dir O AVM_FIFO_readvalid
+/AVM_FIFO_readvalid
+create_bd_port -dir O Msg_FIFO_Out_readvalid
+/Msg_FIFO_Out_readvalid
+create_bd_port -dir O Msg_FIFO_In_readvalid
+/Msg_FIFO_In_readvalid
+connect_bd_net [get_bd_ports AVM_FIFO_readvalid] [get_bd_pins AVM_FIFO/valid]
+connect_bd_net [get_bd_ports Msg_FIFO_Out_readvalid] [get_bd_pins Msg_FIFO_Out/valid]
+regenerate_bd_layout
+set_property location {1 193 -84} [get_bd_cells AV_FIFO]
+set_property location {1 167 21} [get_bd_cells Msg_FIFO_In]
+connect_bd_net [get_bd_ports Msg_FIFO_In_readvalid] [get_bd_pins Msg_FIFO_In/valid]
+connect_bd_net [get_bd_ports AV_FIFO_readvalid] [get_bd_pins AV_FIFO/valid]
+connect_bd_net [get_bd_ports Msg_FIFO_In_full] [get_bd_pins Msg_FIFO_In/full]
+WARNING: [BD 41-1306] The connection to interface pin </Msg_FIFO_In/full> is being overridden by the user with net <Msg_FIFO_In_full1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+connect_bd_net [get_bd_ports Msg_FIFO_In_empty] [get_bd_pins Msg_FIFO_In/empty]
+WARNING: [BD 41-1306] The connection to interface pin </Msg_FIFO_In/empty> is being overridden by the user with net <Msg_FIFO_In_empty1>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+connect_bd_net [get_bd_ports Msg_FIFO_In_dout] [get_bd_pins Msg_FIFO_In/dout]
+WARNING: [BD 41-1306] The connection to interface pin </Msg_FIFO_In/dout> is being overridden by the user with net <Msg_FIFO_In_dout1>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+connect_bd_net [get_bd_ports Msg_FIFO_In_read] [get_bd_pins Msg_FIFO_In/rd_en]
+WARNING: [BD 41-1306] The connection to interface pin </Msg_FIFO_In/rd_en> is being overridden by the user with net <Msg_FIFO_In_read_1>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+connect_bd_net [get_bd_ports Msg_FIFO_In_write] [get_bd_pins Msg_FIFO_In/wr_en]
+WARNING: [BD 41-1306] The connection to interface pin </Msg_FIFO_In/wr_en> is being overridden by the user with net <Msg_FIFO_In_write_1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+connect_bd_net [get_bd_ports Msg_FIFO_In_din] [get_bd_pins Msg_FIFO_In/din]
+WARNING: [BD 41-1306] The connection to interface pin </Msg_FIFO_In/din> is being overridden by the user with net <Msg_FIFO_In_din_1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+connect_bd_net [get_bd_ports AV_FIFO_dout] [get_bd_pins AV_FIFO/dout]
+WARNING: [BD 41-1306] The connection to interface pin </AV_FIFO/dout> is being overridden by the user with net <AV_FIFO_dout1>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+connect_bd_net [get_bd_ports AV_FIFO_write] [get_bd_pins AV_FIFO/wr_en]
+WARNING: [BD 41-1306] The connection to interface pin </AV_FIFO/wr_en> is being overridden by the user with net <AV_FIFO_write_1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+connect_bd_net [get_bd_ports AV_FIFO_read] [get_bd_pins AV_FIFO/rd_en]
+WARNING: [BD 41-1306] The connection to interface pin </AV_FIFO/rd_en> is being overridden by the user with net <AV_FIFO_read_1>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+connect_bd_net [get_bd_ports AV_FIFO_din] [get_bd_pins AV_FIFO/din]
+WARNING: [BD 41-1306] The connection to interface pin </AV_FIFO/din> is being overridden by the user with net <AV_FIFO_din_1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+connect_bd_net [get_bd_ports AV_FIFO_full] [get_bd_pins AV_FIFO/full]
+WARNING: [BD 41-1306] The connection to interface pin </AV_FIFO/full> is being overridden by the user with net <AV_FIFO_full1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+connect_bd_net [get_bd_ports AV_FIFO_empty] [get_bd_pins AV_FIFO/empty]
+WARNING: [BD 41-1306] The connection to interface pin </AV_FIFO/empty> is being overridden by the user with net <AV_FIFO_empty1>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd> 
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/ui/bd_aea4082.ui> 
+generate_target all [get_files  /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd]
+WARNING: [BD 41-2180] Resetting the memory initialization file of </Cache> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </Tracker> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </History> to default.
+WARNING: [xilinx.com:ip:blk_mem_gen:8.4-1] /Cache Block Memory Generator IP is configured to use UltraRAM, but UltraRAM does not support Memory Initialization, hence elf association or Initialization of the memory through .coe or .mem  files is not possible
+WARNING: [xilinx.com:ip:blk_mem_gen:8.4-1] /Tracker Block Memory Generator IP is configured to use UltraRAM, but UltraRAM does not support Memory Initialization, hence elf association or Initialization of the memory through .coe or .mem  files is not possible
+WARNING: [xilinx.com:ip:blk_mem_gen:8.4-1] /History Block Memory Generator IP is configured to use UltraRAM, but UltraRAM does not support Memory Initialization, hence elf association or Initialization of the memory through .coe or .mem  files is not possible
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd> 
+Verilog Output written to : /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v
+Verilog Output written to : /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/sim/PE_IPs.v
+Verilog Output written to : /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/hdl/PE_IPs_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Tracker .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Cache .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block History .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Msg_FIFO_Out .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Msg_FIFO_In .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AV_FIFO .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AVM_FIFO .
+Exporting to file /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/hw_handoff/PE_IPs.hwh
+Generated Hardware Definition File /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.hwdef
+generate_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 8072.391 ; gain = 0.000 ; free physical = 29377 ; free virtual = 60703
+catch { config_ip_cache -export [get_ips -all PE_IPs_blk_mem_gen_0_0] }
+catch { config_ip_cache -export [get_ips -all PE_IPs_blk_mem_gen_0_1] }
+catch { config_ip_cache -export [get_ips -all PE_IPs_blk_mem_gen_0_2] }
+catch { config_ip_cache -export [get_ips -all PE_IPs_fifo_generator_0_0] }
+catch { config_ip_cache -export [get_ips -all PE_IPs_Msg_FIFO_Out_0] }
+catch { config_ip_cache -export [get_ips -all PE_IPs_Msg_FIFO_In_0] }
+catch { config_ip_cache -export [get_ips -all PE_IPs_Msg_FIFO_In_1] }
+export_ip_user_files -of_objects [get_files /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd]
+launch_runs PE_IPs_blk_mem_gen_0_0_synth_1 PE_IPs_blk_mem_gen_0_1_synth_1 PE_IPs_blk_mem_gen_0_2_synth_1 PE_IPs_fifo_generator_0_0_synth_1 PE_IPs_Msg_FIFO_Out_0_synth_1 PE_IPs_Msg_FIFO_In_0_synth_1 PE_IPs_Msg_FIFO_In_1_synth_1 -jobs 10
+[Wed Mar 27 23:56:41 2024] Launched PE_IPs_blk_mem_gen_0_0_synth_1, PE_IPs_blk_mem_gen_0_1_synth_1, PE_IPs_blk_mem_gen_0_2_synth_1, PE_IPs_fifo_generator_0_0_synth_1, PE_IPs_Msg_FIFO_Out_0_synth_1, PE_IPs_Msg_FIFO_In_0_synth_1, PE_IPs_Msg_FIFO_In_1_synth_1...
+Run output will be captured here:
+PE_IPs_blk_mem_gen_0_0_synth_1: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/PE_IPs_blk_mem_gen_0_0_synth_1/runme.log
+PE_IPs_blk_mem_gen_0_1_synth_1: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/PE_IPs_blk_mem_gen_0_1_synth_1/runme.log
+PE_IPs_blk_mem_gen_0_2_synth_1: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/PE_IPs_blk_mem_gen_0_2_synth_1/runme.log
+PE_IPs_fifo_generator_0_0_synth_1: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/PE_IPs_fifo_generator_0_0_synth_1/runme.log
+PE_IPs_Msg_FIFO_Out_0_synth_1: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/PE_IPs_Msg_FIFO_Out_0_synth_1/runme.log
+PE_IPs_Msg_FIFO_In_0_synth_1: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/PE_IPs_Msg_FIFO_In_0_synth_1/runme.log
+PE_IPs_Msg_FIFO_In_1_synth_1: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/PE_IPs_Msg_FIFO_In_1_synth_1/runme.log
+export_simulation -of_objects [get_files /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd] -directory /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts -ip_user_files_dir /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files -ipstatic_source_dir /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/modelsim} {questa=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/questa} {xcelium=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/xcelium} {vcs=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/vcs} {riviera=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd] -top
+add_files -norecurse /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/hdl/PE_IPs_wrapper.v
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 10
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Thu Mar 28 00:08:26 2024] Launched synth_1...
+Run output will be captured here: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xcu280-fsvh2892-2L-e
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 9249.938 ; gain = 0.000 ; free physical = 28213 ; free virtual = 59540
+INFO: [Netlist 29-17] Analyzing 169 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_user.xdc]
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_user.xdc]
+INFO: [Project 1-1714] 4 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9289.133 ; gain = 0.000 ; free physical = 28098 ; free virtual = 59425
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 71 instances were transformed.
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 69 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+open_run: Time (s): cpu = 00:00:36 ; elapsed = 00:00:16 . Memory (MB): peak = 9744.258 ; gain = 1411.930 ; free physical = 27647 ; free virtual = 58976
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 10578.000 ; gain = 539.227 ; free physical = 26619 ; free virtual = 58081
+close_design
+close_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 10848.883 ; gain = 0.000 ; free physical = 26650 ; free virtual = 58115
+set_property top top_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1160] Copying file /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/rtl_kernel_wizard_0.dcp to /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs synth_1 -jobs 10
+[Thu Mar 28 00:15:21 2024] Launched synth_1...
+Run output will be captured here: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xcu280-fsvh2892-2L-e
+INFO: [Project 1-454] Reading design checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_1/PE_IPs_Msg_FIFO_In_1.dcp' for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AVM_FIFO'
+INFO: [Project 1-454] Reading design checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_0/PE_IPs_Msg_FIFO_In_0.dcp' for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AV_FIFO'
+INFO: [Project 1-454] Reading design checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_blk_mem_gen_0_1/PE_IPs_blk_mem_gen_0_1.dcp' for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Cache'
+INFO: [Project 1-454] Reading design checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_blk_mem_gen_0_2/PE_IPs_blk_mem_gen_0_2.dcp' for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/History'
+INFO: [Project 1-454] Reading design checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_Out_0/PE_IPs_Msg_FIFO_Out_0.dcp' for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_In'
+INFO: [Project 1-454] Reading design checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_fifo_generator_0_0/PE_IPs_fifo_generator_0_0.dcp' for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_Out'
+INFO: [Project 1-454] Reading design checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_blk_mem_gen_0_0/PE_IPs_blk_mem_gen_0_0.dcp' for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker'
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 11062.004 ; gain = 0.000 ; free physical = 26611 ; free virtual = 58079
+INFO: [Netlist 29-17] Analyzing 3721 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top_wrapper' is not ideal for floorplanning, since the cellview 'VMU' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_fifo_generator_0_0/PE_IPs_fifo_generator_0_0.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_Out/U0'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_fifo_generator_0_0/PE_IPs_fifo_generator_0_0.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_Out/U0'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_Out_0/PE_IPs_Msg_FIFO_Out_0.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_In/U0'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_Out_0/PE_IPs_Msg_FIFO_Out_0.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_In/U0'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_0/PE_IPs_Msg_FIFO_In_0.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AV_FIFO/U0'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_0/PE_IPs_Msg_FIFO_In_0.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AV_FIFO/U0'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_1/PE_IPs_Msg_FIFO_In_1.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AVM_FIFO/U0'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_1/PE_IPs_Msg_FIFO_In_1.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AVM_FIFO/U0'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_user.xdc]
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_user.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 11062.004 ; gain = 0.000 ; free physical = 26513 ; free virtual = 57981
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 11062.004 ; gain = 0.000 ; free physical = 26290 ; free virtual = 57758
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 11281.848 ; gain = 0.000 ; free physical = 26011 ; free virtual = 57479
+report_power -name {power_1}
+Command: report_power -name power_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+WARNING: [Timing 38-493] Port clk has one or several leaf clock pins in its transitive fanout without any clock buffer on the path and no clock reaching the clock pin(s). Vivado cannot infer the clock source when no clock buffer is found on the path to a leaf clock pin.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+
+Finished Running Vector-less Activity Propagation
+1 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 11325.836 ; gain = 43.988 ; free physical = 25845 ; free virtual = 57316
+create_bd_design "VMU_FIFOs"
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/VMU_FIFOs.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.2 fifo_generator_0
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+create_bd_cell: Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:10 . Memory (MB): peak = 11616.020 ; gain = 0.000 ; free physical = 25802 ; free virtual = 57298
+endgroup
+set_property name WriteData_FIFO [get_bd_cells fifo_generator_0]
+set_property -dict [list CONFIG.Performance_Options {First_Word_Fall_Through} CONFIG.Input_Data_Width {256} CONFIG.Input_Depth {512} CONFIG.Output_Data_Width {256} CONFIG.Output_Depth {512} CONFIG.Use_Embedded_Registers {true} CONFIG.dynamic_power_saving {true} CONFIG.Data_Count_Width {9} CONFIG.Write_Data_Count_Width {9} CONFIG.Read_Data_Count_Width {9} CONFIG.Full_Threshold_Assert_Value {511} CONFIG.Full_Threshold_Negate_Value {510} CONFIG.Empty_Threshold_Assert_Value {4} CONFIG.Empty_Threshold_Negate_Value {5}] [get_bd_cells WriteData_FIFO]
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /WriteData_FIFOExecuting the post_config_ip from bd
+create_bd_port -dir I -type clk -freq_hz 250000000 clk
+connect_bd_net [get_bd_ports clk] [get_bd_pins WriteData_FIFO/clk]
+startgroup
+create_bd_port -dir I -type rst resetn
+endgroup
+current_bd_design [get_bd_designs PE_IPs]
+close_bd_design [get_bd_designs PE_IPs]
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/ui/bd_aea4082.ui> 
+create_bd_port -dir I sleep
+connect_bd_net [get_bd_ports sleep] [get_bd_pins WriteData_FIFO/sleep]
+set_property CONFIG.ASSOCIATED_RESET {resetn} [get_bd_ports /clk]
+set_property CONFIG.POLARITY ACTIVE_HIGH [get_bd_ports resetn]
+set_property name reset [get_bd_ports resetn]
+connect_bd_net [get_bd_ports reset] [get_bd_pins WriteData_FIFO/srst]
+save_bd_design
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/VMU_FIFOs.bd> 
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/ui/bd_72fbdca6.ui> 
+regenerate_bd_layout
+regenerate_bd_layout
+create_bd_port -dir I WriteData_FIFO_write
+/WriteData_FIFO_write
+create_bd_port -dir I WriteData_FIFO_read
+/WriteData_FIFO_read
+create_bd_port -dir I -from 255 -to 0 -type data WriteData_FIFO_din
+/WriteData_FIFO_din
+create_bd_port -dir O -from 255 -to 0 -type data WriteData_FIFO_dout
+/WriteData_FIFO_dout
+connect_bd_net [get_bd_ports WriteData_FIFO_dout] [get_bd_pins WriteData_FIFO/dout]
+WARNING: [BD 41-1306] The connection to interface pin </WriteData_FIFO/dout> is being overridden by the user with net <WriteData_FIFO_dout1>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+set_property location {-19 -5} [get_bd_ports WriteData_FIFO_write]
+connect_bd_net [get_bd_ports WriteData_FIFO_write] [get_bd_pins WriteData_FIFO/wr_en]
+WARNING: [BD 41-1306] The connection to interface pin </WriteData_FIFO/wr_en> is being overridden by the user with net <WriteData_FIFO_write_1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+connect_bd_net [get_bd_ports WriteData_FIFO_din] [get_bd_pins WriteData_FIFO/din]
+WARNING: [BD 41-1306] The connection to interface pin </WriteData_FIFO/din> is being overridden by the user with net <WriteData_FIFO_din_1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+connect_bd_net [get_bd_ports WriteData_FIFO_read] [get_bd_pins WriteData_FIFO/rd_en]
+WARNING: [BD 41-1306] The connection to interface pin </WriteData_FIFO/rd_en> is being overridden by the user with net <WriteData_FIFO_read_1>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/VMU_FIFOs.bd> 
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/ui/bd_72fbdca6.ui> 
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/VMU_FIFOs.bd] -top
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/VMU_FIFOs.bd> 
+Verilog Output written to : /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/synth/VMU_FIFOs.v
+Verilog Output written to : /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/sim/VMU_FIFOs.v
+Verilog Output written to : /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/hdl/VMU_FIFOs_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 11765.094 ; gain = 0.000 ; free physical = 25786 ; free virtual = 57288
+add_files -norecurse /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/hdl/VMU_FIFOs_wrapper.v
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/VMU_FIFOs.bd]
+INFO: [BD 41-1662] The design 'VMU_FIFOs.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/synth/VMU_FIFOs.v
+Verilog Output written to : /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/sim/VMU_FIFOs.v
+Verilog Output written to : /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/hdl/VMU_FIFOs_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block WriteData_FIFO .
+Exporting to file /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/hw_handoff/VMU_FIFOs.hwh
+Generated Hardware Definition File /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/synth/VMU_FIFOs.hwdef
+catch { config_ip_cache -export [get_ips -all VMU_FIFOs_fifo_generator_0_0] }
+export_ip_user_files -of_objects [get_files /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/VMU_FIFOs.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/VMU_FIFOs.bd]
+launch_runs VMU_FIFOs_fifo_generator_0_0_synth_1 -jobs 10
+[Thu Mar 28 01:16:49 2024] Launched VMU_FIFOs_fifo_generator_0_0_synth_1...
+Run output will be captured here: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/VMU_FIFOs_fifo_generator_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/VMU_FIFOs.bd] -directory /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts -ip_user_files_dir /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files -ipstatic_source_dir /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/modelsim} {questa=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/questa} {xcelium=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/xcelium} {vcs=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/vcs} {riviera=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+close_bd_design [get_bd_designs VMU_FIFOs]
+close_bd_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 11866.961 ; gain = 0.000 ; free physical = 25760 ; free virtual = 57275
+close_design
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/utils_1/imports/synth_1/rtl_kernel_wizard_0.dcp with file /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/top_wrapper.dcp
+launch_runs synth_1 -jobs 10
+[Thu Mar 28 01:21:32 2024] Launched synth_1...
+Run output will be captured here: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xcu280-fsvh2892-2L-e
+INFO: [Project 1-454] Reading design checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_1/PE_IPs_Msg_FIFO_In_1.dcp' for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AVM_FIFO'
+INFO: [Project 1-454] Reading design checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_0/PE_IPs_Msg_FIFO_In_0.dcp' for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AV_FIFO'
+INFO: [Project 1-454] Reading design checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_blk_mem_gen_0_1/PE_IPs_blk_mem_gen_0_1.dcp' for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Cache'
+INFO: [Project 1-454] Reading design checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_blk_mem_gen_0_2/PE_IPs_blk_mem_gen_0_2.dcp' for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/History'
+INFO: [Project 1-454] Reading design checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_Out_0/PE_IPs_Msg_FIFO_Out_0.dcp' for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_In'
+INFO: [Project 1-454] Reading design checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_fifo_generator_0_0/PE_IPs_fifo_generator_0_0.dcp' for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_Out'
+INFO: [Project 1-454] Reading design checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_blk_mem_gen_0_0/PE_IPs_blk_mem_gen_0_0.dcp' for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker'
+INFO: [Project 1-454] Reading design checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/ip/VMU_FIFOs_fifo_generator_0_0/VMU_FIFOs_fifo_generator_0_0.dcp' for cell 'genblk7[0].top/u_VMU/u_VMU_FIFOs_wrapper/VMU_FIFOs_i/WriteData_FIFO'
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 11866.961 ; gain = 0.000 ; free physical = 26179 ; free virtual = 57695
+INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/ip/VMU_FIFOs_fifo_generator_0_0/VMU_FIFOs_fifo_generator_0_0.xdc] for cell 'genblk7[0].top/u_VMU/u_VMU_FIFOs_wrapper/VMU_FIFOs_i/WriteData_FIFO/U0'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/ip/VMU_FIFOs_fifo_generator_0_0/VMU_FIFOs_fifo_generator_0_0.xdc] for cell 'genblk7[0].top/u_VMU/u_VMU_FIFOs_wrapper/VMU_FIFOs_i/WriteData_FIFO/U0'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_fifo_generator_0_0/PE_IPs_fifo_generator_0_0.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_Out/U0'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_fifo_generator_0_0/PE_IPs_fifo_generator_0_0.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_Out/U0'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_Out_0/PE_IPs_Msg_FIFO_Out_0.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_In/U0'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_Out_0/PE_IPs_Msg_FIFO_Out_0.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_In/U0'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_0/PE_IPs_Msg_FIFO_In_0.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AV_FIFO/U0'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_0/PE_IPs_Msg_FIFO_In_0.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AV_FIFO/U0'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_1/PE_IPs_Msg_FIFO_In_1.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AVM_FIFO/U0'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_1/PE_IPs_Msg_FIFO_In_1.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AVM_FIFO/U0'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_user.xdc]
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_user.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 11866.961 ; gain = 0.000 ; free physical = 26107 ; free virtual = 57622
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 11866.961 ; gain = 0.000 ; free physical = 25896 ; free virtual = 57411
+report_power -name {power_1}
+Command: report_power -name power_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+WARNING: [Timing 38-493] Port clk has one or several leaf clock pins in its transitive fanout without any clock buffer on the path and no clock reaching the clock pin(s). Vivado cannot infer the clock source when no clock buffer is found on the path to a leaf clock pin.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+
+Finished Running Vector-less Activity Propagation
+1 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 11866.961 ; gain = 0.000 ; free physical = 25760 ; free virtual = 57276
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clk' matched to 'port' objects.
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+create_clock: Time (s): cpu = 00:00:00.54 ; elapsed = 00:00:07 . Memory (MB): peak = 11943.730 ; gain = 0.000 ; free physical = 25752 ; free virtual = 57280
+create_clock -period 10.000 -name clk -waveform {0.000 5.000} clk
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clk' matched to 'port' objects.
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+set_property target_constrs_file /home/austin01/vivado/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_ooc.xdc [current_fileset -constrset]
+report_power -name {power_1}
+Command: report_power -name power_1
+Running Vector-less Activity Propagation...
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+
+Finished Running Vector-less Activity Propagation
+0 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 11943.730 ; gain = 0.000 ; free physical = 25731 ; free virtual = 57261
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clk' matched to 'port' objects.
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+create_clock: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:07 . Memory (MB): peak = 11943.730 ; gain = 0.000 ; free physical = 25724 ; free virtual = 57254
+reset_timing: Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:08 . Memory (MB): peak = 11943.730 ; gain = 0.000 ; free physical = 25710 ; free virtual = 57239
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clk' matched to 'port' objects.
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+report_power -name power_1
+Command: report_power -name power_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+
+Finished Running Vector-less Activity Propagation
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 11943.730 ; gain = 0.000 ; free physical = 25713 ; free virtual = 57243
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 11943.730 ; gain = 0.000 ; free physical = 25714 ; free virtual = 57245
+open_bd_design {/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd}
+Reading block design file </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd>...
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - Tracker
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - Cache
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - History
+Adding component instance block -- xilinx.com:ip:fifo_generator:13.2 - Msg_FIFO_Out
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /Msg_FIFO_OutExecuting the post_config_ip from bd
+Adding component instance block -- xilinx.com:ip:fifo_generator:13.2 - Msg_FIFO_In
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /Msg_FIFO_InExecuting the post_config_ip from bd
+Adding component instance block -- xilinx.com:ip:fifo_generator:13.2 - AV_FIFO
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /AV_FIFOExecuting the post_config_ip from bd
+Adding component instance block -- xilinx.com:ip:fifo_generator:13.2 - AVM_FIFO
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /AVM_FIFOExecuting the post_config_ip from bd
+Successfully read diagram <PE_IPs> from block design file </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd>
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Write_Depth_A {3907}] [get_bd_cells Tracker]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Write_Depth_A {1125}] [get_bd_cells Cache]
+endgroup
+save_bd_design
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd> 
+Wrote  : </home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/ui/bd_aea4082.ui> 
+save_constraints
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 28 01:55:43 2024...

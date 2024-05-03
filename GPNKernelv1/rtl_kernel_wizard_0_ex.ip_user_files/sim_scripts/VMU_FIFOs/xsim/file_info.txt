@@ -1,0 +1,4 @@
+VMU_FIFOs_fifo_generator_0_0_sim_netlist.v,verilog,xil_defaultlib,../../../bd/VMU_FIFOs/ip/VMU_FIFOs_fifo_generator_0_0/VMU_FIFOs_fifo_generator_0_0_sim_netlist.v,
+VMU_FIFOs_WriteBuffer_0_sim_netlist.v,verilog,xil_defaultlib,../../../bd/VMU_FIFOs/ip/VMU_FIFOs_WriteBuffer_0/VMU_FIFOs_WriteBuffer_0_sim_netlist.v,
+VMU_FIFOs.v,verilog,xil_defaultlib,../../../bd/VMU_FIFOs/sim/VMU_FIFOs.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

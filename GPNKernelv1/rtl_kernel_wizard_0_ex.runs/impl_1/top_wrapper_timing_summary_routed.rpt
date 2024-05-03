@@ -1,0 +1,719 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date              : Thu Mar 28 20:44:23 2024
+| Host              : COE-CS-crystal running 64-bit Ubuntu 22.04.3 LTS
+| Command           : report_timing_summary -max_paths 10 -report_unconstrained -file top_wrapper_timing_summary_routed.rpt -pb top_wrapper_timing_summary_routed.pb -rpx top_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design            : top_wrapper
+| Device            : xcu280-fsvh2892
+| Speed File        : -2L  PRODUCTION 1.29 11-17-2020
+| Temperature Grade : E
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  1000        
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (2339)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (7209)
+5. checking no_input_delay (592)
+6. checking no_output_delay (387)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (2339)
+---------------------------
+ There are 2339 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (7209)
+---------------------------------------------------
+ There are 7209 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (592)
+--------------------------------
+ There are 592 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (387)
+---------------------------------
+ There are 387 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                 7596          inf        0.000                      0                 7596           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay          7596 Endpoints
+Min Delay          7596 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk7[0].top/u_MPU/Cache_WriteData_reg[56]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.101ns  (logic 0.455ns (11.095%)  route 3.646ns (88.905%))
+  Logic Levels:           6  (CARRY8=2 FDRE=1 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X93Y225        FDRE                         0.000     0.000 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+    SLICE_X93Y225        FDRE (Prop_FFF2_SLICEL_C_Q)
+                                                      0.081     0.081 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/Q
+                         net (fo=10, routed)          1.117     1.198    genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData_reg[213][4]
+    SLICE_X105Y234       LUT5 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.090     1.288 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27/O
+                         net (fo=1, routed)           0.144     1.432    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27_n_0
+    SLICE_X105Y233       LUT6 (Prop_B6LUT_SLICEL_I0_O)
+                                                      0.051     1.483 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6/O
+                         net (fo=1, routed)           0.519     2.002    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6_n_0
+    SLICE_X102Y234       CARRY8 (Prop_CARRY8_SLICEM_DI[2]_CO[7])
+                                                      0.110     2.112 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry/CO[7]
+                         net (fo=1, routed)           0.026     2.138    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_n_0
+    SLICE_X102Y235       CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.022     2.160 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry__0/CO[7]
+                         net (fo=145, routed)         0.614     2.775    genblk7[0].top/u_MPU/inst_ReductionEngine/update
+    SLICE_X106Y236       LUT5 (Prop_H6LUT_SLICEM_I2_O)
+                                                      0.101     2.876 r  genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData[205]_i_1/O
+                         net (fo=142, routed)         1.225     4.101    genblk7[0].top/u_MPU/inst_ReductionEngine_n_0
+    SLICE_X100Y228       FDRE                                         r  genblk7[0].top/u_MPU/Cache_WriteData_reg[56]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk7[0].top/u_MPU/Cache_WriteData_reg[57]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.101ns  (logic 0.455ns (11.095%)  route 3.646ns (88.905%))
+  Logic Levels:           6  (CARRY8=2 FDRE=1 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X93Y225        FDRE                         0.000     0.000 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+    SLICE_X93Y225        FDRE (Prop_FFF2_SLICEL_C_Q)
+                                                      0.081     0.081 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/Q
+                         net (fo=10, routed)          1.117     1.198    genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData_reg[213][4]
+    SLICE_X105Y234       LUT5 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.090     1.288 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27/O
+                         net (fo=1, routed)           0.144     1.432    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27_n_0
+    SLICE_X105Y233       LUT6 (Prop_B6LUT_SLICEL_I0_O)
+                                                      0.051     1.483 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6/O
+                         net (fo=1, routed)           0.519     2.002    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6_n_0
+    SLICE_X102Y234       CARRY8 (Prop_CARRY8_SLICEM_DI[2]_CO[7])
+                                                      0.110     2.112 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry/CO[7]
+                         net (fo=1, routed)           0.026     2.138    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_n_0
+    SLICE_X102Y235       CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.022     2.160 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry__0/CO[7]
+                         net (fo=145, routed)         0.614     2.775    genblk7[0].top/u_MPU/inst_ReductionEngine/update
+    SLICE_X106Y236       LUT5 (Prop_H6LUT_SLICEM_I2_O)
+                                                      0.101     2.876 r  genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData[205]_i_1/O
+                         net (fo=142, routed)         1.225     4.101    genblk7[0].top/u_MPU/inst_ReductionEngine_n_0
+    SLICE_X100Y228       FDRE                                         r  genblk7[0].top/u_MPU/Cache_WriteData_reg[57]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk7[0].top/u_MPU/Cache_WriteData_reg[58]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.101ns  (logic 0.455ns (11.095%)  route 3.646ns (88.905%))
+  Logic Levels:           6  (CARRY8=2 FDRE=1 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X93Y225        FDRE                         0.000     0.000 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+    SLICE_X93Y225        FDRE (Prop_FFF2_SLICEL_C_Q)
+                                                      0.081     0.081 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/Q
+                         net (fo=10, routed)          1.117     1.198    genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData_reg[213][4]
+    SLICE_X105Y234       LUT5 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.090     1.288 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27/O
+                         net (fo=1, routed)           0.144     1.432    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27_n_0
+    SLICE_X105Y233       LUT6 (Prop_B6LUT_SLICEL_I0_O)
+                                                      0.051     1.483 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6/O
+                         net (fo=1, routed)           0.519     2.002    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6_n_0
+    SLICE_X102Y234       CARRY8 (Prop_CARRY8_SLICEM_DI[2]_CO[7])
+                                                      0.110     2.112 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry/CO[7]
+                         net (fo=1, routed)           0.026     2.138    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_n_0
+    SLICE_X102Y235       CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.022     2.160 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry__0/CO[7]
+                         net (fo=145, routed)         0.614     2.775    genblk7[0].top/u_MPU/inst_ReductionEngine/update
+    SLICE_X106Y236       LUT5 (Prop_H6LUT_SLICEM_I2_O)
+                                                      0.101     2.876 r  genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData[205]_i_1/O
+                         net (fo=142, routed)         1.225     4.101    genblk7[0].top/u_MPU/inst_ReductionEngine_n_0
+    SLICE_X100Y228       FDRE                                         r  genblk7[0].top/u_MPU/Cache_WriteData_reg[58]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk7[0].top/u_MPU/Cache_WriteData_reg[60]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.101ns  (logic 0.455ns (11.095%)  route 3.646ns (88.905%))
+  Logic Levels:           6  (CARRY8=2 FDRE=1 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X93Y225        FDRE                         0.000     0.000 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+    SLICE_X93Y225        FDRE (Prop_FFF2_SLICEL_C_Q)
+                                                      0.081     0.081 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/Q
+                         net (fo=10, routed)          1.117     1.198    genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData_reg[213][4]
+    SLICE_X105Y234       LUT5 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.090     1.288 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27/O
+                         net (fo=1, routed)           0.144     1.432    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27_n_0
+    SLICE_X105Y233       LUT6 (Prop_B6LUT_SLICEL_I0_O)
+                                                      0.051     1.483 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6/O
+                         net (fo=1, routed)           0.519     2.002    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6_n_0
+    SLICE_X102Y234       CARRY8 (Prop_CARRY8_SLICEM_DI[2]_CO[7])
+                                                      0.110     2.112 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry/CO[7]
+                         net (fo=1, routed)           0.026     2.138    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_n_0
+    SLICE_X102Y235       CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.022     2.160 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry__0/CO[7]
+                         net (fo=145, routed)         0.614     2.775    genblk7[0].top/u_MPU/inst_ReductionEngine/update
+    SLICE_X106Y236       LUT5 (Prop_H6LUT_SLICEM_I2_O)
+                                                      0.101     2.876 r  genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData[205]_i_1/O
+                         net (fo=142, routed)         1.225     4.101    genblk7[0].top/u_MPU/inst_ReductionEngine_n_0
+    SLICE_X100Y228       FDRE                                         r  genblk7[0].top/u_MPU/Cache_WriteData_reg[60]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk7[0].top/u_MPU/Cache_WriteData_reg[18]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.082ns  (logic 0.455ns (11.147%)  route 3.627ns (88.853%))
+  Logic Levels:           6  (CARRY8=2 FDRE=1 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X93Y225        FDRE                         0.000     0.000 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+    SLICE_X93Y225        FDRE (Prop_FFF2_SLICEL_C_Q)
+                                                      0.081     0.081 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/Q
+                         net (fo=10, routed)          1.117     1.198    genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData_reg[213][4]
+    SLICE_X105Y234       LUT5 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.090     1.288 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27/O
+                         net (fo=1, routed)           0.144     1.432    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27_n_0
+    SLICE_X105Y233       LUT6 (Prop_B6LUT_SLICEL_I0_O)
+                                                      0.051     1.483 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6/O
+                         net (fo=1, routed)           0.519     2.002    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6_n_0
+    SLICE_X102Y234       CARRY8 (Prop_CARRY8_SLICEM_DI[2]_CO[7])
+                                                      0.110     2.112 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry/CO[7]
+                         net (fo=1, routed)           0.026     2.138    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_n_0
+    SLICE_X102Y235       CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.022     2.160 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry__0/CO[7]
+                         net (fo=145, routed)         0.614     2.775    genblk7[0].top/u_MPU/inst_ReductionEngine/update
+    SLICE_X106Y236       LUT5 (Prop_H6LUT_SLICEM_I2_O)
+                                                      0.101     2.876 r  genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData[205]_i_1/O
+                         net (fo=142, routed)         1.206     4.082    genblk7[0].top/u_MPU/inst_ReductionEngine_n_0
+    SLICE_X100Y225       FDRE                                         r  genblk7[0].top/u_MPU/Cache_WriteData_reg[18]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk7[0].top/u_MPU/Cache_WriteData_reg[19]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.082ns  (logic 0.455ns (11.147%)  route 3.627ns (88.853%))
+  Logic Levels:           6  (CARRY8=2 FDRE=1 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X93Y225        FDRE                         0.000     0.000 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+    SLICE_X93Y225        FDRE (Prop_FFF2_SLICEL_C_Q)
+                                                      0.081     0.081 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/Q
+                         net (fo=10, routed)          1.117     1.198    genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData_reg[213][4]
+    SLICE_X105Y234       LUT5 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.090     1.288 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27/O
+                         net (fo=1, routed)           0.144     1.432    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27_n_0
+    SLICE_X105Y233       LUT6 (Prop_B6LUT_SLICEL_I0_O)
+                                                      0.051     1.483 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6/O
+                         net (fo=1, routed)           0.519     2.002    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6_n_0
+    SLICE_X102Y234       CARRY8 (Prop_CARRY8_SLICEM_DI[2]_CO[7])
+                                                      0.110     2.112 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry/CO[7]
+                         net (fo=1, routed)           0.026     2.138    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_n_0
+    SLICE_X102Y235       CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.022     2.160 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry__0/CO[7]
+                         net (fo=145, routed)         0.614     2.775    genblk7[0].top/u_MPU/inst_ReductionEngine/update
+    SLICE_X106Y236       LUT5 (Prop_H6LUT_SLICEM_I2_O)
+                                                      0.101     2.876 r  genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData[205]_i_1/O
+                         net (fo=142, routed)         1.206     4.082    genblk7[0].top/u_MPU/inst_ReductionEngine_n_0
+    SLICE_X100Y225       FDRE                                         r  genblk7[0].top/u_MPU/Cache_WriteData_reg[19]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk7[0].top/u_MPU/Cache_WriteData_reg[33]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.082ns  (logic 0.455ns (11.147%)  route 3.627ns (88.853%))
+  Logic Levels:           6  (CARRY8=2 FDRE=1 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X93Y225        FDRE                         0.000     0.000 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+    SLICE_X93Y225        FDRE (Prop_FFF2_SLICEL_C_Q)
+                                                      0.081     0.081 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/Q
+                         net (fo=10, routed)          1.117     1.198    genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData_reg[213][4]
+    SLICE_X105Y234       LUT5 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.090     1.288 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27/O
+                         net (fo=1, routed)           0.144     1.432    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27_n_0
+    SLICE_X105Y233       LUT6 (Prop_B6LUT_SLICEL_I0_O)
+                                                      0.051     1.483 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6/O
+                         net (fo=1, routed)           0.519     2.002    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6_n_0
+    SLICE_X102Y234       CARRY8 (Prop_CARRY8_SLICEM_DI[2]_CO[7])
+                                                      0.110     2.112 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry/CO[7]
+                         net (fo=1, routed)           0.026     2.138    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_n_0
+    SLICE_X102Y235       CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.022     2.160 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry__0/CO[7]
+                         net (fo=145, routed)         0.614     2.775    genblk7[0].top/u_MPU/inst_ReductionEngine/update
+    SLICE_X106Y236       LUT5 (Prop_H6LUT_SLICEM_I2_O)
+                                                      0.101     2.876 r  genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData[205]_i_1/O
+                         net (fo=142, routed)         1.206     4.082    genblk7[0].top/u_MPU/inst_ReductionEngine_n_0
+    SLICE_X100Y225       FDRE                                         r  genblk7[0].top/u_MPU/Cache_WriteData_reg[33]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk7[0].top/u_MPU/Cache_WriteData_reg[37]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.082ns  (logic 0.455ns (11.147%)  route 3.627ns (88.853%))
+  Logic Levels:           6  (CARRY8=2 FDRE=1 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X93Y225        FDRE                         0.000     0.000 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+    SLICE_X93Y225        FDRE (Prop_FFF2_SLICEL_C_Q)
+                                                      0.081     0.081 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/Q
+                         net (fo=10, routed)          1.117     1.198    genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData_reg[213][4]
+    SLICE_X105Y234       LUT5 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.090     1.288 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27/O
+                         net (fo=1, routed)           0.144     1.432    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27_n_0
+    SLICE_X105Y233       LUT6 (Prop_B6LUT_SLICEL_I0_O)
+                                                      0.051     1.483 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6/O
+                         net (fo=1, routed)           0.519     2.002    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6_n_0
+    SLICE_X102Y234       CARRY8 (Prop_CARRY8_SLICEM_DI[2]_CO[7])
+                                                      0.110     2.112 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry/CO[7]
+                         net (fo=1, routed)           0.026     2.138    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_n_0
+    SLICE_X102Y235       CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.022     2.160 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry__0/CO[7]
+                         net (fo=145, routed)         0.614     2.775    genblk7[0].top/u_MPU/inst_ReductionEngine/update
+    SLICE_X106Y236       LUT5 (Prop_H6LUT_SLICEM_I2_O)
+                                                      0.101     2.876 r  genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData[205]_i_1/O
+                         net (fo=142, routed)         1.206     4.082    genblk7[0].top/u_MPU/inst_ReductionEngine_n_0
+    SLICE_X100Y225       FDRE                                         r  genblk7[0].top/u_MPU/Cache_WriteData_reg[37]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk7[0].top/u_MPU/Cache_WriteData_reg[0]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.069ns  (logic 0.455ns (11.182%)  route 3.614ns (88.818%))
+  Logic Levels:           6  (CARRY8=2 FDRE=1 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X93Y225        FDRE                         0.000     0.000 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+    SLICE_X93Y225        FDRE (Prop_FFF2_SLICEL_C_Q)
+                                                      0.081     0.081 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/Q
+                         net (fo=10, routed)          1.117     1.198    genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData_reg[213][4]
+    SLICE_X105Y234       LUT5 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.090     1.288 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27/O
+                         net (fo=1, routed)           0.144     1.432    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27_n_0
+    SLICE_X105Y233       LUT6 (Prop_B6LUT_SLICEL_I0_O)
+                                                      0.051     1.483 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6/O
+                         net (fo=1, routed)           0.519     2.002    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6_n_0
+    SLICE_X102Y234       CARRY8 (Prop_CARRY8_SLICEM_DI[2]_CO[7])
+                                                      0.110     2.112 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry/CO[7]
+                         net (fo=1, routed)           0.026     2.138    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_n_0
+    SLICE_X102Y235       CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.022     2.160 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry__0/CO[7]
+                         net (fo=145, routed)         0.614     2.775    genblk7[0].top/u_MPU/inst_ReductionEngine/update
+    SLICE_X106Y236       LUT5 (Prop_H6LUT_SLICEM_I2_O)
+                                                      0.101     2.876 r  genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData[205]_i_1/O
+                         net (fo=142, routed)         1.193     4.069    genblk7[0].top/u_MPU/inst_ReductionEngine_n_0
+    SLICE_X101Y225       FDRE                                         r  genblk7[0].top/u_MPU/Cache_WriteData_reg[0]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk7[0].top/u_MPU/Cache_WriteData_reg[15]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.069ns  (logic 0.455ns (11.182%)  route 3.614ns (88.818%))
+  Logic Levels:           6  (CARRY8=2 FDRE=1 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X93Y225        FDRE                         0.000     0.000 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/C
+    SLICE_X93Y225        FDRE (Prop_FFF2_SLICEL_C_Q)
+                                                      0.081     0.081 r  genblk7[0].top/u_MPU/msg_reg_reg[4]/Q
+                         net (fo=10, routed)          1.117     1.198    genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData_reg[213][4]
+    SLICE_X105Y234       LUT5 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.090     1.288 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27/O
+                         net (fo=1, routed)           0.144     1.432    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_27_n_0
+    SLICE_X105Y233       LUT6 (Prop_B6LUT_SLICEL_I0_O)
+                                                      0.051     1.483 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6/O
+                         net (fo=1, routed)           0.519     2.002    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_i_6_n_0
+    SLICE_X102Y234       CARRY8 (Prop_CARRY8_SLICEM_DI[2]_CO[7])
+                                                      0.110     2.112 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry/CO[7]
+                         net (fo=1, routed)           0.026     2.138    genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry_n_0
+    SLICE_X102Y235       CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.022     2.160 f  genblk7[0].top/u_MPU/inst_ReductionEngine/min_carry__0/CO[7]
+                         net (fo=145, routed)         0.614     2.775    genblk7[0].top/u_MPU/inst_ReductionEngine/update
+    SLICE_X106Y236       LUT5 (Prop_H6LUT_SLICEM_I2_O)
+                                                      0.101     2.876 r  genblk7[0].top/u_MPU/inst_ReductionEngine/Cache_WriteData[205]_i_1/O
+                         net (fo=142, routed)         1.193     4.069    genblk7[0].top/u_MPU/inst_ReductionEngine_n_0
+    SLICE_X101Y225       FDRE                                         r  genblk7[0].top/u_MPU/Cache_WriteData_reg[15]/R
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_ADDR_B[19]
+                            (internal pin)
+  Destination:            genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_ADDR_B[19]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    URAM288_X1Y56        URAM288                      0.000     0.000 r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_ADDR_B[19]
+                         net (fo=1, routed)           0.000     0.000    genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1_Cas_AddrB_1[19]
+    URAM288_X1Y57        URAM288                                      r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_ADDR_B[19]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[10]
+                            (internal pin)
+  Destination:            genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[10]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    URAM288_X1Y56        URAM288                      0.000     0.000 r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[10]
+                         net (fo=1, routed)           0.000     0.000    genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1_Cas_DinB_1[10]
+    URAM288_X1Y57        URAM288                                      r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[10]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[14]
+                            (internal pin)
+  Destination:            genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[14]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    URAM288_X1Y56        URAM288                      0.000     0.000 r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[14]
+                         net (fo=1, routed)           0.000     0.000    genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1_Cas_DinB_1[14]
+    URAM288_X1Y57        URAM288                                      r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[14]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[16]
+                            (internal pin)
+  Destination:            genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[16]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    URAM288_X1Y56        URAM288                      0.000     0.000 r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[16]
+                         net (fo=1, routed)           0.000     0.000    genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1_Cas_DinB_1[16]
+    URAM288_X1Y57        URAM288                                      r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[16]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[20]
+                            (internal pin)
+  Destination:            genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[20]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    URAM288_X1Y56        URAM288                      0.000     0.000 r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[20]
+                         net (fo=1, routed)           0.000     0.000    genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1_Cas_DinB_1[20]
+    URAM288_X1Y57        URAM288                                      r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[20]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[22]
+                            (internal pin)
+  Destination:            genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[22]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    URAM288_X1Y56        URAM288                      0.000     0.000 r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[22]
+                         net (fo=1, routed)           0.000     0.000    genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1_Cas_DinB_1[22]
+    URAM288_X1Y57        URAM288                                      r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[22]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[46]
+                            (internal pin)
+  Destination:            genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[46]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    URAM288_X1Y56        URAM288                      0.000     0.000 r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[46]
+                         net (fo=1, routed)           0.000     0.000    genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1_Cas_DinB_1[46]
+    URAM288_X1Y57        URAM288                                      r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[46]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[50]
+                            (internal pin)
+  Destination:            genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[50]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    URAM288_X1Y56        URAM288                      0.000     0.000 r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[50]
+                         net (fo=1, routed)           0.000     0.000    genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1_Cas_DinB_1[50]
+    URAM288_X1Y57        URAM288                                      r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[50]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[52]
+                            (internal pin)
+  Destination:            genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[52]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    URAM288_X1Y56        URAM288                      0.000     0.000 r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[52]
+                         net (fo=1, routed)           0.000     0.000    genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1_Cas_DinB_1[52]
+    URAM288_X1Y57        URAM288                                      r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[52]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[54]
+                            (internal pin)
+  Destination:            genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[54]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    URAM288_X1Y56        URAM288                      0.000     0.000 r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_0/CAS_OUT_DIN_B[54]
+                         net (fo=1, routed)           0.000     0.000    genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1_Cas_DinB_1[54]
+    URAM288_X1Y57        URAM288                                      r  genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sp.xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1/CAS_IN_DIN_B[54]
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "/home/austin01/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
+"../../../../rtl_kernel_wizard_0_ex.gen/sources_1/ip/ResultsFIFO/ResultsFIFO_sim_netlist.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

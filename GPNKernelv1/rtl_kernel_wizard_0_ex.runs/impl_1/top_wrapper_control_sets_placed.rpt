@@ -1,0 +1,120 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Thu Mar 28 20:43:47 2024
+| Host         : COE-CS-crystal running 64-bit Ubuntu 22.04.3 LTS
+| Command      : report_control_sets -verbose -file top_wrapper_control_sets_placed.rpt
+| Design       : top_wrapper
+| Device       : xcu280
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    42 |
+|    Minimum number of control sets                        |    42 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    63 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    42 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    28 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             223 |           76 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             517 |          117 |
+| Yes          | No                    | No                     |             414 |           55 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1159 |          220 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+--------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+--------------+
+| Clock Signal |                                                 Enable Signal                                                |                          Set/Reset Signal                         | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+--------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+--------------+
+|  clk         | genblk7[0].top/u_VMU/p_1_in4_in                                                                              | genblk7[0].top/u_VMU/block_bit[4]_i_1_n_0                         |                1 |              2 |         2.00 |
+|  clk         | genblk7[0].top/u_PE_IPs_wrapper/E[0]                                                                         | resetn                                                            |                1 |              3 |         3.00 |
+|  clk         | genblk7[0].top/FSM_onehot_state_reset[2]_i_1_n_0                                                             |                                                                   |                1 |              3 |         3.00 |
+|  clk         | genblk7[0].top/u_MGU/current_edge[2]_i_1_n_0                                                                 |                                                                   |                3 |              3 |         1.00 |
+|  clk         | genblk7[0].top/u_PE_IPs_wrapper/FSM_onehot_state_reg[1][0]                                                   | resetn                                                            |                1 |              4 |         4.00 |
+|  clk         | genblk7[0].top/u_VMU/Q[2]                                                                                    | resetn                                                            |                3 |              4 |         1.33 |
+|  clk         | genblk7[0].top/u_MPU/store_read_data[255]_i_1_n_0                                                            | genblk7[0].top/u_MPU/store_read_data[129]_i_1_n_0                 |                2 |              4 |         2.00 |
+|  clk         | genblk7[0].top/u_VMU/p_1_in4_in                                                                              | genblk7[0].top/u_VMU/block_bit[6]_i_1_n_0                         |                2 |              5 |         2.50 |
+|  clk         | genblk7[0].top/u_VMU/state_b_reg[2]__0_n_0                                                                   | genblk7[0].top/u_VMU/partition_count0                             |                1 |              5 |         5.00 |
+|  clk         | genblk7[0].top/u_VMU/state_b                                                                                 | resetn                                                            |                3 |              5 |         1.67 |
+|  clk         | genblk7[0].top/u_MGU/FSM_onehot_state[6]_i_1__0_n_0                                                          | resetn                                                            |                1 |              7 |         7.00 |
+|  clk         | genblk7[0].top/u_MGU/FSM_onehot_state_reg_n_0_[4]                                                            | resetn                                                            |                3 |             10 |         3.33 |
+|  clk         | genblk7[0].top/u_VMU/halt_block_address0                                                                     | genblk7[0].top/u_VMU/halt_block_address[12]_i_1_n_0               |                4 |             13 |         3.25 |
+|  clk         | genblk7[0].top/u_VMU/Block_Address[12]_i_1_n_0                                                               | resetn                                                            |                6 |             13 |         2.17 |
+|  clk         | genblk7[0].top/depth                                                                                         | genblk7[0].top/block_wrenable_r                                   |                3 |             16 |         5.33 |
+|  clk         | genblk7[0].top/u_MPU/valid                                                                                   | resetn                                                            |                4 |             19 |         4.75 |
+|  clk         | genblk7[0].top/u_VMU/p_1_in3_in                                                                              | resetn                                                            |               10 |             19 |         1.90 |
+|  clk         | genblk7[0].top/u_VMU/start_read0                                                                             | resetn                                                            |                8 |             19 |         2.38 |
+|  clk         | genblk7[0].top/u_MGU/read_addr[28]_i_1_n_0                                                                   | resetn                                                            |                7 |             23 |         3.29 |
+|  clk         | genblk7[0].top/block_address_r                                                                               | genblk7[0].top/block_wrenable_r                                   |                6 |             23 |         3.83 |
+|  clk         | genblk7[0].top/u_VMU/state_a                                                                                 | resetn                                                            |                7 |             26 |         3.71 |
+|  clk         | genblk7[0].top/u_MPU/inst_ReductionEngine/E[0]                                                               | resetn                                                            |               12 |             28 |         2.33 |
+|  clk         | genblk7[0].top/u_MPU/start_rd0                                                                               | resetn                                                            |               11 |             28 |         2.55 |
+|  clk         |                                                                                                              | genblk7[0].top/u_VMU/first_message_write_0                        |                2 |             29 |        14.50 |
+|  clk         | genblk7[0].top/u_MGU/current_edge[2]_i_1_n_0                                                                 | genblk7[0].top/u_PE_IPs_wrapper/resetn_1                          |                5 |             30 |         6.00 |
+|  clk         | genblk7[0].top/u_MGU/active_neighbor[32]_i_1_n_0                                                             |                                                                   |               32 |             33 |         1.03 |
+|  clk         |                                                                                                              | genblk7[0].top/u_MPU/inst_ReductionEngine/SR[0]                   |                9 |             33 |         3.67 |
+|  clk         | genblk7[0].top/u_MGU/cache_tag_0                                                                             |                                                                   |                9 |             50 |         5.56 |
+|  clk         | genblk7[0].top/u_PE_IPs_wrapper/FSM_onehot_state_reg[6]_0[0]                                                 | resetn                                                            |                9 |             51 |         5.67 |
+|  clk         | genblk7[0].top/u_PE_IPs_wrapper/resetn_2[0]                                                                  |                                                                   |               13 |             61 |         4.69 |
+|  clk         | genblk7[0].top/u_PE_IPs_wrapper/FSM_onehot_genblk4[0].state_reg[0][2][0]                                     | resetn                                                            |               10 |             64 |         6.40 |
+|  clk         | genblk7[0].top/u_MGU/FIFO_data_msg[63]_i_1_n_0                                                               | resetn                                                            |               15 |             65 |         4.33 |
+|  clk         | genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_In/U0/inst_fifo_gen/gconvfifo.rf/gbi.bi/v8_fifo.fblk/valid | resetn                                                            |               23 |             65 |         2.83 |
+|  clk         | genblk7[0].top/u_VMU/p_0_in0_in                                                                              | resetn                                                            |               12 |             72 |         6.00 |
+|  clk         | genblk7[0].top/u_VMU/FIFO_data_mgu[93]_i_1_n_0                                                               | resetn                                                            |               32 |             94 |         2.94 |
+|  clk         |                                                                                                              | genblk7[0].top/u_MPU/write_data[191]_i_1_n_0                      |               19 |            124 |         6.53 |
+|  clk         |                                                                                                              | genblk7[0].top/u_MPU/inst_ReductionEngine/FSM_onehot_state_reg[2] |               35 |            142 |         4.06 |
+|  clk         |                                                                                                              | resetn                                                            |               61 |            189 |         3.10 |
+|  clk         | genblk7[0].top/u_VMU/start_partition                                                                         | resetn                                                            |               31 |            190 |         6.13 |
+|  clk         |                                                                                                              |                                                                   |               76 |            223 |         2.93 |
+|  clk         | genblk7[0].top/u_MPU/store_read_data[255]_i_1_n_0                                                            | resetn                                                            |               73 |            252 |         3.45 |
+|  clk         | genblk7[0].top/u_MGU/store_read_data[495]_i_1_n_0                                                            |                                                                   |               33 |            264 |         8.00 |
++--------------+--------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+--------------+
+
+

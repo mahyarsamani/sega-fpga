@@ -1,0 +1,816 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x26B35CB35591FA38",
+      "device": "xcu280-fsvh2892-2L-e",
+      "gen_directory": "../../../../rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs",
+      "name": "PE_IPs",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Tracker": "",
+      "Cache": "",
+      "History": "",
+      "Msg_FIFO_Out": "",
+      "Msg_FIFO_In": "",
+      "AV_FIFO": "",
+      "AVM_FIFO": ""
+    },
+    "ports": {
+      "BRAM_enable": {
+        "direction": "I"
+      },
+      "SuperblockTracker_wrenable": {
+        "direction": "I"
+      },
+      "Cache_wrenableA": {
+        "direction": "I"
+      },
+      "History_wrenable": {
+        "direction": "I"
+      },
+      "SuperblockTracker_addr": {
+        "direction": "I",
+        "left": "13",
+        "right": "0"
+      },
+      "SuperblockTracker_din": {
+        "type": "data",
+        "direction": "I",
+        "left": "71",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "SuperblockTracker_dout": {
+        "type": "data",
+        "direction": "O",
+        "left": "71",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "PE_IPs_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "250000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "Cache_addrA": {
+        "direction": "I",
+        "left": "9",
+        "right": "0"
+      },
+      "Cache_dinA": {
+        "direction": "I",
+        "left": "287",
+        "right": "0"
+      },
+      "History_addr": {
+        "direction": "I",
+        "left": "9",
+        "right": "0"
+      },
+      "History_din": {
+        "direction": "I",
+        "left": "50",
+        "right": "0"
+      },
+      "History_dout": {
+        "type": "data",
+        "direction": "O",
+        "left": "50",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "Cache_doutA": {
+        "type": "data",
+        "direction": "O",
+        "left": "287",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "Msg_FIFO_Out_din": {
+        "type": "data",
+        "direction": "I",
+        "left": "63",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "Msg_FIFO_Out_dout": {
+        "type": "data",
+        "direction": "O",
+        "left": "63",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "Msg_FIFO_Out_write": {
+        "direction": "I"
+      },
+      "Msg_FIFO_Out_read": {
+        "direction": "I"
+      },
+      "Msg_FIFO_Out_empty": {
+        "direction": "O"
+      },
+      "Msg_FIFO_Out_full": {
+        "direction": "O"
+      },
+      "Msg_FIFO_In_din": {
+        "type": "data",
+        "direction": "I",
+        "left": "63",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "Msg_FIFO_In_dout": {
+        "type": "data",
+        "direction": "O",
+        "left": "63",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "Msg_FIFO_In_write": {
+        "direction": "I"
+      },
+      "Msg_FIFO_In_read": {
+        "direction": "I"
+      },
+      "Msg_FIFO_In_empty": {
+        "direction": "O"
+      },
+      "Msg_FIFO_In_full": {
+        "direction": "O"
+      },
+      "AVM_FIFO_din": {
+        "type": "data",
+        "direction": "I",
+        "left": "93",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "AVM_FIFO_dout": {
+        "type": "data",
+        "direction": "O",
+        "left": "93",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "AVM_FIFO_write": {
+        "direction": "I"
+      },
+      "AVM_FIFO_read": {
+        "direction": "I"
+      },
+      "AVM_FIFO_empty": {
+        "direction": "O"
+      },
+      "AVM_FIFO_full": {
+        "direction": "O"
+      },
+      "AV_FIFO_din": {
+        "type": "data",
+        "direction": "I",
+        "left": "32",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "AV_FIFO_dout": {
+        "type": "data",
+        "direction": "O",
+        "left": "32",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "AV_FIFO_write": {
+        "direction": "I"
+      },
+      "AV_FIFO_read": {
+        "direction": "I"
+      },
+      "AV_FIFO_empty": {
+        "direction": "O"
+      },
+      "AV_FIFO_full": {
+        "direction": "O"
+      },
+      "AV_FIFO_readvalid": {
+        "direction": "O"
+      },
+      "AVM_FIFO_readvalid": {
+        "direction": "O"
+      },
+      "Msg_FIFO_Out_readvalid": {
+        "direction": "O"
+      },
+      "Msg_FIFO_In_readvalid": {
+        "direction": "O"
+      },
+      "Cache_addrB": {
+        "direction": "I",
+        "left": "9",
+        "right": "0"
+      },
+      "Cache_dinB": {
+        "direction": "I",
+        "left": "287",
+        "right": "0"
+      },
+      "Cache_doutB": {
+        "type": "data",
+        "direction": "O",
+        "left": "287",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "Cache_wrenableB": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "Tracker": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "PE_IPs_blk_mem_gen_0_0",
+        "xci_path": "ip/PE_IPs_blk_mem_gen_0_0/PE_IPs_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "Tracker",
+        "parameters": {
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_RAM"
+          },
+          "Operating_Mode_A": {
+            "value": "NO_CHANGE"
+          },
+          "PRIM_type_to_Implement": {
+            "value": "URAM"
+          },
+          "Port_B_Clock": {
+            "value": "0"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "0"
+          },
+          "Port_B_Write_Rate": {
+            "value": "0"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "16384"
+          },
+          "Write_Width_A": {
+            "value": "72"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "Cache": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "PE_IPs_blk_mem_gen_0_1",
+        "xci_path": "ip/PE_IPs_blk_mem_gen_0_1/PE_IPs_blk_mem_gen_0_1.xci",
+        "inst_hier_path": "Cache",
+        "parameters": {
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "PRIM_type_to_Implement": {
+            "value": "URAM"
+          },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Port_B_Write_Rate": {
+            "value": "50"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "1024"
+          },
+          "Write_Width_A": {
+            "value": "288"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "History": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "PE_IPs_blk_mem_gen_0_2",
+        "xci_path": "ip/PE_IPs_blk_mem_gen_0_2/PE_IPs_blk_mem_gen_0_2.xci",
+        "inst_hier_path": "History",
+        "parameters": {
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Operating_Mode_A": {
+            "value": "NO_CHANGE"
+          },
+          "PRIM_type_to_Implement": {
+            "value": "URAM"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "1024"
+          },
+          "Write_Width_A": {
+            "value": "51"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "Msg_FIFO_Out": {
+        "vlnv": "xilinx.com:ip:fifo_generator:13.2",
+        "xci_name": "PE_IPs_fifo_generator_0_0",
+        "xci_path": "ip/PE_IPs_fifo_generator_0_0/PE_IPs_fifo_generator_0_0.xci",
+        "inst_hier_path": "Msg_FIFO_Out",
+        "parameters": {
+          "Input_Data_Width": {
+            "value": "64"
+          },
+          "Valid_Flag": {
+            "value": "true"
+          }
+        }
+      },
+      "Msg_FIFO_In": {
+        "vlnv": "xilinx.com:ip:fifo_generator:13.2",
+        "xci_name": "PE_IPs_Msg_FIFO_Out_0",
+        "xci_path": "ip/PE_IPs_Msg_FIFO_Out_0/PE_IPs_Msg_FIFO_Out_0.xci",
+        "inst_hier_path": "Msg_FIFO_In",
+        "parameters": {
+          "Input_Data_Width": {
+            "value": "64"
+          },
+          "Performance_Options": {
+            "value": "First_Word_Fall_Through"
+          },
+          "Valid_Flag": {
+            "value": "true"
+          },
+          "enable_low_latency": {
+            "value": "true"
+          }
+        }
+      },
+      "AV_FIFO": {
+        "vlnv": "xilinx.com:ip:fifo_generator:13.2",
+        "xci_name": "PE_IPs_Msg_FIFO_In_0",
+        "xci_path": "ip/PE_IPs_Msg_FIFO_In_0/PE_IPs_Msg_FIFO_In_0.xci",
+        "inst_hier_path": "AV_FIFO",
+        "parameters": {
+          "Input_Data_Width": {
+            "value": "33"
+          },
+          "Input_Depth": {
+            "value": "512"
+          },
+          "Valid_Flag": {
+            "value": "true"
+          }
+        }
+      },
+      "AVM_FIFO": {
+        "vlnv": "xilinx.com:ip:fifo_generator:13.2",
+        "xci_name": "PE_IPs_Msg_FIFO_In_1",
+        "xci_path": "ip/PE_IPs_Msg_FIFO_In_1/PE_IPs_Msg_FIFO_In_1.xci",
+        "inst_hier_path": "AVM_FIFO",
+        "parameters": {
+          "Full_Threshold_Assert_Value": {
+            "value": "895"
+          },
+          "Input_Data_Width": {
+            "value": "94"
+          },
+          "Programmable_Full_Type": {
+            "value": "Single_Programmable_Full_Threshold_Constant"
+          },
+          "Valid_Flag": {
+            "value": "true"
+          }
+        }
+      }
+    },
+    "nets": {
+      "AVM_FIFO_din_1": {
+        "ports": [
+          "AVM_FIFO_din",
+          "AVM_FIFO/din"
+        ]
+      },
+      "AVM_FIFO_dout1": {
+        "ports": [
+          "AVM_FIFO/dout",
+          "AVM_FIFO_dout"
+        ]
+      },
+      "AVM_FIFO_empty1": {
+        "ports": [
+          "AVM_FIFO/empty",
+          "AVM_FIFO_empty"
+        ]
+      },
+      "AVM_FIFO_prog_full": {
+        "ports": [
+          "AVM_FIFO/prog_full",
+          "AVM_FIFO_full"
+        ]
+      },
+      "AVM_FIFO_read_1": {
+        "ports": [
+          "AVM_FIFO_read",
+          "AVM_FIFO/rd_en"
+        ]
+      },
+      "AVM_FIFO_valid": {
+        "ports": [
+          "AVM_FIFO/valid",
+          "AVM_FIFO_readvalid"
+        ]
+      },
+      "AVM_FIFO_write_1": {
+        "ports": [
+          "AVM_FIFO_write",
+          "AVM_FIFO/wr_en"
+        ]
+      },
+      "AV_FIFO_din_1": {
+        "ports": [
+          "AV_FIFO_din",
+          "AV_FIFO/din"
+        ]
+      },
+      "AV_FIFO_dout1": {
+        "ports": [
+          "AV_FIFO/dout",
+          "AV_FIFO_dout"
+        ]
+      },
+      "AV_FIFO_empty1": {
+        "ports": [
+          "AV_FIFO/empty",
+          "AV_FIFO_empty"
+        ]
+      },
+      "AV_FIFO_full1": {
+        "ports": [
+          "AV_FIFO/full",
+          "AV_FIFO_full"
+        ]
+      },
+      "AV_FIFO_read_1": {
+        "ports": [
+          "AV_FIFO_read",
+          "AV_FIFO/rd_en"
+        ]
+      },
+      "AV_FIFO_valid": {
+        "ports": [
+          "AV_FIFO/valid",
+          "AV_FIFO_readvalid"
+        ]
+      },
+      "AV_FIFO_write_1": {
+        "ports": [
+          "AV_FIFO_write",
+          "AV_FIFO/wr_en"
+        ]
+      },
+      "BRAM_enable_1": {
+        "ports": [
+          "BRAM_enable",
+          "Tracker/ena",
+          "Cache/ena",
+          "History/ena",
+          "Cache/enb"
+        ]
+      },
+      "Cache_addrB_1": {
+        "ports": [
+          "Cache_addrB",
+          "Cache/addrb"
+        ]
+      },
+      "Cache_addr_1": {
+        "ports": [
+          "Cache_addrA",
+          "Cache/addra"
+        ]
+      },
+      "Cache_dinB_1": {
+        "ports": [
+          "Cache_dinB",
+          "Cache/dinb"
+        ]
+      },
+      "Cache_din_1": {
+        "ports": [
+          "Cache_dinA",
+          "Cache/dina"
+        ]
+      },
+      "Cache_douta1": {
+        "ports": [
+          "Cache/douta",
+          "Cache_doutA"
+        ]
+      },
+      "Cache_doutb1": {
+        "ports": [
+          "Cache/doutb",
+          "Cache_doutB"
+        ]
+      },
+      "Cache_wrenableB_1": {
+        "ports": [
+          "Cache_wrenableB",
+          "Cache/web"
+        ]
+      },
+      "Cache_wrenable_1": {
+        "ports": [
+          "Cache_wrenableA",
+          "Cache/wea"
+        ]
+      },
+      "History_addr_1": {
+        "ports": [
+          "History_addr",
+          "History/addra"
+        ]
+      },
+      "History_din_1": {
+        "ports": [
+          "History_din",
+          "History/dina"
+        ]
+      },
+      "History_douta": {
+        "ports": [
+          "History/douta",
+          "History_dout"
+        ]
+      },
+      "History_wrenable_1": {
+        "ports": [
+          "History_wrenable",
+          "History/wea"
+        ]
+      },
+      "Msg_FIFO_In_din_1": {
+        "ports": [
+          "Msg_FIFO_In_din",
+          "Msg_FIFO_In/din"
+        ]
+      },
+      "Msg_FIFO_In_dout1": {
+        "ports": [
+          "Msg_FIFO_In/dout",
+          "Msg_FIFO_In_dout"
+        ]
+      },
+      "Msg_FIFO_In_empty1": {
+        "ports": [
+          "Msg_FIFO_In/empty",
+          "Msg_FIFO_In_empty"
+        ]
+      },
+      "Msg_FIFO_In_full1": {
+        "ports": [
+          "Msg_FIFO_In/full",
+          "Msg_FIFO_In_full"
+        ]
+      },
+      "Msg_FIFO_In_read_1": {
+        "ports": [
+          "Msg_FIFO_In_read",
+          "Msg_FIFO_In/rd_en"
+        ]
+      },
+      "Msg_FIFO_In_valid": {
+        "ports": [
+          "Msg_FIFO_In/valid",
+          "Msg_FIFO_In_readvalid"
+        ]
+      },
+      "Msg_FIFO_In_write_1": {
+        "ports": [
+          "Msg_FIFO_In_write",
+          "Msg_FIFO_In/wr_en"
+        ]
+      },
+      "Msg_FIFO_Out_din_1": {
+        "ports": [
+          "Msg_FIFO_Out_din",
+          "Msg_FIFO_Out/din"
+        ]
+      },
+      "Msg_FIFO_Out_dout1": {
+        "ports": [
+          "Msg_FIFO_Out/dout",
+          "Msg_FIFO_Out_dout"
+        ]
+      },
+      "Msg_FIFO_Out_empty1": {
+        "ports": [
+          "Msg_FIFO_Out/empty",
+          "Msg_FIFO_Out_empty"
+        ]
+      },
+      "Msg_FIFO_Out_full1": {
+        "ports": [
+          "Msg_FIFO_Out/full",
+          "Msg_FIFO_Out_full"
+        ]
+      },
+      "Msg_FIFO_Out_read_1": {
+        "ports": [
+          "Msg_FIFO_Out_read",
+          "Msg_FIFO_Out/rd_en"
+        ]
+      },
+      "Msg_FIFO_Out_valid": {
+        "ports": [
+          "Msg_FIFO_Out/valid",
+          "Msg_FIFO_Out_readvalid"
+        ]
+      },
+      "Msg_FIFO_Out_write_1": {
+        "ports": [
+          "Msg_FIFO_Out_write",
+          "Msg_FIFO_Out/wr_en"
+        ]
+      },
+      "Tracker_addr_1": {
+        "ports": [
+          "SuperblockTracker_addr",
+          "Tracker/addra"
+        ]
+      },
+      "Tracker_din_1": {
+        "ports": [
+          "SuperblockTracker_din",
+          "Tracker/dina"
+        ]
+      },
+      "Tracker_douta": {
+        "ports": [
+          "Tracker/douta",
+          "SuperblockTracker_dout"
+        ]
+      },
+      "Tracker_wrenable_1": {
+        "ports": [
+          "SuperblockTracker_wrenable",
+          "Tracker/wea"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "Tracker/clka",
+          "Cache/clka",
+          "History/clka",
+          "Msg_FIFO_In/clk",
+          "Msg_FIFO_Out/clk",
+          "AV_FIFO/clk",
+          "AVM_FIFO/clk",
+          "Cache/clkb"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "Msg_FIFO_In/srst",
+          "Msg_FIFO_Out/srst",
+          "AVM_FIFO/srst",
+          "AV_FIFO/srst"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,162 @@
+
+
+================================================================
+== Vitis HLS Report for 'rtl_kernel_wizard_0_Pipeline_VITIS_LOOP_96_11'
+================================================================
+* Date:           Wed Mar 27 22:51:16 2024
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        prj
+* Solution:       sol (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  0.880 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_96_1  |        ?|        ?|         1|          1|          1|     ?|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|      626|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       27|    -|
+|Register             |        -|     -|        2|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|        2|      653|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3008|   869120|   434560|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9024|  2607360|  1303680|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln232_10_fu_315_p2            |         +|   0|  0|  39|          32|           1|
+    |add_ln232_11_fu_331_p2            |         +|   0|  0|  39|          32|           1|
+    |add_ln232_12_fu_347_p2            |         +|   0|  0|  39|          32|           1|
+    |add_ln232_13_fu_363_p2            |         +|   0|  0|  39|          32|           1|
+    |add_ln232_14_fu_379_p2            |         +|   0|  0|  39|          32|           1|
+    |add_ln232_15_fu_395_p2            |         +|   0|  0|  39|          32|           1|
+    |add_ln232_1_fu_171_p2             |         +|   0|  0|  39|          32|           1|
+    |add_ln232_2_fu_187_p2             |         +|   0|  0|  39|          32|           1|
+    |add_ln232_3_fu_203_p2             |         +|   0|  0|  39|          32|           1|
+    |add_ln232_4_fu_219_p2             |         +|   0|  0|  39|          32|           1|
+    |add_ln232_5_fu_235_p2             |         +|   0|  0|  39|          32|           1|
+    |add_ln232_6_fu_251_p2             |         +|   0|  0|  39|          32|           1|
+    |add_ln232_7_fu_267_p2             |         +|   0|  0|  39|          32|           1|
+    |add_ln232_8_fu_283_p2             |         +|   0|  0|  39|          32|           1|
+    |add_ln232_9_fu_299_p2             |         +|   0|  0|  39|          32|           1|
+    |add_ln232_fu_155_p2               |         +|   0|  0|  39|          32|           1|
+    |ap_block_state1_pp0_stage0_iter0  |        or|   0|  0|   2|           1|           1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 626|         513|          17|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------+----+-----------+-----+-----------+
+    |          Name          | LUT| Input Size| Bits| Total Bits|
+    +------------------------+----+-----------+-----+-----------+
+    |ap_done_int             |   9|          2|    1|          2|
+    |axisDDRin_TDATA_blk_n   |   9|          2|    1|          2|
+    |axisDDRout_TDATA_blk_n  |   9|          2|    1|          2|
+    +------------------------+----+-----------+-----+-----------+
+    |Total                   |  27|          6|    3|          6|
+    +------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  2|   0|    2|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+-----------------------------------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |                 Source Object                 |    C Type    |
++-------------------+-----+-----+------------+-----------------------------------------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|  rtl_kernel_wizard_0_Pipeline_VITIS_LOOP_96_11|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|  rtl_kernel_wizard_0_Pipeline_VITIS_LOOP_96_11|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|  rtl_kernel_wizard_0_Pipeline_VITIS_LOOP_96_11|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|  rtl_kernel_wizard_0_Pipeline_VITIS_LOOP_96_11|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|  rtl_kernel_wizard_0_Pipeline_VITIS_LOOP_96_11|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|  rtl_kernel_wizard_0_Pipeline_VITIS_LOOP_96_11|  return value|
+|axisDDRin_TVALID   |   in|    1|        axis|                             axisDDRin_V_data_V|       pointer|
+|axisDDRin_TDATA    |   in|  512|        axis|                             axisDDRin_V_data_V|       pointer|
+|axisDDRout_TREADY  |   in|    1|        axis|                            axisDDRout_V_data_V|       pointer|
+|axisDDRout_TDATA   |  out|  512|        axis|                            axisDDRout_V_data_V|       pointer|
+|axisDDRin_TREADY   |  out|    1|        axis|                             axisDDRin_V_last_V|       pointer|
+|axisDDRin_TLAST    |   in|    1|        axis|                             axisDDRin_V_last_V|       pointer|
+|axisDDRin_TKEEP    |   in|   64|        axis|                             axisDDRin_V_keep_V|       pointer|
+|axisDDRin_TSTRB    |   in|   64|        axis|                             axisDDRin_V_strb_V|       pointer|
+|axisDDRout_TVALID  |  out|    1|        axis|                            axisDDRout_V_last_V|       pointer|
+|axisDDRout_TLAST   |  out|    1|        axis|                            axisDDRout_V_last_V|       pointer|
+|axisDDRout_TKEEP   |  out|   64|        axis|                            axisDDRout_V_keep_V|       pointer|
+|axisDDRout_TSTRB   |  out|   64|        axis|                            axisDDRout_V_strb_V|       pointer|
++-------------------+-----+-----+------------+-----------------------------------------------+--------------+
+

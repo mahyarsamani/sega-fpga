@@ -1,0 +1,1 @@
+vopt -64 +acc=npr -l elaborate.log -L xil_defaultlib -L xilinx_vip -L xpm -L axis_infrastructure_v1_1_0 -L axi4stream_vip_v1_1_12 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.axishbmout_vip xil_defaultlib.glbl -o axishbmout_vip_opt

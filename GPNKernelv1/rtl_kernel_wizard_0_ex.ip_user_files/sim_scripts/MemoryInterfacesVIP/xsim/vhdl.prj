@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/MemoryInterfacesVIP/ip/MemoryInterfacesVIP_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_d1ca_psr_aclk_0.vhd" \
+
+nosort

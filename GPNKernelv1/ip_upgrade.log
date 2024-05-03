@@ -1,0 +1,123 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Wed Apr 24 14:27:49 2024
+| Host         : COE-CS-crystal running 64-bit Ubuntu 22.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MemoryInterfaces_HBM_00_AXI_Engine_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of MemoryInterfaces_HBM_00_AXI_Engine_0 (user.org:user:AXI_Engine:2.0) from (Rev. 54) to (Rev. 55)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'MemoryInterfaces_HBM_00_AXI_Engine_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'write_last'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Wed Apr 24 14:27:49 2024
+| Host         : COE-CS-crystal running 64-bit Ubuntu 22.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MemoryInterfaces_AXI_Engine_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of MemoryInterfaces_AXI_Engine_0_0 (user.org:user:AXI_Engine:2.0) from (Rev. 54) to (Rev. 55)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'MemoryInterfaces_AXI_Engine_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'write_last'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Wed Apr 24 14:27:40 2024
+| Host         : COE-CS-crystal running 64-bit Ubuntu 22.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MemoryInterfacesVIP_HBM_00_AXI_Engine_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of MemoryInterfacesVIP_HBM_00_AXI_Engine_0 (user.org:user:AXI_Engine:2.0) from (Rev. 54) to (Rev. 55)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'MemoryInterfacesVIP_HBM_00_AXI_Engine_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'write_last'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Wed Apr 24 14:27:40 2024
+| Host         : COE-CS-crystal running 64-bit Ubuntu 22.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MemoryInterfacesVIP_DDR_00_AXI_Engine_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of MemoryInterfacesVIP_DDR_00_AXI_Engine_0 (user.org:user:AXI_Engine:2.0) from (Rev. 54) to (Rev. 55)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'MemoryInterfacesVIP_DDR_00_AXI_Engine_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'write_last'
+
+

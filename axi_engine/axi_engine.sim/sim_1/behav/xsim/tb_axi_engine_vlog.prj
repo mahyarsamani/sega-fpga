@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "/home/austin01/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
+"../../../../axi_engine.ip_user_files/bd/axi_verification/sim/axi_verification.v" \
+"../../../../axi_engine.v" \
+"../../../../axi_engine.gen/sources_1/bd/axi_verification/hdl/axi_verification_wrapper.v" \
+"../../../../rd_engine.v" \
+"../../../../wr_engine.v" \
+
+sv xil_defaultlib  --include "/home/austin01/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
+"../../../../axi_engine.srcs/sim_1/new/tb_axi_engine.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

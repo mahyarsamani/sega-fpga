@@ -1,0 +1,40 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.75",
+   "Default View_TopLeft":"-581,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace port port-id_sleep -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port port-id_WriteBuffer_Write -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace port port-id_WriteBuffer_Read -pg 1 -lvl 0 -x 0 -y 540 -defaultsOSRD
+preplace port port-id_ReadBuffer_Write -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port port-id_ReadBuffer_Read -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port port-id_ReadBuffer_Empty -pg 1 -lvl 2 -x 430 -y 20 -defaultsOSRD
+preplace port port-id_WriteBuffer_Empty -pg 1 -lvl 2 -x 430 -y 360 -defaultsOSRD
+preplace portBus WriteBuffer_WriteData -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace portBus WriteBuffer_ReadData -pg 1 -lvl 2 -x 430 -y 660 -defaultsOSRD
+preplace portBus ReadBuffer_WriteData -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace portBus ReadBuffer_ReadData -pg 1 -lvl 2 -x 430 -y 340 -defaultsOSRD
+preplace inst WriteBuffer -pg 1 -lvl 1 -x 230 -y 510 -defaultsOSRD
+preplace inst ReadBuffer -pg 1 -lvl 1 -x 230 -y 180 -defaultsOSRD
+preplace netloc WriteData_FIFO_din_1 1 0 1 NJ 440
+preplace netloc WriteData_FIFO_dout1 1 0 2 50 660 NJ
+preplace netloc WriteData_FIFO_read_1 1 0 1 NJ 540
+preplace netloc WriteData_FIFO_write_1 1 0 1 NJ 460
+preplace netloc clk_1 1 0 1 40 240n
+preplace netloc reset_1 1 0 1 30 260n
+preplace netloc sleep_1 1 0 1 20 280n
+preplace netloc ReadBuffer_WriteData_1 1 0 1 NJ 120
+preplace netloc ReadBuffer_Write_1 1 0 1 NJ 140
+preplace netloc ReadBuffer_Read_1 1 0 1 NJ 220
+preplace netloc ReadBuffer_dout 1 0 2 50 340 NJ
+preplace netloc ReadBuffer_empty1 1 0 2 50 20 NJ
+preplace netloc WriteBuffer_empty1 1 0 2 50 360 NJ
+levelinfo -pg 1 0 230 430
+pagesize -pg 1 -db -bbox -sgen -270 0 700 680
+"
+}
+0

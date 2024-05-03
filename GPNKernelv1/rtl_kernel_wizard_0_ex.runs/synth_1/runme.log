@@ -1,0 +1,693 @@
+
+*** Running vivado
+    with args -log top_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_wrapper.tcl
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source top_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/austin01/vivado/axi_engine'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/austin01/Xilinx/Vivado/2022.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/utils_1/imports/synth_1/rtl_kernel_wizard_0.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/utils_1/imports/synth_1/rtl_kernel_wizard_0.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_wrapper -part xcu280-fsvh2892-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 78151
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/home/austin01/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+WARNING: [Synth 8-6901] identifier 'state_a' is used before its declaration [/home/austin01/vivado/rtl_kernel_wizard_0_ex/VMU.v:102]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3634.004 ; gain = 337.766 ; free physical = 25606 ; free virtual = 57434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_wrapper' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:17]
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top.v:22]
+	Parameter MEMORY_OFFSET bound to: 33'b000000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'PE_IPs_wrapper' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/hdl/PE_IPs_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'PE_IPs' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v:12]
+INFO: [Synth 8-6157] synthesizing module 'PE_IPs_Msg_FIFO_In_1' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/PE_IPs_Msg_FIFO_In_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PE_IPs_Msg_FIFO_In_1' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/PE_IPs_Msg_FIFO_In_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'full' of module 'PE_IPs_Msg_FIFO_In_1' is unconnected for instance 'AVM_FIFO' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v:188]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'PE_IPs_Msg_FIFO_In_1' is unconnected for instance 'AVM_FIFO' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v:188]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'PE_IPs_Msg_FIFO_In_1' is unconnected for instance 'AVM_FIFO' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v:188]
+WARNING: [Synth 8-7023] instance 'AVM_FIFO' of module 'PE_IPs_Msg_FIFO_In_1' has 12 connections declared, but only 9 given [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v:188]
+INFO: [Synth 8-6157] synthesizing module 'PE_IPs_Msg_FIFO_In_0' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/PE_IPs_Msg_FIFO_In_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PE_IPs_Msg_FIFO_In_0' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/PE_IPs_Msg_FIFO_In_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'PE_IPs_Msg_FIFO_In_0' is unconnected for instance 'AV_FIFO' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v:198]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'PE_IPs_Msg_FIFO_In_0' is unconnected for instance 'AV_FIFO' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v:198]
+WARNING: [Synth 8-7023] instance 'AV_FIFO' of module 'PE_IPs_Msg_FIFO_In_0' has 11 connections declared, but only 9 given [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v:198]
+INFO: [Synth 8-6157] synthesizing module 'PE_IPs_blk_mem_gen_0_1' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/PE_IPs_blk_mem_gen_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PE_IPs_blk_mem_gen_0_1' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/PE_IPs_blk_mem_gen_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'PE_IPs_blk_mem_gen_0_2' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/PE_IPs_blk_mem_gen_0_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PE_IPs_blk_mem_gen_0_2' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/PE_IPs_blk_mem_gen_0_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'PE_IPs_Msg_FIFO_Out_0' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/PE_IPs_Msg_FIFO_Out_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PE_IPs_Msg_FIFO_Out_0' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/PE_IPs_Msg_FIFO_Out_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'PE_IPs_Msg_FIFO_Out_0' is unconnected for instance 'Msg_FIFO_In' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v:222]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'PE_IPs_Msg_FIFO_Out_0' is unconnected for instance 'Msg_FIFO_In' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v:222]
+WARNING: [Synth 8-7023] instance 'Msg_FIFO_In' of module 'PE_IPs_Msg_FIFO_Out_0' has 11 connections declared, but only 9 given [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v:222]
+INFO: [Synth 8-6157] synthesizing module 'PE_IPs_fifo_generator_0_0' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/PE_IPs_fifo_generator_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PE_IPs_fifo_generator_0_0' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/PE_IPs_fifo_generator_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'PE_IPs_fifo_generator_0_0' is unconnected for instance 'Msg_FIFO_Out' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v:232]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'PE_IPs_fifo_generator_0_0' is unconnected for instance 'Msg_FIFO_Out' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v:232]
+WARNING: [Synth 8-7023] instance 'Msg_FIFO_Out' of module 'PE_IPs_fifo_generator_0_0' has 11 connections declared, but only 9 given [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v:232]
+INFO: [Synth 8-6157] synthesizing module 'PE_IPs_blk_mem_gen_0_0' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/PE_IPs_blk_mem_gen_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PE_IPs_blk_mem_gen_0_0' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/PE_IPs_blk_mem_gen_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PE_IPs' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/synth/PE_IPs.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'PE_IPs_wrapper' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/hdl/PE_IPs_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'MPU' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MPU.v:22]
+	Parameter DataWidth bound to: 256 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MPU.v:279]
+INFO: [Synth 8-226] default block is never used [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MPU.v:346]
+INFO: [Synth 8-226] default block is never used [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MPU.v:358]
+INFO: [Synth 8-226] default block is never used [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MPU.v:369]
+INFO: [Synth 8-6157] synthesizing module 'ReductionEngine' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MPU.v:404]
+	Parameter VPropWidth bound to: 32 - type: integer 
+	Parameter EDegreeWidth bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ReductionEngine' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MPU.v:404]
+INFO: [Synth 8-6155] done synthesizing module 'MPU' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MPU.v:22]
+INFO: [Synth 8-6157] synthesizing module 'VMU' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/VMU.v:21]
+	Parameter MEMORY_OFFSET bound to: 33'b000000000000000000000000000000000 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/austin01/vivado/rtl_kernel_wizard_0_ex/VMU.v:227]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/austin01/vivado/rtl_kernel_wizard_0_ex/VMU.v:521]
+INFO: [Synth 8-6157] synthesizing module 'VMU_FIFOs_wrapper' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/hdl/VMU_FIFOs_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'VMU_FIFOs' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/synth/VMU_FIFOs.v:12]
+INFO: [Synth 8-6157] synthesizing module 'VMU_FIFOs_fifo_generator_0_0' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/VMU_FIFOs_fifo_generator_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'VMU_FIFOs_fifo_generator_0_0' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/.Xil/Vivado-77920-COE-CS-crystal/realtime/VMU_FIFOs_fifo_generator_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'full' of module 'VMU_FIFOs_fifo_generator_0_0' is unconnected for instance 'WriteData_FIFO' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/synth/VMU_FIFOs.v:44]
+WARNING: [Synth 8-7071] port 'empty' of module 'VMU_FIFOs_fifo_generator_0_0' is unconnected for instance 'WriteData_FIFO' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/synth/VMU_FIFOs.v:44]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'VMU_FIFOs_fifo_generator_0_0' is unconnected for instance 'WriteData_FIFO' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/synth/VMU_FIFOs.v:44]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'VMU_FIFOs_fifo_generator_0_0' is unconnected for instance 'WriteData_FIFO' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/synth/VMU_FIFOs.v:44]
+WARNING: [Synth 8-7023] instance 'WriteData_FIFO' of module 'VMU_FIFOs_fifo_generator_0_0' has 11 connections declared, but only 7 given [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/synth/VMU_FIFOs.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'VMU_FIFOs' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/synth/VMU_FIFOs.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'VMU_FIFOs_wrapper' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/hdl/VMU_FIFOs_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'VMU' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/VMU.v:21]
+WARNING: [Synth 8-6104] Input port 'VMU_write_data' has an internal driver [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top.v:370]
+INFO: [Synth 8-6157] synthesizing module 'MGU' [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MGU.v:24]
+	Parameter DataWidth bound to: 512 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MGU' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MGU.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top.v:22]
+WARNING: [Synth 8-324] index 1 out of range [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:275]
+WARNING: [Synth 8-324] index 2 out of range [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:275]
+WARNING: [Synth 8-324] index 3 out of range [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:275]
+WARNING: [Synth 8-324] index 4 out of range [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:275]
+WARNING: [Synth 8-324] index 5 out of range [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:275]
+WARNING: [Synth 8-324] index 6 out of range [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:275]
+WARNING: [Synth 8-324] index 7 out of range [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:276]
+WARNING: [Synth 8-324] index 8 out of range [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:276]
+WARNING: [Synth 8-324] index 9 out of range [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:276]
+WARNING: [Synth 8-324] index 10 out of range [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:276]
+WARNING: [Synth 8-324] index 11 out of range [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:276]
+WARNING: [Synth 8-324] index 12 out of range [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:276]
+WARNING: [Synth 8-324] index 13 out of range [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:277]
+WARNING: [Synth 8-324] index 14 out of range [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:277]
+WARNING: [Synth 8-324] index 15 out of range [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:277]
+INFO: [Synth 8-6155] done synthesizing module 'top_wrapper' (0#1) [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:17]
+WARNING: [Synth 8-6014] Unused sequential element first_message_received_reg was removed.  [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MPU.v:129]
+WARNING: [Synth 8-6014] Unused sequential element dirty1_reg was removed.  [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MPU.v:251]
+WARNING: [Synth 8-6014] Unused sequential element dirty2_reg was removed.  [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MPU.v:258]
+WARNING: [Synth 8-6014] Unused sequential element prev_state_a_reg was removed.  [/home/austin01/vivado/rtl_kernel_wizard_0_ex/VMU.v:220]
+WARNING: [Synth 8-6014] Unused sequential element store_read_data_reg was removed.  [/home/austin01/vivado/rtl_kernel_wizard_0_ex/VMU.v:436]
+WARNING: [Synth 8-6014] Unused sequential element write_counter_reg was removed.  [/home/austin01/vivado/rtl_kernel_wizard_0_ex/VMU.v:189]
+WARNING: [Synth 8-6014] Unused sequential element WriteData_FIFO_read_reg was removed.  [/home/austin01/vivado/rtl_kernel_wizard_0_ex/VMU.v:500]
+WARNING: [Synth 8-6014] Unused sequential element active_weight_reg was removed.  [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MGU.v:190]
+WARNING: [Synth 8-6014] Unused sequential element valid_reg was removed.  [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MGU.v:241]
+WARNING: [Synth 8-3848] Net VMU_write_data[0] in module/entity top_wrapper does not have driver. [/home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v:140]
+WARNING: [Synth 8-3917] design top_wrapper has port start_write_DDR4 driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port wburst_DDR4[7] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port wburst_DDR4[6] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port wburst_DDR4[5] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port wburst_DDR4[4] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port wburst_DDR4[3] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port wburst_DDR4[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port wburst_DDR4[1] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port wburst_DDR4[0] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[32] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[31] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[30] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[29] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[28] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[27] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[26] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[25] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[24] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[23] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[22] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[21] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[20] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[19] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[18] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[17] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[16] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[15] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[14] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[13] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[12] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[11] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[10] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[9] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[8] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[7] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[6] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[5] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[4] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[3] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[1] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_addr_DDR4[0] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[511] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[510] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[509] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[508] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[507] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[506] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[505] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[504] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[503] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[502] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[501] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[500] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[499] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[498] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[497] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[496] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[495] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[494] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[493] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[492] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[491] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[490] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[489] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[488] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[487] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[486] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[485] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[484] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[483] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[482] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[481] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[480] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[479] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[478] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[477] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[476] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[475] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[474] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[473] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[472] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[471] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[470] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[469] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[468] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[467] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[466] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[465] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[464] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[463] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[462] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[461] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[460] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[459] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[458] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[457] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[456] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[455] driven by constant 0
+WARNING: [Synth 8-3917] design top_wrapper has port write_data_DDR4[454] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port FIFO_data_vmu_a[61] in module MGU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIFO_data_vmu_a[60] in module MGU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[32] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[31] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[30] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[29] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[9] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[8] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[7] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[6] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[5] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[4] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[3] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[2] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[1] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[0] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIFO_empty_mgu in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[214] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[213] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[212] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[211] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[210] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[209] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[208] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[207] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[206] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port end_write_HBM[1] in module top_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_resp_DDR4 in module top_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_resp_DDR4 in module top_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port end_write_DDR4[1] in module top_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port end_write_DDR4[0] in module top_wrapper is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3714.910 ; gain = 418.672 ; free physical = 26687 ; free virtual = 58517
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3732.723 ; gain = 436.484 ; free physical = 26689 ; free virtual = 58519
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3732.723 ; gain = 436.484 ; free physical = 26689 ; free virtual = 58519
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3732.723 ; gain = 0.000 ; free physical = 26685 ; free virtual = 58515
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/ip/VMU_FIFOs_fifo_generator_0_0/VMU_FIFOs_fifo_generator_0_0/VMU_FIFOs_fifo_generator_0_0_in_context.xdc] for cell 'genblk7[0].top/u_VMU/u_VMU_FIFOs_wrapper/VMU_FIFOs_i/WriteData_FIFO'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/ip/VMU_FIFOs_fifo_generator_0_0/VMU_FIFOs_fifo_generator_0_0/VMU_FIFOs_fifo_generator_0_0_in_context.xdc] for cell 'genblk7[0].top/u_VMU/u_VMU_FIFOs_wrapper/VMU_FIFOs_i/WriteData_FIFO'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_blk_mem_gen_0_0/PE_IPs_blk_mem_gen_0_0/PE_IPs_blk_mem_gen_0_0_in_context.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_blk_mem_gen_0_0/PE_IPs_blk_mem_gen_0_0/PE_IPs_blk_mem_gen_0_0_in_context.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Tracker'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_blk_mem_gen_0_1/PE_IPs_blk_mem_gen_0_1/PE_IPs_blk_mem_gen_0_1_in_context.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Cache'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_blk_mem_gen_0_1/PE_IPs_blk_mem_gen_0_1/PE_IPs_blk_mem_gen_0_1_in_context.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Cache'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_blk_mem_gen_0_2/PE_IPs_blk_mem_gen_0_2/PE_IPs_blk_mem_gen_0_2_in_context.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/History'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_blk_mem_gen_0_2/PE_IPs_blk_mem_gen_0_2/PE_IPs_blk_mem_gen_0_2_in_context.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/History'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_fifo_generator_0_0/PE_IPs_fifo_generator_0_0/PE_IPs_fifo_generator_0_0_in_context.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_Out'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_fifo_generator_0_0/PE_IPs_fifo_generator_0_0/PE_IPs_fifo_generator_0_0_in_context.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_Out'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_Out_0/PE_IPs_Msg_FIFO_Out_0/PE_IPs_fifo_generator_0_0_in_context.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_In'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_Out_0/PE_IPs_Msg_FIFO_Out_0/PE_IPs_fifo_generator_0_0_in_context.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_In'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_0/PE_IPs_Msg_FIFO_In_0/PE_IPs_Msg_FIFO_In_0_in_context.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AV_FIFO'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_0/PE_IPs_Msg_FIFO_In_0/PE_IPs_Msg_FIFO_In_0_in_context.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AV_FIFO'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_1/PE_IPs_Msg_FIFO_In_1/PE_IPs_Msg_FIFO_In_1_in_context.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AVM_FIFO'
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_1/PE_IPs_Msg_FIFO_In_1/PE_IPs_Msg_FIFO_In_1_in_context.xdc] for cell 'genblk7[0].top/u_PE_IPs_wrapper/PE_IPs_i/AVM_FIFO'
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_ooc.xdc]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clk' matched to 'port' objects. [/home/austin01/vivado/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_ooc.xdc:1]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_ooc.xdc]
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_user.xdc]
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_user.xdc]
+Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3917.316 ; gain = 0.000 ; free physical = 26546 ; free virtual = 58376
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3917.316 ; gain = 0.000 ; free physical = 26544 ; free virtual = 58373
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3917.316 ; gain = 621.078 ; free physical = 26664 ; free virtual = 58493
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3917.316 ; gain = 621.078 ; free physical = 26664 ; free virtual = 58493
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk7[0].top /u_VMU/u_VMU_FIFOs_wrapper/VMU_FIFOs_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk7[0].top /u_VMU/u_VMU_FIFOs_wrapper/VMU_FIFOs_i/WriteData_FIFO. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk7[0].top /u_PE_IPs_wrapper/PE_IPs_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk7[0].top /u_PE_IPs_wrapper/PE_IPs_i/Tracker. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk7[0].top /u_PE_IPs_wrapper/PE_IPs_i/Cache. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk7[0].top /u_PE_IPs_wrapper/PE_IPs_i/History. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk7[0].top /u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_Out. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk7[0].top /u_PE_IPs_wrapper/PE_IPs_i/Msg_FIFO_In. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk7[0].top /u_PE_IPs_wrapper/PE_IPs_i/AV_FIFO. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \genblk7[0].top /u_PE_IPs_wrapper/PE_IPs_i/AVM_FIFO. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3917.316 ; gain = 621.078 ; free physical = 26664 ; free virtual = 58493
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'MPU'
+INFO: [Synth 8-802] inferred FSM for state register 'state_a_reg' in module 'VMU'
+INFO: [Synth 8-802] inferred FSM for state register 'state_b_reg' in module 'VMU'
+WARNING: [Synth 8-3936] Found unconnected internal register 'new_value_reg' and it is trimmed from '32' to '31' bits. [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MGU.v:234]
+WARNING: [Synth 8-3936] Found unconnected internal register 'prop_reg' and it is trimmed from '32' to '31' bits. [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MGU.v:158]
+WARNING: [Synth 8-3936] Found unconnected internal register 'active_neighbor_reg' and it is trimmed from '48' to '33' bits. [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MGU.v:191]
+WARNING: [Synth 8-3936] Found unconnected internal register 'store_read_data_reg' and it is trimmed from '512' to '496' bits. [/home/austin01/vivado/rtl_kernel_wizard_0_ex/MGU.v:89]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'MGU'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reset_reg' in module 'top'
+INFO: [Synth 8-802] inferred FSM for state register 'genblk4[0].state_reg[0]' in module 'top_wrapper'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                       0000100000 |                             0000
+                     VMU |                       0010000000 |                             1001
+               FIFO_READ |                       0001000000 |                             0001
+              CACHE_WAIT |                       0000010000 |                             0010
+              CACHE_READ |                       0000000001 |                             0011
+          CACHE_HIT_MISS |                       0000000010 |                             0100
+             MEMORY_READ |                       0000001000 |                             0101
+                  REDUCE |                       1000000000 |                             0110
+                  UPDATE |                       0000000100 |                             0111
+                   WRITE |                       0100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'MPU'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+              PARTITION1 |                             0010 |                             0010
+              PARTITION2 |                             0100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_b_reg' in module 'VMU'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |             00000000000000000001 |             00000000000000000001
+                    WAIT |             00000000000001000000 |             00000000000001000000
+              BLOCK_READ |             00000000000010000000 |             00000000000010000000
+             BLOCK_CHECK |             00000000000100000000 |             00000000000100000000
+             BLOCK_RESET |             00000001000000000000 |             00000001000000000000
+          MEM_READ_CYCLE |             00000000001000000000 |             00000000001000000000
+          MEM_WRITE_BACK |             00000000010000000000 |             00000000010000000000
+         MEM_WRITE_CYCLE |             00000000100000000000 |             00000000100000000000
+               FIFO_READ |             00000000000000000010 |             00000000000000000010
+                RAM_WAIT |             00000000000000000100 |             00000000000000000100
+                RAM_READ |             00000000000000001000 |             00000000000000001000
+                ACTIVATE |             00000000000000010000 |             00000000000000010000
+               RAM_WRITE |             00000000000000100000 |             00000000000000100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_a_reg' in module 'VMU'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                          0000001 |                             0000
+                    READ |                          0000010 |                             0001
+               READ_WAIT |                          0000100 |                             0010
+             CHECK_EDGES |                          0001000 |                             0100
+                 COMPUTE |                          0010000 |                             0101
+                    WAIT |                          0100000 |                             0110
+             CHECK_CACHE |                          1000000 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'MGU'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   RESET |                              001 |                               00
+                    WAIT |                              010 |                               01
+                   CYCLE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reset_reg' using encoding 'one-hot' in module 'top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                              000
+                    READ |                              100 |                              001
+                 REQUEST |                              010 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'genblk4[0].state_reg[0]' using encoding 'one-hot' in module 'top_wrapper'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3917.316 ; gain = 621.078 ; free physical = 26652 ; free virtual = 58483
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input   30 Bit       Adders := 1     
+	   2 Input   23 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	              496 Bit    Registers := 1     
+	              256 Bit    Registers := 4     
+	              216 Bit    Registers := 1     
+	               94 Bit    Registers := 1     
+	               72 Bit    Registers := 3     
+	               64 Bit    Registers := 3     
+	               51 Bit    Registers := 1     
+	               33 Bit    Registers := 7     
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 2     
+	               30 Bit    Registers := 3     
+	               20 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               13 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 31    
++---Muxes : 
+	   2 Input  512 Bit        Muxes := 1     
+	   2 Input  256 Bit        Muxes := 13    
+	   2 Input  216 Bit        Muxes := 3     
+	   2 Input  208 Bit        Muxes := 1     
+	   2 Input   94 Bit        Muxes := 1     
+	   2 Input   72 Bit        Muxes := 3     
+	   5 Input   72 Bit        Muxes := 1     
+	   7 Input   64 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 3     
+	   2 Input   33 Bit        Muxes := 7     
+	   3 Input   33 Bit        Muxes := 1     
+	   7 Input   33 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 6     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 1     
+	   7 Input   30 Bit        Muxes := 1     
+	   3 Input   30 Bit        Muxes := 1     
+	   2 Input   29 Bit        Muxes := 3     
+	  14 Input   20 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   13 Bit        Muxes := 5     
+	   2 Input   12 Bit        Muxes := 4     
+	   2 Input   11 Bit        Muxes := 2     
+	  10 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 10    
+	   3 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 7     
+	   2 Input    7 Bit        Muxes := 7     
+	   5 Input    7 Bit        Muxes := 1     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   7 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 20    
+	   4 Input    1 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 10    
+	   3 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[32] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[31] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[30] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[29] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[9] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[8] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[7] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[6] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[5] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[4] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[3] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[2] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[1] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MPU_VMU_FIFO_ReadData[0] in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIFO_empty_mgu in module VMU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[214] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[213] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[212] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[211] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[210] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[209] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[208] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[207] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cache_ReadData[206] in module MPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[511] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[510] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[509] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[508] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[507] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[506] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[505] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[504] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[503] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[502] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[501] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[500] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[499] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[498] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[497] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MGU_read_data[496] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port end_write_HBM[1] in module top_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_resp_DDR4 in module top_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_resp_DDR4 in module top_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port end_write_DDR4[1] in module top_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port end_write_DDR4[0] in module top_wrapper is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3917.316 ; gain = 621.078 ; free physical = 26625 ; free virtual = 58465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 4149.004 ; gain = 852.766 ; free physical = 26131 ; free virtual = 57970
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 4201.051 ; gain = 904.812 ; free physical = 26112 ; free virtual = 57952
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 4209.059 ; gain = 912.820 ; free physical = 26101 ; free virtual = 57940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 4209.059 ; gain = 912.820 ; free physical = 26100 ; free virtual = 57939
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 4209.059 ; gain = 912.820 ; free physical = 26100 ; free virtual = 57939
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 4209.059 ; gain = 912.820 ; free physical = 26100 ; free virtual = 57940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 4209.059 ; gain = 912.820 ; free physical = 26100 ; free virtual = 57940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 4209.059 ; gain = 912.820 ; free physical = 26100 ; free virtual = 57940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 4209.059 ; gain = 912.820 ; free physical = 26100 ; free virtual = 57940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |PE_IPs_Msg_FIFO_In_1         |         1|
+|2     |PE_IPs_Msg_FIFO_In_0         |         1|
+|3     |PE_IPs_blk_mem_gen_0_1       |         1|
+|4     |PE_IPs_blk_mem_gen_0_2       |         1|
+|5     |PE_IPs_Msg_FIFO_Out_0        |         1|
+|6     |PE_IPs_fifo_generator_0_0    |         1|
+|7     |PE_IPs_blk_mem_gen_0_0       |         1|
+|8     |VMU_FIFOs_fifo_generator_0_0 |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |PE_IPs_Msg_FIFO_In         |     2|
+|3     |PE_IPs_Msg_FIFO_Out        |     1|
+|4     |PE_IPs_blk_mem_gen_0       |     3|
+|7     |PE_IPs_fifo_generator_0    |     1|
+|8     |VMU_FIFOs_fifo_generator_0 |     1|
+|9     |CARRY8                     |    24|
+|10    |LUT1                       |     7|
+|11    |LUT2                       |   145|
+|12    |LUT3                       |   590|
+|13    |LUT4                       |   411|
+|14    |LUT5                       |   638|
+|15    |LUT6                       |   320|
+|16    |MUXF7                      |    50|
+|17    |MUXF8                      |     8|
+|18    |FDRE                       |  2367|
+|19    |FDSE                       |     8|
++------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 4209.059 ; gain = 912.820 ; free physical = 26100 ; free virtual = 57940
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 605 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 4209.059 ; gain = 728.227 ; free physical = 26138 ; free virtual = 57978
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 4209.066 ; gain = 912.820 ; free physical = 26138 ; free virtual = 57978
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4217.059 ; gain = 0.000 ; free physical = 26230 ; free virtual = 58070
+INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4298.363 ; gain = 0.000 ; free physical = 26139 ; free virtual = 57978
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: d9565b93
+INFO: [Common 17-83] Releasing license: Synthesis
+80 Infos, 227 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 4298.363 ; gain = 1425.422 ; free physical = 26353 ; free virtual = 58192
+INFO: [Common 17-1381] The checkpoint '/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/top_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_wrapper_utilization_synth.rpt -pb top_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 28 20:01:58 2024...

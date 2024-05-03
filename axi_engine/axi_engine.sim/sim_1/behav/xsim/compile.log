@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/axi_engine/axi_engine.ip_user_files/bd/axi_verification/sim/axi_verification.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_verification
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/axi_engine/axi_engine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_engine
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/axi_engine/axi_engine.gen/sources_1/bd/axi_verification/hdl/axi_verification_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_verification_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/axi_engine/rd_engine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rd_engine
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/austin01/vivado/axi_engine/wr_engine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wr_engine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/austin01/vivado/axi_engine/axi_engine.srcs/sim_1/new/tb_axi_engine.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_axi_engine
+ERROR: [VRFC 10-2989] 'axi_verification_axi_vip_0_0_pkg' is not declared [/home/austin01/vivado/axi_engine/axi_engine.srcs/sim_1/new/tb_axi_engine.sv:28]
+ERROR: [VRFC 10-8530] module 'tb_axi_engine' is ignored due to previous errors [/home/austin01/vivado/axi_engine/axi_engine.srcs/sim_1/new/tb_axi_engine.sv:26]

@@ -1,0 +1,998 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.0561056",
+   "Default View_TopLeft":"-9999,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_HBM_00_ARESET_N -pg 1 -lvl 0 -x 0 -y 3940 -defaultsOSRD
+preplace port port-id_HBM_00_start_read -pg 1 -lvl 0 -x 0 -y 4950 -defaultsOSRD
+preplace port port-id_HBM_00_start_write -pg 1 -lvl 0 -x 0 -y 4930 -defaultsOSRD
+preplace port port-id_HBM_00_write_ready -pg 1 -lvl 0 -x 0 -y 5070 -defaultsOSRD
+preplace port port-id_c0_sys_clk_i -pg 1 -lvl 0 -x 0 -y 2500 -defaultsOSRD
+preplace port port-id_HBM_00_end_read -pg 1 -lvl 4 -x 1250 -y 4960 -defaultsOSRD
+preplace port port-id_HBM_00_read_ready -pg 1 -lvl 4 -x 1250 -y 5020 -defaultsOSRD
+preplace port port-id_HBM_00_write_resp -pg 1 -lvl 4 -x 1250 -y 5000 -defaultsOSRD
+preplace port port-id_DDR_00_end_read -pg 1 -lvl 4 -x 1250 -y 410 -defaultsOSRD
+preplace port port-id_DDR_00_read_ready -pg 1 -lvl 4 -x 1250 -y 470 -defaultsOSRD
+preplace port port-id_DDR_00_start_read -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
+preplace port port-id_DDR_00_start_write -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace port port-id_DDR_00_write_resp -pg 1 -lvl 4 -x 1250 -y 450 -defaultsOSRD
+preplace port port-id_DDR_00_write_ready -pg 1 -lvl 0 -x 0 -y 520 -defaultsOSRD
+preplace port port-id_DDR_00_write_last -pg 1 -lvl 4 -x 1250 -y 490 -defaultsOSRD
+preplace port port-id_HBM_00_write_last -pg 1 -lvl 4 -x 1250 -y 5040 -defaultsOSRD
+preplace port port-id_DDR_01_start_write -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_DDR_02_start_write -pg 1 -lvl 0 -x 0 -y 660 -defaultsOSRD
+preplace port port-id_DDR_03_start_write -pg 1 -lvl 0 -x 0 -y 1220 -defaultsOSRD
+preplace port port-id_DDR_04_start_write -pg 1 -lvl 0 -x 0 -y 940 -defaultsOSRD
+preplace port port-id_DDR_05_start_write -pg 1 -lvl 0 -x 0 -y 1500 -defaultsOSRD
+preplace port port-id_DDR_06_start_write -pg 1 -lvl 0 -x 0 -y 2060 -defaultsOSRD
+preplace port port-id_DDR_07_start_write -pg 1 -lvl 0 -x 0 -y 1780 -defaultsOSRD
+preplace port port-id_DDR_08_start_write -pg 1 -lvl 0 -x 0 -y 2340 -defaultsOSRD
+preplace port port-id_DDR_09_start_write -pg 1 -lvl 0 -x 0 -y 2620 -defaultsOSRD
+preplace port port-id_DDR_10_start_write -pg 1 -lvl 0 -x 0 -y 2920 -defaultsOSRD
+preplace port port-id_DDR_11_start_write -pg 1 -lvl 0 -x 0 -y 3200 -defaultsOSRD
+preplace port port-id_DDR_12_start_write -pg 1 -lvl 0 -x 0 -y 3500 -defaultsOSRD
+preplace port port-id_DDR_13_start_write -pg 1 -lvl 0 -x 0 -y 3780 -defaultsOSRD
+preplace port port-id_DDR_14_start_write -pg 1 -lvl 0 -x 0 -y 4060 -defaultsOSRD
+preplace port port-id_DDR_15_start_write -pg 1 -lvl 0 -x 0 -y 4340 -defaultsOSRD
+preplace port port-id_DDR_01_start_read -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_DDR_02_start_read -pg 1 -lvl 0 -x 0 -y 680 -defaultsOSRD
+preplace port port-id_DDR_03_start_read -pg 1 -lvl 0 -x 0 -y 1240 -defaultsOSRD
+preplace port port-id_DDR_04_start_read -pg 1 -lvl 0 -x 0 -y 960 -defaultsOSRD
+preplace port port-id_DDR_05_start_read -pg 1 -lvl 0 -x 0 -y 1520 -defaultsOSRD
+preplace port port-id_DDR_06_start_read -pg 1 -lvl 0 -x 0 -y 2080 -defaultsOSRD
+preplace port port-id_DDR_07_start_read -pg 1 -lvl 0 -x 0 -y 1800 -defaultsOSRD
+preplace port port-id_DDR_08_start_read -pg 1 -lvl 0 -x 0 -y 2360 -defaultsOSRD
+preplace port port-id_DDR_09_start_read -pg 1 -lvl 0 -x 0 -y 2640 -defaultsOSRD
+preplace port port-id_DDR_10_start_read -pg 1 -lvl 0 -x 0 -y 2940 -defaultsOSRD
+preplace port port-id_DDR_11_start_read -pg 1 -lvl 0 -x 0 -y 3220 -defaultsOSRD
+preplace port port-id_DDR_12_start_read -pg 1 -lvl 0 -x 0 -y 3520 -defaultsOSRD
+preplace port port-id_DDR_13_start_read -pg 1 -lvl 0 -x 0 -y 3800 -defaultsOSRD
+preplace port port-id_DDR_14_start_read -pg 1 -lvl 0 -x 0 -y 4080 -defaultsOSRD
+preplace port port-id_DDR_15_start_read -pg 1 -lvl 0 -x 0 -y 4360 -defaultsOSRD
+preplace port port-id_DDR_01_end_read -pg 1 -lvl 4 -x 1250 -y 130 -defaultsOSRD
+preplace port port-id_DDR_02_end_read -pg 1 -lvl 4 -x 1250 -y 690 -defaultsOSRD
+preplace port port-id_DDR_03_end_read -pg 1 -lvl 4 -x 1250 -y 1250 -defaultsOSRD
+preplace port port-id_DDR_04_end_read -pg 1 -lvl 4 -x 1250 -y 970 -defaultsOSRD
+preplace port port-id_DDR_05_end_read -pg 1 -lvl 4 -x 1250 -y 1530 -defaultsOSRD
+preplace port port-id_DDR_06_end_read -pg 1 -lvl 4 -x 1250 -y 2090 -defaultsOSRD
+preplace port port-id_DDR_07_end_read -pg 1 -lvl 4 -x 1250 -y 1810 -defaultsOSRD
+preplace port port-id_DDR_08_end_read -pg 1 -lvl 4 -x 1250 -y 2330 -defaultsOSRD
+preplace port port-id_DDR_09_end_read -pg 1 -lvl 4 -x 1250 -y 2450 -defaultsOSRD
+preplace port port-id_DDR_10_end_read -pg 1 -lvl 4 -x 1250 -y 2950 -defaultsOSRD
+preplace port port-id_DDR_11_end_read -pg 1 -lvl 4 -x 1250 -y 3230 -defaultsOSRD
+preplace port port-id_DDR_12_end_read -pg 1 -lvl 4 -x 1250 -y 3530 -defaultsOSRD
+preplace port port-id_DDR_13_end_read -pg 1 -lvl 4 -x 1250 -y 3810 -defaultsOSRD
+preplace port port-id_DDR_14_end_read -pg 1 -lvl 4 -x 1250 -y 4090 -defaultsOSRD
+preplace port port-id_DDR_15_end_read -pg 1 -lvl 4 -x 1250 -y 4370 -defaultsOSRD
+preplace port port-id_DDR_01_read_ready -pg 1 -lvl 4 -x 1250 -y 190 -defaultsOSRD
+preplace port port-id_DDR_01_write_resp -pg 1 -lvl 4 -x 1250 -y 170 -defaultsOSRD
+preplace port port-id_DDR_01_write_last -pg 1 -lvl 4 -x 1250 -y 210 -defaultsOSRD
+preplace port port-id_DDR_02_read_ready -pg 1 -lvl 4 -x 1250 -y 750 -defaultsOSRD
+preplace port port-id_DDR_02_write_resp -pg 1 -lvl 4 -x 1250 -y 730 -defaultsOSRD
+preplace port port-id_DDR_02_write_last -pg 1 -lvl 4 -x 1250 -y 770 -defaultsOSRD
+preplace port port-id_DDR_03_read_ready -pg 1 -lvl 4 -x 1250 -y 1310 -defaultsOSRD
+preplace port port-id_DDR_03_write_resp -pg 1 -lvl 4 -x 1250 -y 1290 -defaultsOSRD
+preplace port port-id_DDR_03_write_last -pg 1 -lvl 4 -x 1250 -y 1330 -defaultsOSRD
+preplace port port-id_DDR_04_read_ready -pg 1 -lvl 4 -x 1250 -y 1030 -defaultsOSRD
+preplace port port-id_DDR_04_write_resp -pg 1 -lvl 4 -x 1250 -y 1010 -defaultsOSRD
+preplace port port-id_DDR_04_write_last -pg 1 -lvl 4 -x 1250 -y 1050 -defaultsOSRD
+preplace port port-id_DDR_05_read_ready -pg 1 -lvl 4 -x 1250 -y 1590 -defaultsOSRD
+preplace port port-id_DDR_05_write_resp -pg 1 -lvl 4 -x 1250 -y 1570 -defaultsOSRD
+preplace port port-id_DDR_05_write_last -pg 1 -lvl 4 -x 1250 -y 1610 -defaultsOSRD
+preplace port port-id_DDR_06_read_ready -pg 1 -lvl 4 -x 1250 -y 2150 -defaultsOSRD
+preplace port port-id_DDR_06_write_resp -pg 1 -lvl 4 -x 1250 -y 2130 -defaultsOSRD
+preplace port port-id_DDR_06_write_last -pg 1 -lvl 4 -x 1250 -y 2170 -defaultsOSRD
+preplace port port-id_DDR_07_read_ready -pg 1 -lvl 4 -x 1250 -y 1870 -defaultsOSRD
+preplace port port-id_DDR_07_write_resp -pg 1 -lvl 4 -x 1250 -y 1850 -defaultsOSRD
+preplace port port-id_DDR_07_write_last -pg 1 -lvl 4 -x 1250 -y 1890 -defaultsOSRD
+preplace port port-id_DDR_08_read_ready -pg 1 -lvl 4 -x 1250 -y 2390 -defaultsOSRD
+preplace port port-id_DDR_08_write_resp -pg 1 -lvl 4 -x 1250 -y 2370 -defaultsOSRD
+preplace port port-id_DDR_08_write_last -pg 1 -lvl 4 -x 1250 -y 2410 -defaultsOSRD
+preplace port port-id_DDR_09_read_ready -pg 1 -lvl 4 -x 1250 -y 2510 -defaultsOSRD
+preplace port port-id_DDR_09_write_resp -pg 1 -lvl 4 -x 1250 -y 2490 -defaultsOSRD
+preplace port port-id_DDR_09_write_last -pg 1 -lvl 4 -x 1250 -y 2530 -defaultsOSRD
+preplace port port-id_DDR_10_read_ready -pg 1 -lvl 4 -x 1250 -y 3010 -defaultsOSRD
+preplace port port-id_DDR_10_write_resp -pg 1 -lvl 4 -x 1250 -y 2990 -defaultsOSRD
+preplace port port-id_DDR_10_write_last -pg 1 -lvl 4 -x 1250 -y 3030 -defaultsOSRD
+preplace port port-id_DDR_11_read_ready -pg 1 -lvl 4 -x 1250 -y 3290 -defaultsOSRD
+preplace port port-id_DDR_11_write_resp -pg 1 -lvl 4 -x 1250 -y 3270 -defaultsOSRD
+preplace port port-id_DDR_11_write_last -pg 1 -lvl 4 -x 1250 -y 3310 -defaultsOSRD
+preplace port port-id_DDR_12_read_ready -pg 1 -lvl 4 -x 1250 -y 3590 -defaultsOSRD
+preplace port port-id_DDR_12_write_resp -pg 1 -lvl 4 -x 1250 -y 3570 -defaultsOSRD
+preplace port port-id_DDR_12_write_last -pg 1 -lvl 4 -x 1250 -y 3610 -defaultsOSRD
+preplace port port-id_DDR_13_read_ready -pg 1 -lvl 4 -x 1250 -y 3870 -defaultsOSRD
+preplace port port-id_DDR_13_write_resp -pg 1 -lvl 4 -x 1250 -y 3850 -defaultsOSRD
+preplace port port-id_DDR_13_write_last -pg 1 -lvl 4 -x 1250 -y 3890 -defaultsOSRD
+preplace port port-id_DDR_14_read_ready -pg 1 -lvl 4 -x 1250 -y 4150 -defaultsOSRD
+preplace port port-id_DDR_14_write_resp -pg 1 -lvl 4 -x 1250 -y 4130 -defaultsOSRD
+preplace port port-id_DDR_14_write_last -pg 1 -lvl 4 -x 1250 -y 4170 -defaultsOSRD
+preplace port port-id_DDR_15_read_ready -pg 1 -lvl 4 -x 1250 -y 4430 -defaultsOSRD
+preplace port port-id_DDR_15_write_resp -pg 1 -lvl 4 -x 1250 -y 4410 -defaultsOSRD
+preplace port port-id_DDR_15_write_last -pg 1 -lvl 4 -x 1250 -y 4450 -defaultsOSRD
+preplace port port-id_DDR_01_write_ready -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port port-id_DDR_02_write_ready -pg 1 -lvl 0 -x 0 -y 800 -defaultsOSRD
+preplace port port-id_DDR_03_write_ready -pg 1 -lvl 0 -x 0 -y 1360 -defaultsOSRD
+preplace port port-id_DDR_04_write_ready -pg 1 -lvl 0 -x 0 -y 1080 -defaultsOSRD
+preplace port port-id_DDR_05_write_ready -pg 1 -lvl 0 -x 0 -y 1640 -defaultsOSRD
+preplace port port-id_DDR_06_write_ready -pg 1 -lvl 0 -x 0 -y 2200 -defaultsOSRD
+preplace port port-id_DDR_07_write_ready -pg 1 -lvl 0 -x 0 -y 1920 -defaultsOSRD
+preplace port port-id_DDR_08_write_ready -pg 1 -lvl 0 -x 0 -y 2480 -defaultsOSRD
+preplace port port-id_DDR_09_write_ready -pg 1 -lvl 0 -x 0 -y 2760 -defaultsOSRD
+preplace port port-id_DDR_10_write_ready -pg 1 -lvl 0 -x 0 -y 3060 -defaultsOSRD
+preplace port port-id_DDR_11_write_ready -pg 1 -lvl 0 -x 0 -y 3340 -defaultsOSRD
+preplace port port-id_DDR_12_write_ready -pg 1 -lvl 0 -x 0 -y 3640 -defaultsOSRD
+preplace port port-id_DDR_13_write_ready -pg 1 -lvl 0 -x 0 -y 3920 -defaultsOSRD
+preplace port port-id_DDR_14_write_ready -pg 1 -lvl 0 -x 0 -y 4200 -defaultsOSRD
+preplace port port-id_DDR_15_write_ready -pg 1 -lvl 0 -x 0 -y 4480 -defaultsOSRD
+preplace port port-id_HBM_01_start_write -pg 1 -lvl 0 -x 0 -y 4580 -defaultsOSRD
+preplace port port-id_HBM_01_start_read -pg 1 -lvl 0 -x 0 -y 4600 -defaultsOSRD
+preplace port port-id_HBM_01_write_ready -pg 1 -lvl 0 -x 0 -y 4720 -defaultsOSRD
+preplace port port-id_HBM_02_start_write -pg 1 -lvl 0 -x 0 -y 5210 -defaultsOSRD
+preplace port port-id_HBM_02_start_read -pg 1 -lvl 0 -x 0 -y 5230 -defaultsOSRD
+preplace port port-id_HBM_02_write_ready -pg 1 -lvl 0 -x 0 -y 5350 -defaultsOSRD
+preplace port port-id_HBM_03_start_write -pg 1 -lvl 0 -x 0 -y 6610 -defaultsOSRD
+preplace port port-id_HBM_03_start_read -pg 1 -lvl 0 -x 0 -y 6630 -defaultsOSRD
+preplace port port-id_HBM_03_write_ready -pg 1 -lvl 0 -x 0 -y 6750 -defaultsOSRD
+preplace port port-id_HBM_04_start_write -pg 1 -lvl 0 -x 0 -y 6890 -defaultsOSRD
+preplace port port-id_HBM_04_start_read -pg 1 -lvl 0 -x 0 -y 6910 -defaultsOSRD
+preplace port port-id_HBM_04_write_ready -pg 1 -lvl 0 -x 0 -y 7030 -defaultsOSRD
+preplace port port-id_HBM_05_start_write -pg 1 -lvl 0 -x 0 -y 7190 -defaultsOSRD
+preplace port port-id_HBM_05_start_read -pg 1 -lvl 0 -x 0 -y 7210 -defaultsOSRD
+preplace port port-id_HBM_05_write_ready -pg 1 -lvl 0 -x 0 -y 7330 -defaultsOSRD
+preplace port port-id_HBM_06_start_write -pg 1 -lvl 0 -x 0 -y 7490 -defaultsOSRD
+preplace port port-id_HBM_06_start_read -pg 1 -lvl 0 -x 0 -y 7510 -defaultsOSRD
+preplace port port-id_HBM_06_write_ready -pg 1 -lvl 0 -x 0 -y 7630 -defaultsOSRD
+preplace port port-id_HBM_07_start_write -pg 1 -lvl 0 -x 0 -y 7770 -defaultsOSRD
+preplace port port-id_HBM_07_start_read -pg 1 -lvl 0 -x 0 -y 7790 -defaultsOSRD
+preplace port port-id_HBM_07_write_ready -pg 1 -lvl 0 -x 0 -y 7910 -defaultsOSRD
+preplace port port-id_HBM_08_start_write -pg 1 -lvl 0 -x 0 -y 8050 -defaultsOSRD
+preplace port port-id_HBM_08_start_read -pg 1 -lvl 0 -x 0 -y 8070 -defaultsOSRD
+preplace port port-id_HBM_08_write_ready -pg 1 -lvl 0 -x 0 -y 8190 -defaultsOSRD
+preplace port port-id_HBM_09_start_write -pg 1 -lvl 0 -x 0 -y 8330 -defaultsOSRD
+preplace port port-id_HBM_09_start_read -pg 1 -lvl 0 -x 0 -y 8350 -defaultsOSRD
+preplace port port-id_HBM_09_write_ready -pg 1 -lvl 0 -x 0 -y 8470 -defaultsOSRD
+preplace port port-id_HBM_10_start_write -pg 1 -lvl 0 -x 0 -y 5490 -defaultsOSRD
+preplace port port-id_HBM_10_start_read -pg 1 -lvl 0 -x 0 -y 5510 -defaultsOSRD
+preplace port port-id_HBM_10_write_ready -pg 1 -lvl 0 -x 0 -y 5630 -defaultsOSRD
+preplace port port-id_HBM_11_start_write -pg 1 -lvl 0 -x 0 -y 5770 -defaultsOSRD
+preplace port port-id_HBM_11_start_read -pg 1 -lvl 0 -x 0 -y 5790 -defaultsOSRD
+preplace port port-id_HBM_11_write_ready -pg 1 -lvl 0 -x 0 -y 5910 -defaultsOSRD
+preplace port port-id_HBM_12_start_write -pg 1 -lvl 0 -x 0 -y 6050 -defaultsOSRD
+preplace port port-id_HBM_12_start_read -pg 1 -lvl 0 -x 0 -y 6070 -defaultsOSRD
+preplace port port-id_HBM_12_write_ready -pg 1 -lvl 0 -x 0 -y 6190 -defaultsOSRD
+preplace port port-id_HBM_13_start_write -pg 1 -lvl 0 -x 0 -y 6330 -defaultsOSRD
+preplace port port-id_HBM_13_start_read -pg 1 -lvl 0 -x 0 -y 6350 -defaultsOSRD
+preplace port port-id_HBM_13_write_ready -pg 1 -lvl 0 -x 0 -y 6470 -defaultsOSRD
+preplace port port-id_HBM_14_start_write -pg 1 -lvl 0 -x 0 -y 8610 -defaultsOSRD
+preplace port port-id_HBM_14_start_read -pg 1 -lvl 0 -x 0 -y 8630 -defaultsOSRD
+preplace port port-id_HBM_14_write_ready -pg 1 -lvl 0 -x 0 -y 8750 -defaultsOSRD
+preplace port port-id_HBM_15_start_write -pg 1 -lvl 0 -x 0 -y 8890 -defaultsOSRD
+preplace port port-id_HBM_15_start_read -pg 1 -lvl 0 -x 0 -y 8910 -defaultsOSRD
+preplace port port-id_HBM_15_write_ready -pg 1 -lvl 0 -x 0 -y 9030 -defaultsOSRD
+preplace port port-id_HBM_01_end_read -pg 1 -lvl 4 -x 1250 -y 4610 -defaultsOSRD
+preplace port port-id_HBM_01_write_resp -pg 1 -lvl 4 -x 1250 -y 4810 -defaultsOSRD
+preplace port port-id_HBM_01_write_last -pg 1 -lvl 4 -x 1250 -y 4790 -defaultsOSRD
+preplace port port-id_HBM_01_read_ready -pg 1 -lvl 4 -x 1250 -y 4770 -defaultsOSRD
+preplace port port-id_HBM_02_end_read -pg 1 -lvl 4 -x 1250 -y 5240 -defaultsOSRD
+preplace port port-id_HBM_02_write_resp -pg 1 -lvl 4 -x 1250 -y 5280 -defaultsOSRD
+preplace port port-id_HBM_02_write_last -pg 1 -lvl 4 -x 1250 -y 5320 -defaultsOSRD
+preplace port port-id_HBM_02_read_ready -pg 1 -lvl 4 -x 1250 -y 5300 -defaultsOSRD
+preplace port port-id_HBM_03_end_read -pg 1 -lvl 4 -x 1250 -y 6640 -defaultsOSRD
+preplace port port-id_HBM_03_write_resp -pg 1 -lvl 4 -x 1250 -y 6680 -defaultsOSRD
+preplace port port-id_HBM_03_write_last -pg 1 -lvl 4 -x 1250 -y 6720 -defaultsOSRD
+preplace port port-id_HBM_03_read_ready -pg 1 -lvl 4 -x 1250 -y 6700 -defaultsOSRD
+preplace port port-id_HBM_04_end_read -pg 1 -lvl 4 -x 1250 -y 6920 -defaultsOSRD
+preplace port port-id_HBM_04_write_resp -pg 1 -lvl 4 -x 1250 -y 6960 -defaultsOSRD
+preplace port port-id_HBM_04_write_last -pg 1 -lvl 4 -x 1250 -y 7000 -defaultsOSRD
+preplace port port-id_HBM_04_read_ready -pg 1 -lvl 4 -x 1250 -y 6980 -defaultsOSRD
+preplace port port-id_HBM_05_end_read -pg 1 -lvl 4 -x 1250 -y 7220 -defaultsOSRD
+preplace port port-id_HBM_05_write_resp -pg 1 -lvl 4 -x 1250 -y 7260 -defaultsOSRD
+preplace port port-id_HBM_05_write_last -pg 1 -lvl 4 -x 1250 -y 7300 -defaultsOSRD
+preplace port port-id_HBM_05_read_ready -pg 1 -lvl 4 -x 1250 -y 7280 -defaultsOSRD
+preplace port port-id_HBM_06_end_read -pg 1 -lvl 4 -x 1250 -y 7520 -defaultsOSRD
+preplace port port-id_HBM_06_write_resp -pg 1 -lvl 4 -x 1250 -y 7560 -defaultsOSRD
+preplace port port-id_HBM_06_write_last -pg 1 -lvl 4 -x 1250 -y 7600 -defaultsOSRD
+preplace port port-id_HBM_06_read_ready -pg 1 -lvl 4 -x 1250 -y 7580 -defaultsOSRD
+preplace port port-id_HBM_07_end_read -pg 1 -lvl 4 -x 1250 -y 7800 -defaultsOSRD
+preplace port port-id_HBM_07_write_resp -pg 1 -lvl 4 -x 1250 -y 7840 -defaultsOSRD
+preplace port port-id_HBM_07_write_last -pg 1 -lvl 4 -x 1250 -y 7880 -defaultsOSRD
+preplace port port-id_HBM_07_read_ready -pg 1 -lvl 4 -x 1250 -y 7860 -defaultsOSRD
+preplace port port-id_HBM_08_end_read -pg 1 -lvl 4 -x 1250 -y 8080 -defaultsOSRD
+preplace port port-id_HBM_08_write_resp -pg 1 -lvl 4 -x 1250 -y 8120 -defaultsOSRD
+preplace port port-id_HBM_08_write_last -pg 1 -lvl 4 -x 1250 -y 8160 -defaultsOSRD
+preplace port port-id_HBM_08_read_ready -pg 1 -lvl 4 -x 1250 -y 8140 -defaultsOSRD
+preplace port port-id_HBM_09_end_read -pg 1 -lvl 4 -x 1250 -y 8410 -defaultsOSRD
+preplace port port-id_HBM_09_write_resp -pg 1 -lvl 4 -x 1250 -y 8800 -defaultsOSRD
+preplace port port-id_HBM_09_write_last -pg 1 -lvl 4 -x 1250 -y 8780 -defaultsOSRD
+preplace port port-id_HBM_09_read_ready -pg 1 -lvl 4 -x 1250 -y 8450 -defaultsOSRD
+preplace port port-id_HBM_10_end_read -pg 1 -lvl 4 -x 1250 -y 5520 -defaultsOSRD
+preplace port port-id_HBM_10_write_resp -pg 1 -lvl 4 -x 1250 -y 5560 -defaultsOSRD
+preplace port port-id_HBM_10_write_last -pg 1 -lvl 4 -x 1250 -y 5600 -defaultsOSRD
+preplace port port-id_HBM_10_read_ready -pg 1 -lvl 4 -x 1250 -y 5580 -defaultsOSRD
+preplace port port-id_HBM_11_end_read -pg 1 -lvl 4 -x 1250 -y 5800 -defaultsOSRD
+preplace port port-id_HBM_11_write_resp -pg 1 -lvl 4 -x 1250 -y 5840 -defaultsOSRD
+preplace port port-id_HBM_11_write_last -pg 1 -lvl 4 -x 1250 -y 5880 -defaultsOSRD
+preplace port port-id_HBM_11_read_ready -pg 1 -lvl 4 -x 1250 -y 5860 -defaultsOSRD
+preplace port port-id_HBM_12_end_read -pg 1 -lvl 4 -x 1250 -y 6080 -defaultsOSRD
+preplace port port-id_HBM_12_write_resp -pg 1 -lvl 4 -x 1250 -y 6120 -defaultsOSRD
+preplace port port-id_HBM_12_write_last -pg 1 -lvl 4 -x 1250 -y 6160 -defaultsOSRD
+preplace port port-id_HBM_12_read_ready -pg 1 -lvl 4 -x 1250 -y 6140 -defaultsOSRD
+preplace port port-id_HBM_13_end_read -pg 1 -lvl 4 -x 1250 -y 6360 -defaultsOSRD
+preplace port port-id_HBM_13_write_resp -pg 1 -lvl 4 -x 1250 -y 6400 -defaultsOSRD
+preplace port port-id_HBM_13_write_last -pg 1 -lvl 4 -x 1250 -y 6440 -defaultsOSRD
+preplace port port-id_HBM_13_read_ready -pg 1 -lvl 4 -x 1250 -y 6420 -defaultsOSRD
+preplace port port-id_HBM_14_end_read -pg 1 -lvl 4 -x 1250 -y 8820 -defaultsOSRD
+preplace port port-id_HBM_14_write_resp -pg 1 -lvl 4 -x 1250 -y 8880 -defaultsOSRD
+preplace port port-id_HBM_14_write_last -pg 1 -lvl 4 -x 1250 -y 8860 -defaultsOSRD
+preplace port port-id_HBM_14_read_ready -pg 1 -lvl 4 -x 1250 -y 8840 -defaultsOSRD
+preplace port port-id_HBM_15_end_read -pg 1 -lvl 4 -x 1250 -y 8920 -defaultsOSRD
+preplace port port-id_HBM_15_write_resp -pg 1 -lvl 4 -x 1250 -y 8960 -defaultsOSRD
+preplace port port-id_HBM_15_write_last -pg 1 -lvl 4 -x 1250 -y 9000 -defaultsOSRD
+preplace port port-id_HBM_15_read_ready -pg 1 -lvl 4 -x 1250 -y 8980 -defaultsOSRD
+preplace portBus HBM_00_rburst -pg 1 -lvl 0 -x 0 -y 5030 -defaultsOSRD
+preplace portBus HBM_00_read_addr -pg 1 -lvl 0 -x 0 -y 5010 -defaultsOSRD
+preplace portBus HBM_00_wburst -pg 1 -lvl 0 -x 0 -y 4990 -defaultsOSRD
+preplace portBus HBM_00_write_addr -pg 1 -lvl 0 -x 0 -y 4970 -defaultsOSRD
+preplace portBus HBM_00_write_data -pg 1 -lvl 0 -x 0 -y 5050 -defaultsOSRD
+preplace portBus HBM_00_end_write -pg 1 -lvl 4 -x 1250 -y 4940 -defaultsOSRD
+preplace portBus HBM_00_read_data -pg 1 -lvl 4 -x 1250 -y 4980 -defaultsOSRD
+preplace portBus DDR_00_end_write -pg 1 -lvl 4 -x 1250 -y 390 -defaultsOSRD
+preplace portBus DDR_00_rburst -pg 1 -lvl 0 -x 0 -y 480 -defaultsOSRD
+preplace portBus DDR_00_read_addr -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace portBus DDR_00_read_data -pg 1 -lvl 4 -x 1250 -y 430 -defaultsOSRD
+preplace portBus DDR_00_wburst -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace portBus DDR_00_write_addr -pg 1 -lvl 0 -x 0 -y 420 -defaultsOSRD
+preplace portBus DDR_00_write_data -pg 1 -lvl 0 -x 0 -y 500 -defaultsOSRD
+preplace portBus DDR_01_write_addr -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace portBus DDR_02_write_addr -pg 1 -lvl 0 -x 0 -y 700 -defaultsOSRD
+preplace portBus DDR_03_write_addr -pg 1 -lvl 0 -x 0 -y 1260 -defaultsOSRD
+preplace portBus DDR_04_write_addr -pg 1 -lvl 0 -x 0 -y 980 -defaultsOSRD
+preplace portBus DDR_05_write_addr -pg 1 -lvl 0 -x 0 -y 1540 -defaultsOSRD
+preplace portBus DDR_06_write_addr -pg 1 -lvl 0 -x 0 -y 2100 -defaultsOSRD
+preplace portBus DDR_07_write_addr -pg 1 -lvl 0 -x 0 -y 1820 -defaultsOSRD
+preplace portBus DDR_08_write_addr -pg 1 -lvl 0 -x 0 -y 2380 -defaultsOSRD
+preplace portBus DDR_09_write_addr -pg 1 -lvl 0 -x 0 -y 2660 -defaultsOSRD
+preplace portBus DDR_10_write_addr -pg 1 -lvl 0 -x 0 -y 2960 -defaultsOSRD
+preplace portBus DDR_11_write_addr -pg 1 -lvl 0 -x 0 -y 3240 -defaultsOSRD
+preplace portBus DDR_12_write_addr -pg 1 -lvl 0 -x 0 -y 3540 -defaultsOSRD
+preplace portBus DDR_13_write_addr -pg 1 -lvl 0 -x 0 -y 3820 -defaultsOSRD
+preplace portBus DDR_14_write_addr -pg 1 -lvl 0 -x 0 -y 4100 -defaultsOSRD
+preplace portBus DDR_15_write_addr -pg 1 -lvl 0 -x 0 -y 4380 -defaultsOSRD
+preplace portBus DDR_01_read_addr -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace portBus DDR_02_read_addr -pg 1 -lvl 0 -x 0 -y 740 -defaultsOSRD
+preplace portBus DDR_03_read_addr -pg 1 -lvl 0 -x 0 -y 1300 -defaultsOSRD
+preplace portBus DDR_04_read_addr -pg 1 -lvl 0 -x 0 -y 1020 -defaultsOSRD
+preplace portBus DDR_05_read_addr -pg 1 -lvl 0 -x 0 -y 1580 -defaultsOSRD
+preplace portBus DDR_06_read_addr -pg 1 -lvl 0 -x 0 -y 2140 -defaultsOSRD
+preplace portBus DDR_07_read_addr -pg 1 -lvl 0 -x 0 -y 1860 -defaultsOSRD
+preplace portBus DDR_08_read_addr -pg 1 -lvl 0 -x 0 -y 2420 -defaultsOSRD
+preplace portBus DDR_09_read_addr -pg 1 -lvl 0 -x 0 -y 2700 -defaultsOSRD
+preplace portBus DDR_10_read_addr -pg 1 -lvl 0 -x 0 -y 3000 -defaultsOSRD
+preplace portBus DDR_11_read_addr -pg 1 -lvl 0 -x 0 -y 3280 -defaultsOSRD
+preplace portBus DDR_12_read_addr -pg 1 -lvl 0 -x 0 -y 3580 -defaultsOSRD
+preplace portBus DDR_13_read_addr -pg 1 -lvl 0 -x 0 -y 3860 -defaultsOSRD
+preplace portBus DDR_14_read_addr -pg 1 -lvl 0 -x 0 -y 4140 -defaultsOSRD
+preplace portBus DDR_15_read_addr -pg 1 -lvl 0 -x 0 -y 4420 -defaultsOSRD
+preplace portBus DDR_01_write_data -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace portBus DDR_02_write_data -pg 1 -lvl 0 -x 0 -y 780 -defaultsOSRD
+preplace portBus DDR_03_write_data -pg 1 -lvl 0 -x 0 -y 1340 -defaultsOSRD
+preplace portBus DDR_04_write_data -pg 1 -lvl 0 -x 0 -y 1060 -defaultsOSRD
+preplace portBus DDR_05_write_data -pg 1 -lvl 0 -x 0 -y 1620 -defaultsOSRD
+preplace portBus DDR_06_write_data -pg 1 -lvl 0 -x 0 -y 2180 -defaultsOSRD
+preplace portBus DDR_07_write_data -pg 1 -lvl 0 -x 0 -y 1900 -defaultsOSRD
+preplace portBus DDR_08_write_data -pg 1 -lvl 0 -x 0 -y 2460 -defaultsOSRD
+preplace portBus DDR_09_write_data -pg 1 -lvl 0 -x 0 -y 2740 -defaultsOSRD
+preplace portBus DDR_10_write_data -pg 1 -lvl 0 -x 0 -y 3040 -defaultsOSRD
+preplace portBus DDR_11_write_data -pg 1 -lvl 0 -x 0 -y 3320 -defaultsOSRD
+preplace portBus DDR_12_write_data -pg 1 -lvl 0 -x 0 -y 3620 -defaultsOSRD
+preplace portBus DDR_13_write_data -pg 1 -lvl 0 -x 0 -y 3900 -defaultsOSRD
+preplace portBus DDR_14_write_data -pg 1 -lvl 0 -x 0 -y 4180 -defaultsOSRD
+preplace portBus DDR_15_write_data -pg 1 -lvl 0 -x 0 -y 4460 -defaultsOSRD
+preplace portBus DDR_01_read_data -pg 1 -lvl 4 -x 1250 -y 150 -defaultsOSRD
+preplace portBus DDR_02_read_data -pg 1 -lvl 4 -x 1250 -y 710 -defaultsOSRD
+preplace portBus DDR_03_read_data -pg 1 -lvl 4 -x 1250 -y 1270 -defaultsOSRD
+preplace portBus DDR_04_read_data -pg 1 -lvl 4 -x 1250 -y 990 -defaultsOSRD
+preplace portBus DDR_05_read_data -pg 1 -lvl 4 -x 1250 -y 1550 -defaultsOSRD
+preplace portBus DDR_06_read_data -pg 1 -lvl 4 -x 1250 -y 2110 -defaultsOSRD
+preplace portBus DDR_07_read_data -pg 1 -lvl 4 -x 1250 -y 1830 -defaultsOSRD
+preplace portBus DDR_08_read_data -pg 1 -lvl 4 -x 1250 -y 2350 -defaultsOSRD
+preplace portBus DDR_09_read_data -pg 1 -lvl 4 -x 1250 -y 2470 -defaultsOSRD
+preplace portBus DDR_10_read_data -pg 1 -lvl 4 -x 1250 -y 2970 -defaultsOSRD
+preplace portBus DDR_11_read_data -pg 1 -lvl 4 -x 1250 -y 3250 -defaultsOSRD
+preplace portBus DDR_12_read_data -pg 1 -lvl 4 -x 1250 -y 3550 -defaultsOSRD
+preplace portBus DDR_13_read_data -pg 1 -lvl 4 -x 1250 -y 3830 -defaultsOSRD
+preplace portBus DDR_14_read_data -pg 1 -lvl 4 -x 1250 -y 4110 -defaultsOSRD
+preplace portBus DDR_15_read_data -pg 1 -lvl 4 -x 1250 -y 4390 -defaultsOSRD
+preplace portBus DDR_01_end_write -pg 1 -lvl 4 -x 1250 -y 110 -defaultsOSRD
+preplace portBus DDR_02_end_write -pg 1 -lvl 4 -x 1250 -y 670 -defaultsOSRD
+preplace portBus DDR_03_end_write -pg 1 -lvl 4 -x 1250 -y 1230 -defaultsOSRD
+preplace portBus DDR_04_end_write -pg 1 -lvl 4 -x 1250 -y 950 -defaultsOSRD
+preplace portBus DDR_05_end_write -pg 1 -lvl 4 -x 1250 -y 1510 -defaultsOSRD
+preplace portBus DDR_06_end_write -pg 1 -lvl 4 -x 1250 -y 2070 -defaultsOSRD
+preplace portBus DDR_07_end_write -pg 1 -lvl 4 -x 1250 -y 1790 -defaultsOSRD
+preplace portBus DDR_08_end_write -pg 1 -lvl 4 -x 1250 -y 2310 -defaultsOSRD
+preplace portBus DDR_09_end_write -pg 1 -lvl 4 -x 1250 -y 2430 -defaultsOSRD
+preplace portBus DDR_10_end_write -pg 1 -lvl 4 -x 1250 -y 2930 -defaultsOSRD
+preplace portBus DDR_11_end_write -pg 1 -lvl 4 -x 1250 -y 3210 -defaultsOSRD
+preplace portBus DDR_12_end_write -pg 1 -lvl 4 -x 1250 -y 3510 -defaultsOSRD
+preplace portBus DDR_13_end_write -pg 1 -lvl 4 -x 1250 -y 3790 -defaultsOSRD
+preplace portBus DDR_14_end_write -pg 1 -lvl 4 -x 1250 -y 4070 -defaultsOSRD
+preplace portBus DDR_15_end_write -pg 1 -lvl 4 -x 1250 -y 4350 -defaultsOSRD
+preplace portBus DDR_01_wburst -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace portBus DDR_01_rburst -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace portBus DDR_02_wburst -pg 1 -lvl 0 -x 0 -y 720 -defaultsOSRD
+preplace portBus DDR_02_rburst -pg 1 -lvl 0 -x 0 -y 760 -defaultsOSRD
+preplace portBus DDR_03_wburst -pg 1 -lvl 0 -x 0 -y 1280 -defaultsOSRD
+preplace portBus DDR_03_rburst -pg 1 -lvl 0 -x 0 -y 1320 -defaultsOSRD
+preplace portBus DDR_04_wburst -pg 1 -lvl 0 -x 0 -y 1000 -defaultsOSRD
+preplace portBus DDR_04_rburst -pg 1 -lvl 0 -x 0 -y 1040 -defaultsOSRD
+preplace portBus DDR_05_wburst -pg 1 -lvl 0 -x 0 -y 1560 -defaultsOSRD
+preplace portBus DDR_05_rburst -pg 1 -lvl 0 -x 0 -y 1600 -defaultsOSRD
+preplace portBus DDR_06_wburst -pg 1 -lvl 0 -x 0 -y 2120 -defaultsOSRD
+preplace portBus DDR_06_rburst -pg 1 -lvl 0 -x 0 -y 2160 -defaultsOSRD
+preplace portBus DDR_07_wburst -pg 1 -lvl 0 -x 0 -y 1840 -defaultsOSRD
+preplace portBus DDR_07_rburst -pg 1 -lvl 0 -x 0 -y 1880 -defaultsOSRD
+preplace portBus DDR_08_wburst -pg 1 -lvl 0 -x 0 -y 2400 -defaultsOSRD
+preplace portBus DDR_08_rburst -pg 1 -lvl 0 -x 0 -y 2440 -defaultsOSRD
+preplace portBus DDR_09_wburst -pg 1 -lvl 0 -x 0 -y 2680 -defaultsOSRD
+preplace portBus DDR_09_rburst -pg 1 -lvl 0 -x 0 -y 2720 -defaultsOSRD
+preplace portBus DDR_10_wburst -pg 1 -lvl 0 -x 0 -y 2980 -defaultsOSRD
+preplace portBus DDR_10_rburst -pg 1 -lvl 0 -x 0 -y 3020 -defaultsOSRD
+preplace portBus DDR_11_wburst -pg 1 -lvl 0 -x 0 -y 3260 -defaultsOSRD
+preplace portBus DDR_11_rburst -pg 1 -lvl 0 -x 0 -y 3300 -defaultsOSRD
+preplace portBus DDR_12_wburst -pg 1 -lvl 0 -x 0 -y 3560 -defaultsOSRD
+preplace portBus DDR_12_rburst -pg 1 -lvl 0 -x 0 -y 3600 -defaultsOSRD
+preplace portBus DDR_13_wburst -pg 1 -lvl 0 -x 0 -y 3840 -defaultsOSRD
+preplace portBus DDR_13_rburst -pg 1 -lvl 0 -x 0 -y 3880 -defaultsOSRD
+preplace portBus DDR_14_wburst -pg 1 -lvl 0 -x 0 -y 4120 -defaultsOSRD
+preplace portBus DDR_14_rburst -pg 1 -lvl 0 -x 0 -y 4160 -defaultsOSRD
+preplace portBus DDR_15_wburst -pg 1 -lvl 0 -x 0 -y 4400 -defaultsOSRD
+preplace portBus DDR_15_rburst -pg 1 -lvl 0 -x 0 -y 4440 -defaultsOSRD
+preplace portBus HBM_01_rburst -pg 1 -lvl 0 -x 0 -y 4680 -defaultsOSRD
+preplace portBus HBM_01_wburst -pg 1 -lvl 0 -x 0 -y 4640 -defaultsOSRD
+preplace portBus HBM_01_write_addr -pg 1 -lvl 0 -x 0 -y 4620 -defaultsOSRD
+preplace portBus HBM_01_read_addr -pg 1 -lvl 0 -x 0 -y 4660 -defaultsOSRD
+preplace portBus HBM_01_write_data -pg 1 -lvl 0 -x 0 -y 4700 -defaultsOSRD
+preplace portBus HBM_02_rburst -pg 1 -lvl 0 -x 0 -y 5310 -defaultsOSRD
+preplace portBus HBM_02_wburst -pg 1 -lvl 0 -x 0 -y 5270 -defaultsOSRD
+preplace portBus HBM_02_write_addr -pg 1 -lvl 0 -x 0 -y 5250 -defaultsOSRD
+preplace portBus HBM_02_read_addr -pg 1 -lvl 0 -x 0 -y 5290 -defaultsOSRD
+preplace portBus HBM_02_write_data -pg 1 -lvl 0 -x 0 -y 5330 -defaultsOSRD
+preplace portBus HBM_03_rburst -pg 1 -lvl 0 -x 0 -y 6710 -defaultsOSRD
+preplace portBus HBM_03_wburst -pg 1 -lvl 0 -x 0 -y 6670 -defaultsOSRD
+preplace portBus HBM_03_write_addr -pg 1 -lvl 0 -x 0 -y 6650 -defaultsOSRD
+preplace portBus HBM_03_read_addr -pg 1 -lvl 0 -x 0 -y 6690 -defaultsOSRD
+preplace portBus HBM_03_write_data -pg 1 -lvl 0 -x 0 -y 6730 -defaultsOSRD
+preplace portBus HBM_04_rburst -pg 1 -lvl 0 -x 0 -y 6990 -defaultsOSRD
+preplace portBus HBM_04_wburst -pg 1 -lvl 0 -x 0 -y 6950 -defaultsOSRD
+preplace portBus HBM_04_write_addr -pg 1 -lvl 0 -x 0 -y 6930 -defaultsOSRD
+preplace portBus HBM_04_read_addr -pg 1 -lvl 0 -x 0 -y 6970 -defaultsOSRD
+preplace portBus HBM_04_write_data -pg 1 -lvl 0 -x 0 -y 7010 -defaultsOSRD
+preplace portBus HBM_05_rburst -pg 1 -lvl 0 -x 0 -y 7290 -defaultsOSRD
+preplace portBus HBM_05_wburst -pg 1 -lvl 0 -x 0 -y 7250 -defaultsOSRD
+preplace portBus HBM_05_write_addr -pg 1 -lvl 0 -x 0 -y 7230 -defaultsOSRD
+preplace portBus HBM_05_read_addr -pg 1 -lvl 0 -x 0 -y 7270 -defaultsOSRD
+preplace portBus HBM_05_write_data -pg 1 -lvl 0 -x 0 -y 7310 -defaultsOSRD
+preplace portBus HBM_06_rburst -pg 1 -lvl 0 -x 0 -y 7590 -defaultsOSRD
+preplace portBus HBM_06_wburst -pg 1 -lvl 0 -x 0 -y 7550 -defaultsOSRD
+preplace portBus HBM_06_write_addr -pg 1 -lvl 0 -x 0 -y 7530 -defaultsOSRD
+preplace portBus HBM_06_read_addr -pg 1 -lvl 0 -x 0 -y 7570 -defaultsOSRD
+preplace portBus HBM_06_write_data -pg 1 -lvl 0 -x 0 -y 7610 -defaultsOSRD
+preplace portBus HBM_07_rburst -pg 1 -lvl 0 -x 0 -y 7870 -defaultsOSRD
+preplace portBus HBM_07_wburst -pg 1 -lvl 0 -x 0 -y 7830 -defaultsOSRD
+preplace portBus HBM_07_write_addr -pg 1 -lvl 0 -x 0 -y 7810 -defaultsOSRD
+preplace portBus HBM_07_read_addr -pg 1 -lvl 0 -x 0 -y 7850 -defaultsOSRD
+preplace portBus HBM_07_write_data -pg 1 -lvl 0 -x 0 -y 7890 -defaultsOSRD
+preplace portBus HBM_08_rburst -pg 1 -lvl 0 -x 0 -y 8150 -defaultsOSRD
+preplace portBus HBM_08_wburst -pg 1 -lvl 0 -x 0 -y 8110 -defaultsOSRD
+preplace portBus HBM_08_write_addr -pg 1 -lvl 0 -x 0 -y 8090 -defaultsOSRD
+preplace portBus HBM_08_read_addr -pg 1 -lvl 0 -x 0 -y 8130 -defaultsOSRD
+preplace portBus HBM_08_write_data -pg 1 -lvl 0 -x 0 -y 8170 -defaultsOSRD
+preplace portBus HBM_09_rburst -pg 1 -lvl 0 -x 0 -y 8430 -defaultsOSRD
+preplace portBus HBM_09_wburst -pg 1 -lvl 0 -x 0 -y 8390 -defaultsOSRD
+preplace portBus HBM_09_write_addr -pg 1 -lvl 0 -x 0 -y 8370 -defaultsOSRD
+preplace portBus HBM_09_read_addr -pg 1 -lvl 0 -x 0 -y 8410 -defaultsOSRD
+preplace portBus HBM_09_write_data -pg 1 -lvl 0 -x 0 -y 8450 -defaultsOSRD
+preplace portBus HBM_10_rburst -pg 1 -lvl 0 -x 0 -y 5590 -defaultsOSRD
+preplace portBus HBM_10_wburst -pg 1 -lvl 0 -x 0 -y 5550 -defaultsOSRD
+preplace portBus HBM_10_write_addr -pg 1 -lvl 0 -x 0 -y 5530 -defaultsOSRD
+preplace portBus HBM_10_read_addr -pg 1 -lvl 0 -x 0 -y 5570 -defaultsOSRD
+preplace portBus HBM_10_write_data -pg 1 -lvl 0 -x 0 -y 5610 -defaultsOSRD
+preplace portBus HBM_11_rburst -pg 1 -lvl 0 -x 0 -y 5870 -defaultsOSRD
+preplace portBus HBM_11_wburst -pg 1 -lvl 0 -x 0 -y 5830 -defaultsOSRD
+preplace portBus HBM_11_write_addr -pg 1 -lvl 0 -x 0 -y 5810 -defaultsOSRD
+preplace portBus HBM_11_read_addr -pg 1 -lvl 0 -x 0 -y 5850 -defaultsOSRD
+preplace portBus HBM_11_write_data -pg 1 -lvl 0 -x 0 -y 5890 -defaultsOSRD
+preplace portBus HBM_12_rburst -pg 1 -lvl 0 -x 0 -y 6150 -defaultsOSRD
+preplace portBus HBM_12_wburst -pg 1 -lvl 0 -x 0 -y 6110 -defaultsOSRD
+preplace portBus HBM_12_write_addr -pg 1 -lvl 0 -x 0 -y 6090 -defaultsOSRD
+preplace portBus HBM_12_read_addr -pg 1 -lvl 0 -x 0 -y 6130 -defaultsOSRD
+preplace portBus HBM_12_write_data -pg 1 -lvl 0 -x 0 -y 6170 -defaultsOSRD
+preplace portBus HBM_13_rburst -pg 1 -lvl 0 -x 0 -y 6430 -defaultsOSRD
+preplace portBus HBM_13_wburst -pg 1 -lvl 0 -x 0 -y 6390 -defaultsOSRD
+preplace portBus HBM_13_write_addr -pg 1 -lvl 0 -x 0 -y 6370 -defaultsOSRD
+preplace portBus HBM_13_read_addr -pg 1 -lvl 0 -x 0 -y 6410 -defaultsOSRD
+preplace portBus HBM_13_write_data -pg 1 -lvl 0 -x 0 -y 6450 -defaultsOSRD
+preplace portBus HBM_14_rburst -pg 1 -lvl 0 -x 0 -y 8710 -defaultsOSRD
+preplace portBus HBM_14_wburst -pg 1 -lvl 0 -x 0 -y 8670 -defaultsOSRD
+preplace portBus HBM_14_write_addr -pg 1 -lvl 0 -x 0 -y 8650 -defaultsOSRD
+preplace portBus HBM_14_read_addr -pg 1 -lvl 0 -x 0 -y 8690 -defaultsOSRD
+preplace portBus HBM_14_write_data -pg 1 -lvl 0 -x 0 -y 8730 -defaultsOSRD
+preplace portBus HBM_15_rburst -pg 1 -lvl 0 -x 0 -y 8990 -defaultsOSRD
+preplace portBus HBM_15_wburst -pg 1 -lvl 0 -x 0 -y 8950 -defaultsOSRD
+preplace portBus HBM_15_write_addr -pg 1 -lvl 0 -x 0 -y 8930 -defaultsOSRD
+preplace portBus HBM_15_read_addr -pg 1 -lvl 0 -x 0 -y 8970 -defaultsOSRD
+preplace portBus HBM_15_write_data -pg 1 -lvl 0 -x 0 -y 9010 -defaultsOSRD
+preplace portBus HBM_01_end_write -pg 1 -lvl 4 -x 1250 -y 4590 -defaultsOSRD
+preplace portBus HBM_01_read_data -pg 1 -lvl 4 -x 1250 -y 4630 -defaultsOSRD
+preplace portBus HBM_02_end_write -pg 1 -lvl 4 -x 1250 -y 5220 -defaultsOSRD
+preplace portBus HBM_02_read_data -pg 1 -lvl 4 -x 1250 -y 5260 -defaultsOSRD
+preplace portBus HBM_03_end_write -pg 1 -lvl 4 -x 1250 -y 6620 -defaultsOSRD
+preplace portBus HBM_03_read_data -pg 1 -lvl 4 -x 1250 -y 6660 -defaultsOSRD
+preplace portBus HBM_04_end_write -pg 1 -lvl 4 -x 1250 -y 6900 -defaultsOSRD
+preplace portBus HBM_04_read_data -pg 1 -lvl 4 -x 1250 -y 6940 -defaultsOSRD
+preplace portBus HBM_05_end_write -pg 1 -lvl 4 -x 1250 -y 7200 -defaultsOSRD
+preplace portBus HBM_05_read_data -pg 1 -lvl 4 -x 1250 -y 7240 -defaultsOSRD
+preplace portBus HBM_06_end_write -pg 1 -lvl 4 -x 1250 -y 7370 -defaultsOSRD
+preplace portBus HBM_06_read_data -pg 1 -lvl 4 -x 1250 -y 7540 -defaultsOSRD
+preplace portBus HBM_07_end_write -pg 1 -lvl 4 -x 1250 -y 7650 -defaultsOSRD
+preplace portBus HBM_07_read_data -pg 1 -lvl 4 -x 1250 -y 7820 -defaultsOSRD
+preplace portBus HBM_08_end_write -pg 1 -lvl 4 -x 1250 -y 8060 -defaultsOSRD
+preplace portBus HBM_08_read_data -pg 1 -lvl 4 -x 1250 -y 8100 -defaultsOSRD
+preplace portBus HBM_09_end_write -pg 1 -lvl 4 -x 1250 -y 8260 -defaultsOSRD
+preplace portBus HBM_09_read_data -pg 1 -lvl 4 -x 1250 -y 8430 -defaultsOSRD
+preplace portBus HBM_10_end_write -pg 1 -lvl 4 -x 1250 -y 5500 -defaultsOSRD
+preplace portBus HBM_10_read_data -pg 1 -lvl 4 -x 1250 -y 5540 -defaultsOSRD
+preplace portBus HBM_11_end_write -pg 1 -lvl 4 -x 1250 -y 5780 -defaultsOSRD
+preplace portBus HBM_11_read_data -pg 1 -lvl 4 -x 1250 -y 5820 -defaultsOSRD
+preplace portBus HBM_12_end_write -pg 1 -lvl 4 -x 1250 -y 6060 -defaultsOSRD
+preplace portBus HBM_12_read_data -pg 1 -lvl 4 -x 1250 -y 6100 -defaultsOSRD
+preplace portBus HBM_13_end_write -pg 1 -lvl 4 -x 1250 -y 6340 -defaultsOSRD
+preplace portBus HBM_13_read_data -pg 1 -lvl 4 -x 1250 -y 6380 -defaultsOSRD
+preplace portBus HBM_14_end_write -pg 1 -lvl 4 -x 1250 -y 8490 -defaultsOSRD
+preplace portBus HBM_14_read_data -pg 1 -lvl 4 -x 1250 -y 8650 -defaultsOSRD
+preplace portBus HBM_15_end_write -pg 1 -lvl 4 -x 1250 -y 8900 -defaultsOSRD
+preplace portBus HBM_15_read_data -pg 1 -lvl 4 -x 1250 -y 8940 -defaultsOSRD
+preplace inst HBMVIP0 -pg 1 -lvl 3 -x 1090 -y 4880 -defaultsOSRD
+preplace inst DDRVIP -pg 1 -lvl 3 -x 1090 -y 4700 -defaultsOSRD
+preplace inst DDR_00_AXI_Engine -pg 1 -lvl 1 -x 190 -y 430 -defaultsOSRD
+preplace inst HBM_00_AXI_Engine -pg 1 -lvl 2 -x 710 -y 4980 -defaultsOSRD
+preplace inst HBMVIP1 -pg 1 -lvl 3 -x 1090 -y 4520 -defaultsOSRD
+preplace inst HBM_01_AXI_Engine -pg 1 -lvl 2 -x 710 -y 4630 -defaultsOSRD
+preplace inst HBMVIP2 -pg 1 -lvl 3 -x 1090 -y 5150 -defaultsOSRD
+preplace inst HBM_02_AXI_Engine -pg 1 -lvl 2 -x 710 -y 5260 -defaultsOSRD
+preplace inst HBMVIP3 -pg 1 -lvl 3 -x 1090 -y 6550 -defaultsOSRD
+preplace inst HBM_03_AXI_Engine -pg 1 -lvl 2 -x 710 -y 6660 -defaultsOSRD
+preplace inst HBMVIP4 -pg 1 -lvl 3 -x 1090 -y 6830 -defaultsOSRD
+preplace inst HBM_04_AXI_Engine -pg 1 -lvl 2 -x 710 -y 6940 -defaultsOSRD
+preplace inst HBMVIP5 -pg 1 -lvl 3 -x 1090 -y 7130 -defaultsOSRD
+preplace inst HBM_05_AXI_Engine -pg 1 -lvl 2 -x 710 -y 7240 -defaultsOSRD
+preplace inst HBMVIP6 -pg 1 -lvl 3 -x 1090 -y 7450 -defaultsOSRD
+preplace inst HBM_06_AXI_Engine -pg 1 -lvl 2 -x 710 -y 7540 -defaultsOSRD
+preplace inst HBMVIP7 -pg 1 -lvl 3 -x 1090 -y 7730 -defaultsOSRD
+preplace inst HBM_07_AXI_Engine -pg 1 -lvl 2 -x 710 -y 7820 -defaultsOSRD
+preplace inst HBMVIP8 -pg 1 -lvl 3 -x 1090 -y 7990 -defaultsOSRD
+preplace inst HBM_08_AXI_Engine -pg 1 -lvl 2 -x 710 -y 8100 -defaultsOSRD
+preplace inst HBMVIP9 -pg 1 -lvl 3 -x 1090 -y 8340 -defaultsOSRD
+preplace inst HBM_09_AXI_Engine -pg 1 -lvl 2 -x 710 -y 8380 -defaultsOSRD
+preplace inst HBMVIP10 -pg 1 -lvl 3 -x 1090 -y 5430 -defaultsOSRD
+preplace inst HBM_10_AXI_Engine -pg 1 -lvl 2 -x 710 -y 5540 -defaultsOSRD
+preplace inst HBMVIP11 -pg 1 -lvl 3 -x 1090 -y 5710 -defaultsOSRD
+preplace inst HBM_11_AXI_Engine -pg 1 -lvl 2 -x 710 -y 5820 -defaultsOSRD
+preplace inst HBMVIP12 -pg 1 -lvl 3 -x 1090 -y 5990 -defaultsOSRD
+preplace inst HBM_12_AXI_Engine -pg 1 -lvl 2 -x 710 -y 6100 -defaultsOSRD
+preplace inst HBMVIP13 -pg 1 -lvl 3 -x 1090 -y 6270 -defaultsOSRD
+preplace inst HBM_13_AXI_Engine -pg 1 -lvl 2 -x 710 -y 6380 -defaultsOSRD
+preplace inst HBMVIP14 -pg 1 -lvl 3 -x 1090 -y 8570 -defaultsOSRD
+preplace inst HBM_14_AXI_Engine -pg 1 -lvl 2 -x 710 -y 8660 -defaultsOSRD
+preplace inst HBMVIP15 -pg 1 -lvl 3 -x 1090 -y 8730 -defaultsOSRD
+preplace inst HBM_15_AXI_Engine -pg 1 -lvl 2 -x 710 -y 8940 -defaultsOSRD
+preplace inst DDR_01_AXI_Engine -pg 1 -lvl 1 -x 190 -y 150 -defaultsOSRD
+preplace inst DDR_02_AXI_Engine -pg 1 -lvl 1 -x 190 -y 710 -defaultsOSRD
+preplace inst DDR_03_AXI_Engine -pg 1 -lvl 1 -x 190 -y 1270 -defaultsOSRD
+preplace inst DDR_04_AXI_Engine -pg 1 -lvl 1 -x 190 -y 990 -defaultsOSRD
+preplace inst DDR_05_AXI_Engine -pg 1 -lvl 1 -x 190 -y 1550 -defaultsOSRD
+preplace inst DDR_06_AXI_Engine -pg 1 -lvl 1 -x 190 -y 2110 -defaultsOSRD
+preplace inst DDR_07_AXI_Engine -pg 1 -lvl 1 -x 190 -y 1830 -defaultsOSRD
+preplace inst DDR_08_AXI_Engine -pg 1 -lvl 1 -x 190 -y 2390 -defaultsOSRD
+preplace inst DDR_09_AXI_Engine -pg 1 -lvl 1 -x 190 -y 2670 -defaultsOSRD
+preplace inst DDR_10_AXI_Engine -pg 1 -lvl 1 -x 190 -y 2970 -defaultsOSRD
+preplace inst DDR_11_AXI_Engine -pg 1 -lvl 1 -x 190 -y 3250 -defaultsOSRD
+preplace inst DDR_12_AXI_Engine -pg 1 -lvl 1 -x 190 -y 3550 -defaultsOSRD
+preplace inst DDR_13_AXI_Engine -pg 1 -lvl 1 -x 190 -y 3830 -defaultsOSRD
+preplace inst DDR_14_AXI_Engine -pg 1 -lvl 1 -x 190 -y 4110 -defaultsOSRD
+preplace inst DDR_15_AXI_Engine -pg 1 -lvl 1 -x 190 -y 4390 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 2 -x 710 -y 2710 -defaultsOSRD
+preplace netloc DDR_00_AXI_Engine_end_rd 1 1 3 NJ 410 NJ 410 NJ
+preplace netloc DDR_00_AXI_Engine_end_wr 1 1 3 NJ 390 NJ 390 NJ
+preplace netloc DDR_00_AXI_Engine_read_data 1 1 3 NJ 430 NJ 430 NJ
+preplace netloc DDR_00_AXI_Engine_read_ready 1 1 3 NJ 470 NJ 470 NJ
+preplace netloc DDR_00_AXI_Engine_write_last 1 1 3 NJ 490 NJ 490 NJ
+preplace netloc DDR_00_AXI_Engine_write_resp 1 1 3 NJ 450 NJ 450 NJ
+preplace netloc DDR_00_rburst_1 1 0 1 NJ 480
+preplace netloc DDR_00_read_addr_1 1 0 1 NJ 460
+preplace netloc DDR_00_start_read_1 1 0 1 NJ 400
+preplace netloc DDR_00_start_write_1 1 0 1 NJ 380
+preplace netloc DDR_00_wburst_1 1 0 1 NJ 440
+preplace netloc DDR_00_write_addr_1 1 0 1 NJ 420
+preplace netloc DDR_00_write_data_1 1 0 1 NJ 500
+preplace netloc DDR_00_write_ready_1 1 0 1 NJ 520
+preplace netloc HBM_00_ARESET_N_1 1 0 3 30 4540 380 4470 930
+preplace netloc HBM_00_AXI_Engine_end_rd 1 2 2 NJ 4960 NJ
+preplace netloc HBM_00_AXI_Engine_end_wr 1 2 2 970J 4970 1200J
+preplace netloc HBM_00_AXI_Engine_read_data 1 2 2 NJ 4980 NJ
+preplace netloc HBM_00_AXI_Engine_read_ready 1 2 2 NJ 5020 NJ
+preplace netloc HBM_00_AXI_Engine_write_last 1 2 2 NJ 5040 NJ
+preplace netloc HBM_00_AXI_Engine_write_resp 1 2 2 NJ 5000 NJ
+preplace netloc HBM_00_rburst_1 1 0 2 NJ 5030 NJ
+preplace netloc HBM_00_read_addr_1 1 0 2 NJ 5010 NJ
+preplace netloc HBM_00_start_read_1 1 0 2 NJ 4950 NJ
+preplace netloc HBM_00_start_write_1 1 0 2 NJ 4930 NJ
+preplace netloc HBM_00_wburst_1 1 0 2 NJ 4990 NJ
+preplace netloc HBM_00_write_addr_1 1 0 2 NJ 4970 NJ
+preplace netloc HBM_00_write_data_1 1 0 2 NJ 5050 NJ
+preplace netloc HBM_00_write_ready_1 1 0 2 NJ 5070 NJ
+preplace netloc c0_sys_clk_i_1 1 0 3 20 3400 520 4480 920
+preplace netloc DDR_01_start_write_1 1 0 1 NJ 100
+preplace netloc DDR_02_start_write_1 1 0 1 NJ 660
+preplace netloc DDR_03_start_write_1 1 0 1 NJ 1220
+preplace netloc DDR_04_start_write_1 1 0 1 NJ 940
+preplace netloc DDR_05_start_write_1 1 0 1 NJ 1500
+preplace netloc DDR_06_start_write_1 1 0 1 NJ 2060
+preplace netloc DDR_07_start_write_1 1 0 1 NJ 1780
+preplace netloc DDR_08_start_write_1 1 0 1 NJ 2340
+preplace netloc DDR_09_start_write_1 1 0 1 NJ 2620
+preplace netloc DDR_10_start_write_1 1 0 1 NJ 2920
+preplace netloc DDR_11_start_write_1 1 0 1 NJ 3200
+preplace netloc DDR_12_start_write_1 1 0 1 NJ 3500
+preplace netloc DDR_13_start_write_1 1 0 1 NJ 3780
+preplace netloc DDR_14_start_write_1 1 0 1 NJ 4060
+preplace netloc DDR_15_start_write_1 1 0 1 NJ 4340
+preplace netloc DDR_01_start_read_1 1 0 1 NJ 120
+preplace netloc DDR_02_start_read_1 1 0 1 NJ 680
+preplace netloc DDR_03_start_read_1 1 0 1 NJ 1240
+preplace netloc DDR_04_start_read_1 1 0 1 NJ 960
+preplace netloc DDR_05_start_read_1 1 0 1 NJ 1520
+preplace netloc DDR_06_start_read_1 1 0 1 NJ 2080
+preplace netloc DDR_07_start_read_1 1 0 1 NJ 1800
+preplace netloc DDR_08_start_read_1 1 0 1 NJ 2360
+preplace netloc DDR_09_start_read_1 1 0 1 NJ 2640
+preplace netloc DDR_10_start_read_1 1 0 1 NJ 2940
+preplace netloc DDR_11_start_read_1 1 0 1 NJ 3220
+preplace netloc DDR_12_start_read_1 1 0 1 NJ 3520
+preplace netloc DDR_13_start_read_1 1 0 1 NJ 3800
+preplace netloc DDR_14_start_read_1 1 0 1 NJ 4080
+preplace netloc DDR_15_start_read_1 1 0 1 NJ 4360
+preplace netloc DDR_01_rburst_1 1 0 1 NJ 200
+preplace netloc DDR_01_wburst_1 1 0 1 NJ 160
+preplace netloc DDR_02_rburst_1 1 0 1 NJ 760
+preplace netloc DDR_02_wburst_1 1 0 1 NJ 720
+preplace netloc DDR_03_rburst_1 1 0 1 NJ 1320
+preplace netloc DDR_03_wburst_1 1 0 1 NJ 1280
+preplace netloc DDR_04_rburst_1 1 0 1 NJ 1040
+preplace netloc DDR_04_wburst_1 1 0 1 NJ 1000
+preplace netloc DDR_05_rburst_1 1 0 1 NJ 1600
+preplace netloc DDR_05_wburst_1 1 0 1 NJ 1560
+preplace netloc DDR_06_rburst_1 1 0 1 NJ 2160
+preplace netloc DDR_06_wburst_1 1 0 1 NJ 2120
+preplace netloc DDR_07_rburst_1 1 0 1 NJ 1880
+preplace netloc DDR_07_wburst_1 1 0 1 NJ 1840
+preplace netloc DDR_08_rburst_1 1 0 1 NJ 2440
+preplace netloc DDR_08_wburst_1 1 0 1 NJ 2400
+preplace netloc DDR_09_rburst_1 1 0 1 NJ 2720
+preplace netloc DDR_09_wburst_1 1 0 1 NJ 2680
+preplace netloc DDR_10_rburst_1 1 0 1 NJ 3020
+preplace netloc DDR_10_wburst_1 1 0 1 NJ 2980
+preplace netloc DDR_11_rburst_1 1 0 1 NJ 3300
+preplace netloc DDR_11_wburst_1 1 0 1 NJ 3260
+preplace netloc DDR_12_rburst_1 1 0 1 NJ 3600
+preplace netloc DDR_12_wburst_1 1 0 1 NJ 3560
+preplace netloc DDR_13_rburst_1 1 0 1 NJ 3880
+preplace netloc DDR_13_wburst_1 1 0 1 NJ 3840
+preplace netloc DDR_14_rburst_1 1 0 1 NJ 4160
+preplace netloc DDR_14_wburst_1 1 0 1 NJ 4120
+preplace netloc DDR_15_rburst_1 1 0 1 NJ 4440
+preplace netloc DDR_15_wburst_1 1 0 1 NJ 4400
+preplace netloc DDR_01_write_ready_1 1 0 1 NJ 240
+preplace netloc DDR_02_write_ready_1 1 0 1 NJ 800
+preplace netloc DDR_03_write_ready_1 1 0 1 NJ 1360
+preplace netloc DDR_04_write_ready_1 1 0 1 NJ 1080
+preplace netloc DDR_05_write_ready_1 1 0 1 NJ 1640
+preplace netloc DDR_06_write_ready_1 1 0 1 NJ 2200
+preplace netloc DDR_07_write_ready_1 1 0 1 NJ 1920
+preplace netloc DDR_08_write_ready_1 1 0 1 NJ 2480
+preplace netloc DDR_09_write_ready_1 1 0 1 NJ 2760
+preplace netloc DDR_10_write_ready_1 1 0 1 NJ 3060
+preplace netloc DDR_11_write_ready_1 1 0 1 NJ 3340
+preplace netloc DDR_12_write_ready_1 1 0 1 NJ 3640
+preplace netloc DDR_13_write_ready_1 1 0 1 NJ 3920
+preplace netloc DDR_14_write_ready_1 1 0 1 NJ 4200
+preplace netloc DDR_15_write_ready_1 1 0 1 NJ 4480
+preplace netloc DDR_01_write_addr_1 1 0 1 NJ 140
+preplace netloc DDR_01_read_addr_1 1 0 1 NJ 180
+preplace netloc DDR_02_write_addr_1 1 0 1 NJ 700
+preplace netloc DDR_02_read_addr_1 1 0 1 NJ 740
+preplace netloc DDR_03_write_addr_1 1 0 1 NJ 1260
+preplace netloc DDR_03_read_addr_1 1 0 1 NJ 1300
+preplace netloc DDR_04_write_addr_1 1 0 1 NJ 980
+preplace netloc DDR_04_read_addr_1 1 0 1 NJ 1020
+preplace netloc DDR_05_write_addr_1 1 0 1 NJ 1540
+preplace netloc DDR_05_read_addr_1 1 0 1 NJ 1580
+preplace netloc DDR_06_write_addr_1 1 0 1 NJ 2100
+preplace netloc DDR_06_read_addr_1 1 0 1 NJ 2140
+preplace netloc DDR_07_write_addr_1 1 0 1 NJ 1820
+preplace netloc DDR_07_read_addr_1 1 0 1 NJ 1860
+preplace netloc DDR_08_write_addr_1 1 0 1 NJ 2380
+preplace netloc DDR_08_read_addr_1 1 0 1 NJ 2420
+preplace netloc DDR_09_write_addr_1 1 0 1 NJ 2660
+preplace netloc DDR_09_read_addr_1 1 0 1 NJ 2700
+preplace netloc DDR_10_write_addr_1 1 0 1 NJ 2960
+preplace netloc DDR_10_read_addr_1 1 0 1 NJ 3000
+preplace netloc DDR_11_write_addr_1 1 0 1 NJ 3240
+preplace netloc DDR_11_read_addr_1 1 0 1 NJ 3280
+preplace netloc DDR_12_write_addr_1 1 0 1 NJ 3540
+preplace netloc DDR_12_read_addr_1 1 0 1 NJ 3580
+preplace netloc DDR_13_write_addr_1 1 0 1 NJ 3820
+preplace netloc DDR_13_read_addr_1 1 0 1 NJ 3860
+preplace netloc DDR_14_write_addr_1 1 0 1 NJ 4100
+preplace netloc DDR_14_read_addr_1 1 0 1 NJ 4140
+preplace netloc DDR_15_write_addr_1 1 0 1 NJ 4380
+preplace netloc DDR_15_read_addr_1 1 0 1 NJ 4420
+preplace netloc DDR_01_write_data_1 1 0 1 NJ 220
+preplace netloc DDR_02_write_data_1 1 0 1 NJ 780
+preplace netloc DDR_03_write_data_1 1 0 1 NJ 1340
+preplace netloc DDR_04_write_data_1 1 0 1 NJ 1060
+preplace netloc DDR_05_write_data_1 1 0 1 NJ 1620
+preplace netloc DDR_06_write_data_1 1 0 1 NJ 2180
+preplace netloc DDR_07_write_data_1 1 0 1 NJ 1900
+preplace netloc DDR_08_write_data_1 1 0 1 NJ 2460
+preplace netloc DDR_09_write_data_1 1 0 1 NJ 2740
+preplace netloc DDR_10_write_data_1 1 0 1 NJ 3040
+preplace netloc DDR_11_write_data_1 1 0 1 NJ 3320
+preplace netloc DDR_12_write_data_1 1 0 1 NJ 3620
+preplace netloc DDR_13_write_data_1 1 0 1 NJ 3900
+preplace netloc DDR_14_write_data_1 1 0 1 NJ 4180
+preplace netloc DDR_15_write_data_1 1 0 1 NJ 4460
+preplace netloc DDR_01_AXI_Engine_write_resp 1 1 3 NJ 170 NJ 170 NJ
+preplace netloc DDR_02_AXI_Engine_write_resp 1 1 3 NJ 730 NJ 730 NJ
+preplace netloc DDR_03_AXI_Engine_write_resp 1 1 3 NJ 1290 NJ 1290 NJ
+preplace netloc DDR_04_AXI_Engine_write_resp 1 1 3 NJ 1010 NJ 1010 NJ
+preplace netloc DDR_05_AXI_Engine_write_resp 1 1 3 NJ 1570 NJ 1570 NJ
+preplace netloc DDR_06_AXI_Engine_write_resp 1 1 3 NJ 2130 NJ 2130 NJ
+preplace netloc DDR_07_AXI_Engine_write_resp 1 1 3 NJ 1850 NJ 1850 NJ
+preplace netloc DDR_08_AXI_Engine_write_resp 1 1 3 390J 2370 NJ 2370 NJ
+preplace netloc DDR_09_AXI_Engine_write_resp 1 1 3 490J 2480 NJ 2480 1190J
+preplace netloc DDR_10_AXI_Engine_write_resp 1 1 3 NJ 2990 NJ 2990 NJ
+preplace netloc DDR_11_AXI_Engine_write_resp 1 1 3 NJ 3270 NJ 3270 NJ
+preplace netloc DDR_12_AXI_Engine_write_resp 1 1 3 NJ 3570 NJ 3570 NJ
+preplace netloc DDR_13_AXI_Engine_write_resp 1 1 3 NJ 3850 NJ 3850 NJ
+preplace netloc DDR_14_AXI_Engine_write_resp 1 1 3 NJ 4130 NJ 4130 NJ
+preplace netloc DDR_15_AXI_Engine_write_resp 1 1 3 NJ 4410 NJ 4410 NJ
+preplace netloc DDR_01_AXI_Engine_write_last 1 1 3 NJ 210 NJ 210 NJ
+preplace netloc DDR_01_AXI_Engine_read_ready 1 1 3 NJ 190 NJ 190 NJ
+preplace netloc DDR_02_AXI_Engine_write_last 1 1 3 NJ 770 NJ 770 NJ
+preplace netloc DDR_02_AXI_Engine_read_ready 1 1 3 NJ 750 NJ 750 NJ
+preplace netloc DDR_03_AXI_Engine_write_last 1 1 3 NJ 1330 NJ 1330 NJ
+preplace netloc DDR_03_AXI_Engine_read_ready 1 1 3 NJ 1310 NJ 1310 NJ
+preplace netloc DDR_04_AXI_Engine_write_last 1 1 3 NJ 1050 NJ 1050 NJ
+preplace netloc DDR_04_AXI_Engine_read_ready 1 1 3 NJ 1030 NJ 1030 NJ
+preplace netloc DDR_05_AXI_Engine_write_last 1 1 3 NJ 1610 NJ 1610 NJ
+preplace netloc DDR_05_AXI_Engine_read_ready 1 1 3 NJ 1590 NJ 1590 NJ
+preplace netloc DDR_06_AXI_Engine_write_last 1 1 3 NJ 2170 NJ 2170 NJ
+preplace netloc DDR_06_AXI_Engine_read_ready 1 1 3 NJ 2150 NJ 2150 NJ
+preplace netloc DDR_07_AXI_Engine_write_last 1 1 3 NJ 1890 NJ 1890 NJ
+preplace netloc DDR_07_AXI_Engine_read_ready 1 1 3 NJ 1870 NJ 1870 NJ
+preplace netloc DDR_08_AXI_Engine_write_last 1 1 3 400J 2410 NJ 2410 NJ
+preplace netloc DDR_08_AXI_Engine_read_ready 1 1 3 410J 2420 NJ 2420 1220J
+preplace netloc DDR_09_AXI_Engine_write_last 1 1 3 500J 2470 NJ 2470 1180J
+preplace netloc DDR_09_AXI_Engine_read_ready 1 1 3 470J 2460 NJ 2460 1200J
+preplace netloc DDR_10_AXI_Engine_write_last 1 1 3 NJ 3030 NJ 3030 NJ
+preplace netloc DDR_10_AXI_Engine_read_ready 1 1 3 NJ 3010 NJ 3010 NJ
+preplace netloc DDR_11_AXI_Engine_write_last 1 1 3 NJ 3310 NJ 3310 NJ
+preplace netloc DDR_11_AXI_Engine_read_ready 1 1 3 NJ 3290 NJ 3290 NJ
+preplace netloc DDR_12_AXI_Engine_write_last 1 1 3 NJ 3610 NJ 3610 NJ
+preplace netloc DDR_12_AXI_Engine_read_ready 1 1 3 NJ 3590 NJ 3590 NJ
+preplace netloc DDR_13_AXI_Engine_write_last 1 1 3 NJ 3890 NJ 3890 NJ
+preplace netloc DDR_13_AXI_Engine_read_ready 1 1 3 NJ 3870 NJ 3870 NJ
+preplace netloc DDR_14_AXI_Engine_write_last 1 1 3 NJ 4170 NJ 4170 NJ
+preplace netloc DDR_14_AXI_Engine_read_ready 1 1 3 NJ 4150 NJ 4150 NJ
+preplace netloc DDR_15_AXI_Engine_write_last 1 1 3 550J 4440 NJ 4440 1200J
+preplace netloc DDR_15_AXI_Engine_read_ready 1 1 3 NJ 4430 NJ 4430 NJ
+preplace netloc DDR_01_AXI_Engine_end_wr 1 1 3 NJ 110 NJ 110 NJ
+preplace netloc DDR_01_AXI_Engine_end_rd 1 1 3 NJ 130 NJ 130 NJ
+preplace netloc DDR_02_AXI_Engine_end_wr 1 1 3 NJ 670 NJ 670 NJ
+preplace netloc DDR_02_AXI_Engine_end_rd 1 1 3 NJ 690 NJ 690 NJ
+preplace netloc DDR_03_AXI_Engine_end_wr 1 1 3 NJ 1230 NJ 1230 NJ
+preplace netloc DDR_03_AXI_Engine_end_rd 1 1 3 NJ 1250 NJ 1250 NJ
+preplace netloc DDR_04_AXI_Engine_end_wr 1 1 3 NJ 950 NJ 950 NJ
+preplace netloc DDR_04_AXI_Engine_end_rd 1 1 3 NJ 970 NJ 970 NJ
+preplace netloc DDR_05_AXI_Engine_end_wr 1 1 3 NJ 1510 NJ 1510 NJ
+preplace netloc DDR_05_AXI_Engine_end_rd 1 1 3 NJ 1530 NJ 1530 NJ
+preplace netloc DDR_06_AXI_Engine_end_wr 1 1 3 NJ 2070 NJ 2070 NJ
+preplace netloc DDR_06_AXI_Engine_end_rd 1 1 3 NJ 2090 NJ 2090 NJ
+preplace netloc DDR_07_AXI_Engine_end_wr 1 1 3 NJ 1790 NJ 1790 NJ
+preplace netloc DDR_07_AXI_Engine_end_rd 1 1 3 NJ 1810 NJ 1810 NJ
+preplace netloc DDR_08_AXI_Engine_end_wr 1 1 3 350J 2310 NJ 2310 NJ
+preplace netloc DDR_08_AXI_Engine_end_rd 1 1 3 370J 2330 NJ 2330 NJ
+preplace netloc DDR_09_AXI_Engine_end_wr 1 1 3 420J 2430 NJ 2430 NJ
+preplace netloc DDR_09_AXI_Engine_end_rd 1 1 3 430J 2440 NJ 2440 1220J
+preplace netloc DDR_10_AXI_Engine_end_wr 1 1 3 350J 2940 930J 2930 NJ
+preplace netloc DDR_10_AXI_Engine_end_rd 1 1 3 NJ 2950 NJ 2950 NJ
+preplace netloc DDR_11_AXI_Engine_end_wr 1 1 3 NJ 3210 NJ 3210 NJ
+preplace netloc DDR_11_AXI_Engine_end_rd 1 1 3 NJ 3230 NJ 3230 NJ
+preplace netloc DDR_12_AXI_Engine_end_wr 1 1 3 NJ 3510 NJ 3510 NJ
+preplace netloc DDR_12_AXI_Engine_end_rd 1 1 3 NJ 3530 NJ 3530 NJ
+preplace netloc DDR_13_AXI_Engine_end_wr 1 1 3 NJ 3790 NJ 3790 NJ
+preplace netloc DDR_13_AXI_Engine_end_rd 1 1 3 NJ 3810 NJ 3810 NJ
+preplace netloc DDR_14_AXI_Engine_end_wr 1 1 3 NJ 4070 NJ 4070 NJ
+preplace netloc DDR_14_AXI_Engine_end_rd 1 1 3 NJ 4090 NJ 4090 NJ
+preplace netloc DDR_15_AXI_Engine_end_wr 1 1 3 NJ 4350 NJ 4350 NJ
+preplace netloc DDR_15_AXI_Engine_end_rd 1 1 3 NJ 4370 NJ 4370 NJ
+preplace netloc DDR_01_AXI_Engine_read_data 1 1 3 NJ 150 NJ 150 NJ
+preplace netloc DDR_02_AXI_Engine_read_data 1 1 3 NJ 710 NJ 710 NJ
+preplace netloc DDR_03_AXI_Engine_read_data 1 1 3 NJ 1270 NJ 1270 NJ
+preplace netloc DDR_04_AXI_Engine_read_data 1 1 3 NJ 990 NJ 990 NJ
+preplace netloc DDR_05_AXI_Engine_read_data 1 1 3 NJ 1550 NJ 1550 NJ
+preplace netloc DDR_06_AXI_Engine_read_data 1 1 3 NJ 2110 NJ 2110 NJ
+preplace netloc DDR_07_AXI_Engine_read_data 1 1 3 NJ 1830 NJ 1830 NJ
+preplace netloc DDR_08_AXI_Engine_read_data 1 1 3 380J 2350 NJ 2350 NJ
+preplace netloc DDR_09_AXI_Engine_read_data 1 1 3 440J 2450 NJ 2450 1210J
+preplace netloc DDR_10_AXI_Engine_read_data 1 1 3 NJ 2970 NJ 2970 NJ
+preplace netloc DDR_11_AXI_Engine_read_data 1 1 3 NJ 3250 NJ 3250 NJ
+preplace netloc DDR_12_AXI_Engine_read_data 1 1 3 NJ 3550 NJ 3550 NJ
+preplace netloc DDR_13_AXI_Engine_read_data 1 1 3 NJ 3830 NJ 3830 NJ
+preplace netloc DDR_14_AXI_Engine_read_data 1 1 3 NJ 4110 NJ 4110 NJ
+preplace netloc DDR_15_AXI_Engine_read_data 1 1 3 NJ 4390 NJ 4390 NJ
+preplace netloc HBM_01_AXI_Engine_read_data 1 2 2 870J 4620 1200J
+preplace netloc HBM_01_write_data_1 1 0 2 NJ 4700 NJ
+preplace netloc HBM_01_start_write_1 1 0 2 NJ 4580 NJ
+preplace netloc HBM_01_start_read_1 1 0 2 NJ 4600 NJ
+preplace netloc HBM_01_AXI_Engine_end_wr 1 2 2 960J 4600 1200J
+preplace netloc HBM_01_AXI_Engine_end_rd 1 2 2 NJ 4610 NJ
+preplace netloc HBM_02_AXI_Engine_read_data 1 2 2 NJ 5260 NJ
+preplace netloc HBM_02_write_data_1 1 0 2 NJ 5330 NJ
+preplace netloc HBM_02_start_write_1 1 0 2 NJ 5210 NJ
+preplace netloc HBM_02_start_read_1 1 0 2 NJ 5230 NJ
+preplace netloc HBM_02_AXI_Engine_end_wr 1 2 2 970J 5230 1200J
+preplace netloc HBM_02_AXI_Engine_end_rd 1 2 2 NJ 5240 NJ
+preplace netloc HBM_03_AXI_Engine_read_data 1 2 2 NJ 6660 NJ
+preplace netloc HBM_03_write_data_1 1 0 2 NJ 6730 NJ
+preplace netloc HBM_03_start_write_1 1 0 2 NJ 6610 NJ
+preplace netloc HBM_03_start_read_1 1 0 2 NJ 6630 NJ
+preplace netloc HBM_03_AXI_Engine_end_wr 1 2 2 870J 6630 1200J
+preplace netloc HBM_03_AXI_Engine_end_rd 1 2 2 NJ 6640 NJ
+preplace netloc HBM_04_AXI_Engine_read_data 1 2 2 NJ 6940 NJ
+preplace netloc HBM_04_write_data_1 1 0 2 NJ 7010 NJ
+preplace netloc HBM_04_start_write_1 1 0 2 NJ 6890 NJ
+preplace netloc HBM_04_start_read_1 1 0 2 NJ 6910 NJ
+preplace netloc HBM_04_AXI_Engine_end_wr 1 2 2 870J 6910 1200J
+preplace netloc HBM_04_AXI_Engine_end_rd 1 2 2 NJ 6920 NJ
+preplace netloc HBM_05_AXI_Engine_read_data 1 2 2 NJ 7240 NJ
+preplace netloc HBM_05_write_data_1 1 0 2 NJ 7310 NJ
+preplace netloc HBM_05_start_write_1 1 0 2 NJ 7190 NJ
+preplace netloc HBM_05_start_read_1 1 0 2 NJ 7210 NJ
+preplace netloc HBM_05_AXI_Engine_end_wr 1 2 2 870J 7210 1200J
+preplace netloc HBM_05_AXI_Engine_end_rd 1 2 2 NJ 7220 NJ
+preplace netloc HBM_06_AXI_Engine_read_data 1 2 2 NJ 7540 NJ
+preplace netloc HBM_06_write_data_1 1 0 2 NJ 7610 NJ
+preplace netloc HBM_06_start_write_1 1 0 2 NJ 7490 NJ
+preplace netloc HBM_06_start_read_1 1 0 2 NJ 7510 NJ
+preplace netloc HBM_06_AXI_Engine_end_wr 1 2 2 960J 7370 NJ
+preplace netloc HBM_06_AXI_Engine_end_rd 1 2 2 870J 7530 1200J
+preplace netloc HBM_07_AXI_Engine_read_data 1 2 2 NJ 7820 NJ
+preplace netloc HBM_07_write_data_1 1 0 2 NJ 7890 NJ
+preplace netloc HBM_07_start_write_1 1 0 2 NJ 7770 NJ
+preplace netloc HBM_07_start_read_1 1 0 2 NJ 7790 NJ
+preplace netloc HBM_07_AXI_Engine_end_wr 1 2 2 960J 7650 NJ
+preplace netloc HBM_07_AXI_Engine_end_rd 1 2 2 870J 7810 1200J
+preplace netloc HBM_08_AXI_Engine_read_data 1 2 2 NJ 8100 NJ
+preplace netloc HBM_08_write_data_1 1 0 2 NJ 8170 NJ
+preplace netloc HBM_08_start_write_1 1 0 2 NJ 8050 NJ
+preplace netloc HBM_08_start_read_1 1 0 2 NJ 8070 NJ
+preplace netloc HBM_08_AXI_Engine_end_wr 1 2 2 870J 8070 1200J
+preplace netloc HBM_08_AXI_Engine_end_rd 1 2 2 NJ 8080 NJ
+preplace netloc HBM_09_AXI_Engine_read_data 1 2 2 910J 8430 NJ
+preplace netloc HBM_09_write_data_1 1 0 2 NJ 8450 NJ
+preplace netloc HBM_09_start_write_1 1 0 2 NJ 8330 NJ
+preplace netloc HBM_09_start_read_1 1 0 2 NJ 8350 NJ
+preplace netloc HBM_09_AXI_Engine_end_wr 1 2 2 870J 8250 1210J
+preplace netloc HBM_09_AXI_Engine_end_rd 1 2 2 880J 8260 1190J
+preplace netloc HBM_10_AXI_Engine_read_data 1 2 2 NJ 5540 NJ
+preplace netloc HBM_10_write_data_1 1 0 2 NJ 5610 NJ
+preplace netloc HBM_10_start_write_1 1 0 2 NJ 5490 NJ
+preplace netloc HBM_10_start_read_1 1 0 2 NJ 5510 NJ
+preplace netloc HBM_10_AXI_Engine_end_wr 1 2 2 970J 5510 1200J
+preplace netloc HBM_10_AXI_Engine_end_rd 1 2 2 NJ 5520 NJ
+preplace netloc HBM_11_AXI_Engine_read_data 1 2 2 NJ 5820 NJ
+preplace netloc HBM_11_write_data_1 1 0 2 NJ 5890 NJ
+preplace netloc HBM_11_start_write_1 1 0 2 NJ 5770 NJ
+preplace netloc HBM_11_start_read_1 1 0 2 NJ 5790 NJ
+preplace netloc HBM_11_AXI_Engine_end_wr 1 2 2 970J 5790 1200J
+preplace netloc HBM_11_AXI_Engine_end_rd 1 2 2 NJ 5800 NJ
+preplace netloc HBM_12_AXI_Engine_read_data 1 2 2 NJ 6100 NJ
+preplace netloc HBM_12_write_data_1 1 0 2 NJ 6170 NJ
+preplace netloc HBM_12_start_write_1 1 0 2 NJ 6050 NJ
+preplace netloc HBM_12_start_read_1 1 0 2 NJ 6070 NJ
+preplace netloc HBM_12_AXI_Engine_end_wr 1 2 2 970J 6070 1200J
+preplace netloc HBM_12_AXI_Engine_end_rd 1 2 2 NJ 6080 NJ
+preplace netloc HBM_13_AXI_Engine_read_data 1 2 2 NJ 6380 NJ
+preplace netloc HBM_13_write_data_1 1 0 2 NJ 6450 NJ
+preplace netloc HBM_13_start_write_1 1 0 2 NJ 6330 NJ
+preplace netloc HBM_13_start_read_1 1 0 2 NJ 6350 NJ
+preplace netloc HBM_13_AXI_Engine_end_wr 1 2 2 870J 6350 1200J
+preplace netloc HBM_13_AXI_Engine_end_rd 1 2 2 NJ 6360 NJ
+preplace netloc HBM_14_AXI_Engine_read_data 1 2 2 970J 8650 NJ
+preplace netloc HBM_14_write_data_1 1 0 2 NJ 8730 NJ
+preplace netloc HBM_14_start_write_1 1 0 2 NJ 8610 NJ
+preplace netloc HBM_14_start_read_1 1 0 2 NJ 8630 NJ
+preplace netloc HBM_14_AXI_Engine_end_wr 1 2 2 960J 8490 NJ
+preplace netloc HBM_14_AXI_Engine_end_rd 1 2 2 910J 8820 NJ
+preplace netloc HBM_15_AXI_Engine_read_data 1 2 2 NJ 8940 NJ
+preplace netloc HBM_15_write_data_1 1 0 2 NJ 9010 NJ
+preplace netloc HBM_15_start_write_1 1 0 2 NJ 8890 NJ
+preplace netloc HBM_15_start_read_1 1 0 2 NJ 8910 NJ
+preplace netloc HBM_15_AXI_Engine_end_wr 1 2 2 NJ 8900 NJ
+preplace netloc HBM_15_AXI_Engine_end_rd 1 2 2 NJ 8920 NJ
+preplace netloc HBM_01_AXI_Engine_write_resp 1 2 2 950J 4800 1200J
+preplace netloc HBM_01_AXI_Engine_write_last 1 2 2 940J 4790 NJ
+preplace netloc HBM_01_AXI_Engine_read_ready 1 2 2 960J 4780 1200J
+preplace netloc HBM_02_AXI_Engine_write_resp 1 2 2 NJ 5280 NJ
+preplace netloc HBM_02_AXI_Engine_write_last 1 2 2 NJ 5320 NJ
+preplace netloc HBM_02_AXI_Engine_read_ready 1 2 2 NJ 5300 NJ
+preplace netloc HBM_03_AXI_Engine_write_resp 1 2 2 NJ 6680 NJ
+preplace netloc HBM_03_AXI_Engine_write_last 1 2 2 NJ 6720 NJ
+preplace netloc HBM_03_AXI_Engine_read_ready 1 2 2 NJ 6700 NJ
+preplace netloc HBM_04_AXI_Engine_write_resp 1 2 2 NJ 6960 NJ
+preplace netloc HBM_04_AXI_Engine_write_last 1 2 2 NJ 7000 NJ
+preplace netloc HBM_04_AXI_Engine_read_ready 1 2 2 NJ 6980 NJ
+preplace netloc HBM_05_AXI_Engine_write_resp 1 2 2 NJ 7260 NJ
+preplace netloc HBM_05_AXI_Engine_write_last 1 2 2 NJ 7300 NJ
+preplace netloc HBM_05_AXI_Engine_read_ready 1 2 2 NJ 7280 NJ
+preplace netloc HBM_06_AXI_Engine_write_resp 1 2 2 NJ 7560 NJ
+preplace netloc HBM_06_AXI_Engine_write_last 1 2 2 NJ 7600 NJ
+preplace netloc HBM_06_AXI_Engine_read_ready 1 2 2 NJ 7580 NJ
+preplace netloc HBM_07_AXI_Engine_write_resp 1 2 2 NJ 7840 NJ
+preplace netloc HBM_07_AXI_Engine_write_last 1 2 2 NJ 7880 NJ
+preplace netloc HBM_07_AXI_Engine_read_ready 1 2 2 NJ 7860 NJ
+preplace netloc HBM_08_AXI_Engine_write_resp 1 2 2 NJ 8120 NJ
+preplace netloc HBM_08_AXI_Engine_write_last 1 2 2 NJ 8160 NJ
+preplace netloc HBM_08_AXI_Engine_read_ready 1 2 2 NJ 8140 NJ
+preplace netloc HBM_09_AXI_Engine_write_resp 1 2 2 880J 8420 1210J
+preplace netloc HBM_09_AXI_Engine_write_last 1 2 2 NJ 8440 1190J
+preplace netloc HBM_09_AXI_Engine_read_ready 1 2 2 870J 8450 NJ
+preplace netloc HBM_10_AXI_Engine_write_resp 1 2 2 NJ 5560 NJ
+preplace netloc HBM_10_AXI_Engine_write_last 1 2 2 NJ 5600 NJ
+preplace netloc HBM_10_AXI_Engine_read_ready 1 2 2 NJ 5580 NJ
+preplace netloc HBM_11_AXI_Engine_write_resp 1 2 2 NJ 5840 NJ
+preplace netloc HBM_11_AXI_Engine_write_last 1 2 2 NJ 5880 NJ
+preplace netloc HBM_11_AXI_Engine_read_ready 1 2 2 NJ 5860 NJ
+preplace netloc HBM_12_AXI_Engine_write_resp 1 2 2 NJ 6120 NJ
+preplace netloc HBM_12_AXI_Engine_write_last 1 2 2 NJ 6160 NJ
+preplace netloc HBM_12_AXI_Engine_read_ready 1 2 2 NJ 6140 NJ
+preplace netloc HBM_13_AXI_Engine_write_resp 1 2 2 NJ 6400 NJ
+preplace netloc HBM_13_AXI_Engine_write_last 1 2 2 NJ 6440 NJ
+preplace netloc HBM_13_AXI_Engine_read_ready 1 2 2 NJ 6420 NJ
+preplace netloc HBM_14_AXI_Engine_write_resp 1 2 2 890J 8880 NJ
+preplace netloc HBM_14_AXI_Engine_write_last 1 2 2 880J 8860 NJ
+preplace netloc HBM_14_AXI_Engine_read_ready 1 2 2 900J 8840 NJ
+preplace netloc HBM_15_AXI_Engine_write_resp 1 2 2 NJ 8960 NJ
+preplace netloc HBM_15_AXI_Engine_write_last 1 2 2 NJ 9000 NJ
+preplace netloc HBM_15_AXI_Engine_read_ready 1 2 2 NJ 8980 NJ
+preplace netloc HBM_01_write_addr_1 1 0 2 NJ 4620 NJ
+preplace netloc HBM_01_read_addr_1 1 0 2 NJ 4660 NJ
+preplace netloc HBM_02_write_addr_1 1 0 2 NJ 5250 NJ
+preplace netloc HBM_02_read_addr_1 1 0 2 NJ 5290 NJ
+preplace netloc HBM_03_write_addr_1 1 0 2 NJ 6650 NJ
+preplace netloc HBM_03_read_addr_1 1 0 2 NJ 6690 NJ
+preplace netloc HBM_04_write_addr_1 1 0 2 NJ 6930 NJ
+preplace netloc HBM_04_read_addr_1 1 0 2 NJ 6970 NJ
+preplace netloc HBM_05_write_addr_1 1 0 2 NJ 7230 NJ
+preplace netloc HBM_05_read_addr_1 1 0 2 NJ 7270 NJ
+preplace netloc HBM_06_write_addr_1 1 0 2 NJ 7530 NJ
+preplace netloc HBM_06_read_addr_1 1 0 2 NJ 7570 NJ
+preplace netloc HBM_07_write_addr_1 1 0 2 NJ 7810 NJ
+preplace netloc HBM_07_read_addr_1 1 0 2 NJ 7850 NJ
+preplace netloc HBM_08_write_addr_1 1 0 2 NJ 8090 NJ
+preplace netloc HBM_08_read_addr_1 1 0 2 NJ 8130 NJ
+preplace netloc HBM_09_write_addr_1 1 0 2 NJ 8370 NJ
+preplace netloc HBM_09_read_addr_1 1 0 2 NJ 8410 NJ
+preplace netloc HBM_10_write_addr_1 1 0 2 NJ 5530 NJ
+preplace netloc HBM_10_read_addr_1 1 0 2 NJ 5570 NJ
+preplace netloc HBM_11_write_addr_1 1 0 2 NJ 5810 NJ
+preplace netloc HBM_11_read_addr_1 1 0 2 NJ 5850 NJ
+preplace netloc HBM_12_write_addr_1 1 0 2 NJ 6090 NJ
+preplace netloc HBM_12_read_addr_1 1 0 2 NJ 6130 NJ
+preplace netloc HBM_13_write_addr_1 1 0 2 NJ 6370 NJ
+preplace netloc HBM_13_read_addr_1 1 0 2 NJ 6410 NJ
+preplace netloc HBM_14_write_addr_1 1 0 2 NJ 8650 NJ
+preplace netloc HBM_14_read_addr_1 1 0 2 NJ 8690 NJ
+preplace netloc HBM_15_write_addr_1 1 0 2 NJ 8930 NJ
+preplace netloc HBM_15_read_addr_1 1 0 2 NJ 8970 NJ
+preplace netloc HBM_01_wburst_1 1 0 2 NJ 4640 NJ
+preplace netloc HBM_01_rburst_1 1 0 2 NJ 4680 NJ
+preplace netloc HBM_02_wburst_1 1 0 2 NJ 5270 NJ
+preplace netloc HBM_02_rburst_1 1 0 2 NJ 5310 NJ
+preplace netloc HBM_03_wburst_1 1 0 2 NJ 6670 NJ
+preplace netloc HBM_03_rburst_1 1 0 2 NJ 6710 NJ
+preplace netloc HBM_04_wburst_1 1 0 2 NJ 6950 NJ
+preplace netloc HBM_04_rburst_1 1 0 2 NJ 6990 NJ
+preplace netloc HBM_05_wburst_1 1 0 2 NJ 7250 NJ
+preplace netloc HBM_05_rburst_1 1 0 2 NJ 7290 NJ
+preplace netloc HBM_06_wburst_1 1 0 2 NJ 7550 NJ
+preplace netloc HBM_06_rburst_1 1 0 2 NJ 7590 NJ
+preplace netloc HBM_07_wburst_1 1 0 2 NJ 7830 NJ
+preplace netloc HBM_07_rburst_1 1 0 2 NJ 7870 NJ
+preplace netloc HBM_08_wburst_1 1 0 2 NJ 8110 NJ
+preplace netloc HBM_08_rburst_1 1 0 2 NJ 8150 NJ
+preplace netloc HBM_09_wburst_1 1 0 2 NJ 8390 NJ
+preplace netloc HBM_09_rburst_1 1 0 2 NJ 8430 NJ
+preplace netloc HBM_10_wburst_1 1 0 2 NJ 5550 NJ
+preplace netloc HBM_10_rburst_1 1 0 2 NJ 5590 NJ
+preplace netloc HBM_11_wburst_1 1 0 2 NJ 5830 NJ
+preplace netloc HBM_11_rburst_1 1 0 2 NJ 5870 NJ
+preplace netloc HBM_12_wburst_1 1 0 2 NJ 6110 NJ
+preplace netloc HBM_12_rburst_1 1 0 2 NJ 6150 NJ
+preplace netloc HBM_13_wburst_1 1 0 2 NJ 6390 NJ
+preplace netloc HBM_13_rburst_1 1 0 2 NJ 6430 NJ
+preplace netloc HBM_14_wburst_1 1 0 2 NJ 8670 NJ
+preplace netloc HBM_14_rburst_1 1 0 2 NJ 8710 NJ
+preplace netloc HBM_15_wburst_1 1 0 2 NJ 8950 NJ
+preplace netloc HBM_15_rburst_1 1 0 2 NJ 8990 NJ
+preplace netloc HBM_01_write_ready_1 1 0 2 NJ 4720 NJ
+preplace netloc HBM_02_write_ready_1 1 0 2 NJ 5350 NJ
+preplace netloc HBM_03_write_ready_1 1 0 2 NJ 6750 NJ
+preplace netloc HBM_04_write_ready_1 1 0 2 NJ 7030 NJ
+preplace netloc HBM_05_write_ready_1 1 0 2 NJ 7330 NJ
+preplace netloc HBM_06_write_ready_1 1 0 2 NJ 7630 NJ
+preplace netloc HBM_07_write_ready_1 1 0 2 NJ 7910 NJ
+preplace netloc HBM_08_write_ready_1 1 0 2 NJ 8190 NJ
+preplace netloc HBM_09_write_ready_1 1 0 2 NJ 8470 NJ
+preplace netloc HBM_10_write_ready_1 1 0 2 NJ 5630 NJ
+preplace netloc HBM_11_write_ready_1 1 0 2 NJ 5910 NJ
+preplace netloc HBM_12_write_ready_1 1 0 2 NJ 6190 NJ
+preplace netloc HBM_13_write_ready_1 1 0 2 NJ 6470 NJ
+preplace netloc HBM_14_write_ready_1 1 0 2 NJ 8750 NJ
+preplace netloc HBM_15_write_ready_1 1 0 2 NJ 9030 NJ
+preplace netloc HBM_00_AXI_Engine_m_axi 1 2 1 870 4860n
+preplace netloc HBM_01_AXI_Engine_m_axi 1 2 1 870 4500n
+preplace netloc HBM_02_AXI_Engine_m_axi 1 2 1 870 5130n
+preplace netloc HBM_03_AXI_Engine_m_axi 1 2 1 870 6530n
+preplace netloc HBM_04_AXI_Engine_m_axi 1 2 1 870 6810n
+preplace netloc HBM_05_AXI_Engine_m_axi 1 2 1 870 7110n
+preplace netloc HBM_06_AXI_Engine_m_axi 1 2 1 970 7430n
+preplace netloc HBM_07_AXI_Engine_m_axi 1 2 1 970 7710n
+preplace netloc HBM_08_AXI_Engine_m_axi 1 2 1 970 7970n
+preplace netloc HBM_09_AXI_Engine_m_axi 1 2 1 N 8320
+preplace netloc HBM_10_AXI_Engine_m_axi 1 2 1 870 5410n
+preplace netloc HBM_11_AXI_Engine_m_axi 1 2 1 870 5690n
+preplace netloc HBM_12_AXI_Engine_m_axi 1 2 1 870 5970n
+preplace netloc HBM_13_AXI_Engine_m_axi 1 2 1 870 6250n
+preplace netloc HBM_14_AXI_Engine_m_axi 1 2 1 970 8550n
+preplace netloc HBM_15_AXI_Engine_m_axi 1 2 1 870 8710n
+preplace netloc smartconnect_0_M00_AXI 1 2 1 970 2710n
+preplace netloc DDR_00_AXI_Engine_m_axi 1 1 1 540 370n
+preplace netloc DDR_01_AXI_Engine_m_axi 1 1 1 550 90n
+preplace netloc DDR_02_AXI_Engine_m_axi 1 1 1 530 650n
+preplace netloc DDR_03_AXI_Engine_m_axi 1 1 1 510 1210n
+preplace netloc DDR_04_AXI_Engine_m_axi 1 1 1 520 930n
+preplace netloc DDR_05_AXI_Engine_m_axi 1 1 1 480 1490n
+preplace netloc DDR_06_AXI_Engine_m_axi 1 1 1 450 2050n
+preplace netloc DDR_07_AXI_Engine_m_axi 1 1 1 460 1770n
+preplace netloc DDR_08_AXI_Engine_m_axi 1 1 1 360 2330n
+preplace netloc DDR_09_AXI_Engine_m_axi 1 1 1 350 2610n
+preplace netloc DDR_10_AXI_Engine_m_axi 1 1 1 360 2740n
+preplace netloc DDR_11_AXI_Engine_m_axi 1 1 1 400 2760n
+preplace netloc DDR_12_AXI_Engine_m_axi 1 1 1 430 2780n
+preplace netloc DDR_13_AXI_Engine_m_axi 1 1 1 450 2800n
+preplace netloc DDR_14_AXI_Engine_m_axi 1 1 1 470 2820n
+preplace netloc DDR_15_AXI_Engine_m_axi 1 1 1 490 2840n
+levelinfo -pg 1 0 190 710 1090 1250
+pagesize -pg 1 -db -bbox -sgen -250 0 1490 9090
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_clkrst_cnt":"30"
+}

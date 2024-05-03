@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../rtl_kernel_wizard_0_ex.ip_user_files/bd/MemoryInterfacesVIP/ip/MemoryInterfacesVIP_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_d1ca_psr_aclk_0.vhd" \
+
+# Do not sort compile order
+nosort

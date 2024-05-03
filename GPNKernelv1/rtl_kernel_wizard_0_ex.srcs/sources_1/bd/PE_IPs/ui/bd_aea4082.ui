@@ -1,0 +1,115 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.927273",
+   "Default View_TopLeft":"-442,330",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_BRAM_enable -pg 1 -lvl 0 -x 0 -y 540 -defaultsOSRD
+preplace port port-id_SuperblockTracker_wrenable -pg 1 -lvl 0 -x 0 -y 820 -defaultsOSRD
+preplace port port-id_Cache_wrenableA -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port port-id_History_wrenable -pg 1 -lvl 0 -x 0 -y 580 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 1750 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 1770 -defaultsOSRD
+preplace port port-id_Msg_FIFO_Out_write -pg 1 -lvl 0 -x 0 -y 1980 -defaultsOSRD
+preplace port port-id_Msg_FIFO_Out_read -pg 1 -lvl 0 -x 0 -y 2060 -defaultsOSRD
+preplace port port-id_Msg_FIFO_Out_empty -pg 1 -lvl 2 -x 430 -y 2160 -defaultsOSRD
+preplace port port-id_Msg_FIFO_Out_full -pg 1 -lvl 2 -x 430 -y 1860 -defaultsOSRD
+preplace port port-id_Msg_FIFO_In_write -pg 1 -lvl 0 -x 0 -y 1650 -defaultsOSRD
+preplace port port-id_Msg_FIFO_In_read -pg 1 -lvl 0 -x 0 -y 1730 -defaultsOSRD
+preplace port port-id_Msg_FIFO_In_empty -pg 1 -lvl 2 -x 430 -y 1820 -defaultsOSRD
+preplace port port-id_Msg_FIFO_In_full -pg 1 -lvl 2 -x 430 -y 1530 -defaultsOSRD
+preplace port port-id_AVM_FIFO_write -pg 1 -lvl 0 -x 0 -y 1330 -defaultsOSRD
+preplace port port-id_AVM_FIFO_read -pg 1 -lvl 0 -x 0 -y 1410 -defaultsOSRD
+preplace port port-id_AVM_FIFO_empty -pg 1 -lvl 2 -x 430 -y 1230 -defaultsOSRD
+preplace port port-id_AVM_FIFO_full -pg 1 -lvl 2 -x 430 -y 1360 -defaultsOSRD
+preplace port port-id_AV_FIFO_write -pg 1 -lvl 0 -x 0 -y 1020 -defaultsOSRD
+preplace port port-id_AV_FIFO_read -pg 1 -lvl 0 -x 0 -y 1100 -defaultsOSRD
+preplace port port-id_AV_FIFO_empty -pg 1 -lvl 2 -x 430 -y 1190 -defaultsOSRD
+preplace port port-id_AV_FIFO_full -pg 1 -lvl 2 -x 430 -y 900 -defaultsOSRD
+preplace port port-id_AV_FIFO_readvalid -pg 1 -lvl 2 -x 430 -y 1030 -defaultsOSRD
+preplace port port-id_AVM_FIFO_readvalid -pg 1 -lvl 2 -x 430 -y 1340 -defaultsOSRD
+preplace port port-id_Msg_FIFO_Out_readvalid -pg 1 -lvl 2 -x 430 -y 1990 -defaultsOSRD
+preplace port port-id_Msg_FIFO_In_readvalid -pg 1 -lvl 2 -x 430 -y 1660 -defaultsOSRD
+preplace port port-id_Cache_wrenableB -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace portBus SuperblockTracker_addr -pg 1 -lvl 0 -x 0 -y 720 -defaultsOSRD
+preplace portBus SuperblockTracker_din -pg 1 -lvl 0 -x 0 -y 760 -defaultsOSRD
+preplace portBus SuperblockTracker_dout -pg 1 -lvl 2 -x 430 -y 880 -defaultsOSRD
+preplace portBus Cache_addrA -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace portBus Cache_dinA -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace portBus History_addr -pg 1 -lvl 0 -x 0 -y 480 -defaultsOSRD
+preplace portBus History_din -pg 1 -lvl 0 -x 0 -y 520 -defaultsOSRD
+preplace portBus History_dout -pg 1 -lvl 2 -x 430 -y 640 -defaultsOSRD
+preplace portBus Cache_doutA -pg 1 -lvl 2 -x 430 -y 20 -defaultsOSRD
+preplace portBus Msg_FIFO_Out_din -pg 1 -lvl 0 -x 0 -y 1960 -defaultsOSRD
+preplace portBus Msg_FIFO_Out_dout -pg 1 -lvl 2 -x 430 -y 2180 -defaultsOSRD
+preplace portBus Msg_FIFO_In_din -pg 1 -lvl 0 -x 0 -y 1630 -defaultsOSRD
+preplace portBus Msg_FIFO_In_dout -pg 1 -lvl 2 -x 430 -y 1840 -defaultsOSRD
+preplace portBus AVM_FIFO_din -pg 1 -lvl 0 -x 0 -y 1310 -defaultsOSRD
+preplace portBus AVM_FIFO_dout -pg 1 -lvl 2 -x 430 -y 1510 -defaultsOSRD
+preplace portBus AV_FIFO_din -pg 1 -lvl 0 -x 0 -y 1000 -defaultsOSRD
+preplace portBus AV_FIFO_dout -pg 1 -lvl 2 -x 430 -y 1210 -defaultsOSRD
+preplace portBus Cache_addrB -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace portBus Cache_dinB -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace portBus Cache_doutB -pg 1 -lvl 2 -x 430 -y 400 -defaultsOSRD
+preplace inst Tracker -pg 1 -lvl 1 -x 230 -y 760 -defaultsOSRD
+preplace inst Cache -pg 1 -lvl 1 -x 230 -y 210 -defaultsOSRD
+preplace inst History -pg 1 -lvl 1 -x 230 -y 520 -defaultsOSRD
+preplace inst Msg_FIFO_Out -pg 1 -lvl 1 -x 230 -y 2010 -defaultsOSRD
+preplace inst Msg_FIFO_In -pg 1 -lvl 1 -x 230 -y 1680 -defaultsOSRD
+preplace inst AV_FIFO -pg 1 -lvl 1 -x 230 -y 1050 -defaultsOSRD
+preplace inst AVM_FIFO -pg 1 -lvl 1 -x 230 -y 1370 -defaultsOSRD
+preplace netloc AVM_FIFO_din_1 1 0 1 NJ 1310
+preplace netloc AVM_FIFO_dout1 1 0 2 50 1510 NJ
+preplace netloc AVM_FIFO_empty1 1 0 2 50 1230 NJ
+preplace netloc AVM_FIFO_prog_full 1 1 1 NJ 1360
+preplace netloc AVM_FIFO_read_1 1 0 1 NJ 1410
+preplace netloc AVM_FIFO_valid 1 1 1 NJ 1340
+preplace netloc AVM_FIFO_write_1 1 0 1 NJ 1330
+preplace netloc AV_FIFO_din_1 1 0 1 NJ 1000
+preplace netloc AV_FIFO_dout1 1 0 2 50 1210 NJ
+preplace netloc AV_FIFO_empty1 1 0 2 40 1200 410J
+preplace netloc AV_FIFO_full1 1 0 2 50 900 NJ
+preplace netloc AV_FIFO_read_1 1 0 1 NJ 1100
+preplace netloc AV_FIFO_valid 1 1 1 NJ 1030
+preplace netloc AV_FIFO_write_1 1 0 1 NJ 1020
+preplace netloc BRAM_enable_1 1 0 1 40 180n
+preplace netloc Cache_addrB_1 1 0 1 NJ 240
+preplace netloc Cache_addr_1 1 0 1 NJ 100
+preplace netloc Cache_dinB_1 1 0 1 NJ 280
+preplace netloc Cache_din_1 1 0 1 NJ 140
+preplace netloc Cache_douta1 1 0 2 50 20 NJ
+preplace netloc Cache_doutb1 1 0 2 50 400 NJ
+preplace netloc Cache_wrenableB_1 1 0 1 NJ 340
+preplace netloc Cache_wrenable_1 1 0 1 NJ 200
+preplace netloc History_addr_1 1 0 1 NJ 480
+preplace netloc History_din_1 1 0 1 NJ 520
+preplace netloc History_douta 1 0 2 50 640 NJ
+preplace netloc History_wrenable_1 1 0 1 NJ 580
+preplace netloc Msg_FIFO_In_din_1 1 0 1 NJ 1630
+preplace netloc Msg_FIFO_In_dout1 1 0 2 50 1840 NJ
+preplace netloc Msg_FIFO_In_empty1 1 0 2 40 1830 410J
+preplace netloc Msg_FIFO_In_full1 1 0 2 50 1530 NJ
+preplace netloc Msg_FIFO_In_read_1 1 0 1 NJ 1730
+preplace netloc Msg_FIFO_In_valid 1 1 1 NJ 1660
+preplace netloc Msg_FIFO_In_write_1 1 0 1 NJ 1650
+preplace netloc Msg_FIFO_Out_din_1 1 0 1 NJ 1960
+preplace netloc Msg_FIFO_Out_dout1 1 0 2 50 2180 NJ
+preplace netloc Msg_FIFO_Out_empty1 1 0 2 40 2160 NJ
+preplace netloc Msg_FIFO_Out_full1 1 0 2 50 1860 NJ
+preplace netloc Msg_FIFO_Out_read_1 1 0 1 NJ 2060
+preplace netloc Msg_FIFO_Out_valid 1 1 1 NJ 1990
+preplace netloc Msg_FIFO_Out_write_1 1 0 1 NJ 1980
+preplace netloc Tracker_addr_1 1 0 1 NJ 720
+preplace netloc Tracker_din_1 1 0 1 NJ 760
+preplace netloc Tracker_douta 1 0 2 50 880 NJ
+preplace netloc Tracker_wrenable_1 1 0 1 NJ 820
+preplace netloc clk_1 1 0 1 20 120n
+preplace netloc reset_1 1 0 1 30 1140n
+levelinfo -pg 1 0 230 430
+pagesize -pg 1 -db -bbox -sgen -270 0 700 2200
+"
+}
+{
+   "da_clkrst_cnt":"2"
+}

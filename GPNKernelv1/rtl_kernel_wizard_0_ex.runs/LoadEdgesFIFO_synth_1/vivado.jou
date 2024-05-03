@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Apr 23 13:06:32 2024
+# Process ID: 1548003
+# Current directory: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/LoadEdgesFIFO_synth_1
+# Command line: vivado -log LoadEdgesFIFO.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LoadEdgesFIFO.tcl
+# Log file: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/LoadEdgesFIFO_synth_1/LoadEdgesFIFO.vds
+# Journal file: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/LoadEdgesFIFO_synth_1/vivado.jou
+# Running On: COE-CS-crystal, OS: Linux, CPU Frequency: 4071.392 MHz, CPU Physical cores: 10, Host memory: 67102 MB
+#-----------------------------------------------------------
+source LoadEdgesFIFO.tcl -notrace

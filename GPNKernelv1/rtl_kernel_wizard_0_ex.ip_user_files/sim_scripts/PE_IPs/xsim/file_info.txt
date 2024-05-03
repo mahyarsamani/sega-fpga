@@ -1,0 +1,9 @@
+PE_IPs_blk_mem_gen_0_0.v,verilog,xil_defaultlib,../../../bd/PE_IPs/ip/PE_IPs_blk_mem_gen_0_0/sim/PE_IPs_blk_mem_gen_0_0.v,
+PE_IPs_blk_mem_gen_0_1.v,verilog,xil_defaultlib,../../../bd/PE_IPs/ip/PE_IPs_blk_mem_gen_0_1/sim/PE_IPs_blk_mem_gen_0_1.v,
+PE_IPs_blk_mem_gen_0_2.v,verilog,xil_defaultlib,../../../bd/PE_IPs/ip/PE_IPs_blk_mem_gen_0_2/sim/PE_IPs_blk_mem_gen_0_2.v,
+PE_IPs_fifo_generator_0_0_sim_netlist.v,verilog,xil_defaultlib,../../../bd/PE_IPs/ip/PE_IPs_fifo_generator_0_0/PE_IPs_fifo_generator_0_0_sim_netlist.v,
+PE_IPs_Msg_FIFO_Out_0_sim_netlist.v,verilog,xil_defaultlib,../../../bd/PE_IPs/ip/PE_IPs_Msg_FIFO_Out_0/PE_IPs_Msg_FIFO_Out_0_sim_netlist.v,
+PE_IPs_Msg_FIFO_In_0_sim_netlist.v,verilog,xil_defaultlib,../../../bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_0/PE_IPs_Msg_FIFO_In_0_sim_netlist.v,
+PE_IPs_Msg_FIFO_In_1_sim_netlist.v,verilog,xil_defaultlib,../../../bd/PE_IPs/ip/PE_IPs_Msg_FIFO_In_1/PE_IPs_Msg_FIFO_In_1_sim_netlist.v,
+PE_IPs.v,verilog,xil_defaultlib,../../../bd/PE_IPs/sim/PE_IPs.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

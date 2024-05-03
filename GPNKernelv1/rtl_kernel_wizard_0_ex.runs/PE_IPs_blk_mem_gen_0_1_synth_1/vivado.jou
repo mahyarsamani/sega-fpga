@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Apr 10 16:30:11 2024
+# Process ID: 685966
+# Current directory: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/PE_IPs_blk_mem_gen_0_1_synth_1
+# Command line: vivado -log PE_IPs_blk_mem_gen_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PE_IPs_blk_mem_gen_0_1.tcl
+# Log file: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/PE_IPs_blk_mem_gen_0_1_synth_1/PE_IPs_blk_mem_gen_0_1.vds
+# Journal file: /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/PE_IPs_blk_mem_gen_0_1_synth_1/vivado.jou
+# Running On: COE-CS-crystal, OS: Linux, CPU Frequency: 3827.119 MHz, CPU Physical cores: 10, Host memory: 67102 MB
+#-----------------------------------------------------------
+source PE_IPs_blk_mem_gen_0_1.tcl -notrace

@@ -1,0 +1,288 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Mar 27 22:47:46 2024
+# Process ID: 4118718
+# Current directory: /home/austin01/vivado/rtl_kernel_wizard_0_ex
+# Command line: vivado -notrace -source /home/austin01/vivado/PE_Kernel/PE_Kernel.gen/sources_1/ip/rtl_kernel_wizard_0/rtl_kernel_wizard_0_ex.tcl
+# Log file: /home/austin01/vivado/rtl_kernel_wizard_0_ex/vivado.log
+# Journal file: /home/austin01/vivado/rtl_kernel_wizard_0_ex/vivado.jou
+# Running On: COE-CS-crystal, OS: Linux, CPU Frequency: 3845.424 MHz, CPU Physical cores: 10, Host memory: 67103 MB
+#-----------------------------------------------------------
+start_gui
+source /home/austin01/vivado/PE_Kernel/PE_Kernel.gen/sources_1/ip/rtl_kernel_wizard_0/rtl_kernel_wizard_0_ex.tcl -notrace
+update_compile_order -fileset sources_1
+add_files -norecurse {/home/austin01/vivado/rtl_kernel_wizard_0_ex/MPU.v /home/austin01/vivado/rtl_kernel_wizard_0_ex/MGU.v /home/austin01/vivado/rtl_kernel_wizard_0_ex/VMU.v /home/austin01/vivado/rtl_kernel_wizard_0_ex/top.v /home/austin01/vivado/rtl_kernel_wizard_0_ex/write_engine.v /home/austin01/vivado/rtl_kernel_wizard_0_ex/read_engine.v /home/austin01/vivado/rtl_kernel_wizard_0_ex/top_wrapper.v /home/austin01/vivado/rtl_kernel_wizard_0_ex/axi_engine.v}
+update_compile_order -fileset sources_1
+create_bd_design "PE_IPs"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+endgroup
+copy_bd_objs /  [get_bd_cells {blk_mem_gen_0}]
+copy_bd_objs /  [get_bd_cells {blk_mem_gen_0}]
+set_property name Tracker [get_bd_cells blk_mem_gen_0]
+set_property name Cache [get_bd_cells blk_mem_gen_1]
+set_property name WorkHistory [get_bd_cells blk_mem_gen_2]
+set_property name History [get_bd_cells WorkHistory]
+set_property -dict [list CONFIG.PRIM_type_to_Implement {URAM} CONFIG.Enable_32bit_Address {true} CONFIG.Use_Byte_Write_Enable {true} CONFIG.Byte_Size {8} CONFIG.Primitive {2kx9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {72} CONFIG.Read_Width_A {72} CONFIG.Write_Width_B {72} CONFIG.Read_Width_B {72} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Use_RSTA_Pin {true} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells Tracker]
+set_property -dict [list CONFIG.PRIM_type_to_Implement {URAM} CONFIG.Enable_32bit_Address {true} CONFIG.Use_Byte_Write_Enable {true} CONFIG.Byte_Size {8} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {256} CONFIG.Write_Depth_A {1024} CONFIG.Read_Width_A {256} CONFIG.Write_Width_B {256} CONFIG.Read_Width_B {256} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Use_RSTA_Pin {true} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells Cache]
+set_property -dict [list CONFIG.PRIM_type_to_Implement {URAM} CONFIG.Enable_32bit_Address {true} CONFIG.Use_Byte_Write_Enable {true} CONFIG.Byte_Size {8} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {64} CONFIG.Write_Depth_A {1024} CONFIG.Read_Width_A {64} CONFIG.Write_Width_B {64} CONFIG.Read_Width_B {64} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Use_RSTA_Pin {true} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells History]
+create_bd_port -dir I -type rst BRAM_reset
+set_property CONFIG.POLARITY ACTIVE_HIGH [get_bd_ports BRAM_reset]
+connect_bd_net [get_bd_ports BRAM_reset] [get_bd_pins Tracker/rsta]
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells Tracker]
+delete_bd_objs [get_bd_nets BRAM_reset_1]
+endgroup
+delete_bd_objs [get_bd_ports BRAM_reset]
+set_property location {1 134 56} [get_bd_cells Cache]
+set_property location {1 124 304} [get_bd_cells History]
+create_bd_port -dir I BRAM_enable
+create_bd_port -dir I Tracker_wrenable
+create_bd_port -dir I Cache_wrenable
+create_bd_port -dir I History_wrenable
+create_bd_port -dir I -from 12 -to 0Tracker_addr
+create_bd_port -dir I -from 12 -to 0 Tracker_addr
+create_bd_port -dir I -from 71 -to 0 -type data Tracker_din
+create_bd_port -dir O -from 71 -to 0 -type data Tracker_dout
+connect_bd_net [get_bd_ports Tracker_addr] [get_bd_pins Tracker/addra]
+connect_bd_net [get_bd_ports Tracker_dout] [get_bd_pins Tracker/douta]
+connect_bd_net [get_bd_ports BRAM_enable] [get_bd_pins Tracker/ena]
+connect_bd_net [get_bd_ports Tracker_wrenable] [get_bd_pins Tracker/wea]
+connect_bd_net [get_bd_ports Tracker_din] [get_bd_pins Tracker/dina]
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Write_Width_A {216} CONFIG.Read_Width_A {216} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {216} CONFIG.Read_Width_B {216} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells Cache]
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Write_Width_A {51} CONFIG.Read_Width_A {51} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {51} CONFIG.Read_Width_B {51} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells History]
+connect_bd_net [get_bd_ports BRAM_enable] [get_bd_pins Cache/ena]
+connect_bd_net [get_bd_ports BRAM_enable] [get_bd_pins History/ena]
+create_bd_port -dir I -type clk -freq_hz 250000000 clk
+connect_bd_net [get_bd_ports clk] [get_bd_pins Tracker/clka]
+set_property location {-48 22} [get_bd_ports clk]
+connect_bd_net [get_bd_ports clk] [get_bd_pins Cache/clka]
+connect_bd_net [get_bd_ports clk] [get_bd_pins History/clka]
+create_bd_port -dir I -from 9 -to 0 Cache_addr
+create_bd_port -dir I -from 215 -to 0 Cache_din
+create_bd_port -dir I Cache_wrenable
+create_bd_port -dir O -from 215 -to 0 Cache_dout
+connect_bd_net [get_bd_ports Cache_addr] [get_bd_pins Cache/addra]
+connect_bd_net [get_bd_ports Cache_wrenable] [get_bd_pins Cache/wea]
+connect_bd_net [get_bd_ports Cache_din] [get_bd_pins Cache/dina]
+connect_bd_net [get_bd_ports Cache_dout] [get_bd_pins Cache/douta]
+create_bd_port -dir O -from 215 -to 0 History_dout
+create_bd_port -dir I -from 9 -to 0 History_addr
+create_bd_port -dir I -from 50 -to 0 History_din
+set_property LEFT 50 [get_bd_ports /History_dout]
+connect_bd_net [get_bd_ports History_addr] [get_bd_pins History/addra]
+connect_bd_net [get_bd_ports History_wrenable] [get_bd_pins History/wea]
+connect_bd_net [get_bd_ports History_din] [get_bd_pins History/dina]
+connect_bd_net [get_bd_ports History_dout] [get_bd_pins History/douta]
+regenerate_bd_layout
+save_bd_design
+delete_bd_objs [get_bd_nets Cache_douta] [get_bd_ports Cache_dout]
+delete_bd_objs [get_bd_nets History_douta] [get_bd_ports History_dout]
+create_bd_port -dir O -from 50 -to 0 -type data History_dout
+create_bd_port -dir O -from 215 -to 0 -type data Cache_dout
+connect_bd_net [get_bd_ports Cache_dout] [get_bd_pins Cache/douta]
+connect_bd_net [get_bd_ports History_dout] [get_bd_pins History/douta]
+regenerate_bd_layout
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.2 fifo_generator_0
+endgroup
+set_property -dict [list CONFIG.Input_Data_Width {64} CONFIG.Output_Data_Width {64} CONFIG.Valid_Flag {true} CONFIG.Full_Threshold_Assert_Value {1022} CONFIG.Full_Threshold_Negate_Value {1021}] [get_bd_cells fifo_generator_0]
+set_property name Msg_FIFO_Out [get_bd_cells fifo_generator_0]
+copy_bd_objs /  [get_bd_cells {Msg_FIFO_Out}]
+set_property name Msg_FIFO_In [get_bd_cells Msg_FIFO_Out1]
+connect_bd_net [get_bd_ports clk] [get_bd_pins Msg_FIFO_In/clk]
+connect_bd_net [get_bd_ports clk] [get_bd_pins Msg_FIFO_Out/clk]
+create_bd_port -dir I -type rst reset
+set_property CONFIG.POLARITY ACTIVE_HIGH [get_bd_ports reset]
+connect_bd_net [get_bd_ports reset] [get_bd_pins Msg_FIFO_In/srst]
+connect_bd_net [get_bd_ports reset] [get_bd_pins Msg_FIFO_Out/srst]
+copy_bd_objs /  [get_bd_cells {Msg_FIFO_In}]
+copy_bd_objs /  [get_bd_cells {Msg_FIFO_In}]
+set_property name AV_FIFO [get_bd_cells Msg_FIFO_In1]
+set_property name AVM_FIFO [get_bd_cells Msg_FIFO_In2]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk (250 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins AV_FIFO/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk (250 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins AVM_FIFO/clk]
+endgroup
+connect_bd_net [get_bd_ports reset] [get_bd_pins AVM_FIFO/srst]
+connect_bd_net [get_bd_ports reset] [get_bd_pins AV_FIFO/srst]
+startgroup
+set_property -dict [list CONFIG.Input_Data_Width {94} CONFIG.Output_Data_Width {94} CONFIG.Programmable_Full_Type {Single_Programmable_Full_Threshold_Constant} CONFIG.Full_Threshold_Assert_Value {958} CONFIG.Full_Threshold_Negate_Value {957}] [get_bd_cells AVM_FIFO]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Input_Data_Width {33} CONFIG.Input_Depth {512} CONFIG.Output_Data_Width {33} CONFIG.Output_Depth {512} CONFIG.Data_Count_Width {9} CONFIG.Write_Data_Count_Width {9} CONFIG.Read_Data_Count_Width {9} CONFIG.Full_Threshold_Assert_Value {511} CONFIG.Full_Threshold_Negate_Value {510}] [get_bd_cells AV_FIFO]
+endgroup
+create_bd_port -dir I -from 63 -to 0 -type data Msg_FIFO_Out_din
+create_bd_port -dir O -from 63 -to 0 -type data Msg_FIFO_Out_dout
+create_bd_port -dir I Msg_FIFO_Out_write
+create_bd_port -dir I Msg_FIFO_Out_read
+create_bd_port -dir O Msg_FIFO_Out_empty
+create_bd_port -dir O Msg_FIFO_Out_full
+create_bd_port -dir I -from 63 -to 0 -type data Msg_FIFO_In_din
+create_bd_port -dir O -from 63 -to 0 -type data Msg_FIFO_In_dout
+create_bd_port -dir I Msg_FIFO_In_write
+create_bd_port -dir I Msg_FIFO_In_read
+create_bd_port -dir O Msg_FIFO_In_empty
+create_bd_port -dir O Msg_FIFO_In_full
+create_bd_port -dir I -from 93 -to 0 -type data AVM_FIFO_din
+create_bd_port -dir O -from 93 -to 0 -type data AVM_FIFO_dout
+create_bd_port -dir I AVM_FIFO_write
+create_bd_port -dir I AVM_FIFO_read
+create_bd_port -dir O AVM_FIFO_empty
+create_bd_port -dir O AVM_FIFO_full
+create_bd_port -dir I -from 32 -to 0 -type data AV_FIFO_din
+create_bd_port -dir O -from 32 -to 0 -type data AV_FIFO_dout
+create_bd_port -dir I AV_FIFO_write
+create_bd_port -dir I AV_FIFO_read
+create_bd_port -dir O AV_FIFO_empty
+create_bd_port -dir O AV_FIFO_full
+connect_bd_net [get_bd_ports Msg_FIFO_Out_din] [get_bd_pins Msg_FIFO_Out/din]
+connect_bd_net [get_bd_ports AVM_FIFO_write] [get_bd_pins Msg_FIFO_Out/wr_en]
+undo
+connect_bd_net [get_bd_ports Msg_FIFO_Out_write] [get_bd_pins Msg_FIFO_Out/wr_en]
+connect_bd_net [get_bd_ports Msg_FIFO_Out_read] [get_bd_pins Msg_FIFO_Out/rd_en]
+connect_bd_net [get_bd_ports Msg_FIFO_Out_dout] [get_bd_pins Msg_FIFO_Out/dout]
+connect_bd_net [get_bd_ports Msg_FIFO_Out_full] [get_bd_pins Msg_FIFO_Out/full]
+connect_bd_net [get_bd_ports Msg_FIFO_Out_empty] [get_bd_pins Msg_FIFO_Out/empty]
+set_property location {1 92 388} [get_bd_cells AVM_FIFO]
+connect_bd_net [get_bd_ports AVM_FIFO_empty] [get_bd_pins AVM_FIFO/empty]
+connect_bd_net [get_bd_ports AVM_FIFO_dout] [get_bd_pins AVM_FIFO/dout]
+connect_bd_net [get_bd_ports AVM_FIFO_read] [get_bd_pins AVM_FIFO/rd_en]
+connect_bd_net [get_bd_ports AVM_FIFO_full] [get_bd_pins AVM_FIFO/prog_full]
+connect_bd_net [get_bd_ports AVM_FIFO_din] [get_bd_pins AVM_FIFO/din]
+connect_bd_net [get_bd_ports AVM_FIFO_write] [get_bd_pins AVM_FIFO/wr_en]
+create_bd_port -dir O AV_FIFO_readvalid
+create_bd_port -dir O AVM_FIFO_readvalid
+create_bd_port -dir O Msg_FIFO_Out_readvalid
+create_bd_port -dir O Msg_FIFO_In_readvalid
+connect_bd_net [get_bd_ports AVM_FIFO_readvalid] [get_bd_pins AVM_FIFO/valid]
+connect_bd_net [get_bd_ports Msg_FIFO_Out_readvalid] [get_bd_pins Msg_FIFO_Out/valid]
+regenerate_bd_layout
+set_property location {1 193 -84} [get_bd_cells AV_FIFO]
+set_property location {1 167 21} [get_bd_cells Msg_FIFO_In]
+connect_bd_net [get_bd_ports Msg_FIFO_In_readvalid] [get_bd_pins Msg_FIFO_In/valid]
+connect_bd_net [get_bd_ports AV_FIFO_readvalid] [get_bd_pins AV_FIFO/valid]
+connect_bd_net [get_bd_ports Msg_FIFO_In_full] [get_bd_pins Msg_FIFO_In/full]
+connect_bd_net [get_bd_ports Msg_FIFO_In_empty] [get_bd_pins Msg_FIFO_In/empty]
+connect_bd_net [get_bd_ports Msg_FIFO_In_dout] [get_bd_pins Msg_FIFO_In/dout]
+connect_bd_net [get_bd_ports Msg_FIFO_In_read] [get_bd_pins Msg_FIFO_In/rd_en]
+connect_bd_net [get_bd_ports Msg_FIFO_In_write] [get_bd_pins Msg_FIFO_In/wr_en]
+connect_bd_net [get_bd_ports Msg_FIFO_In_din] [get_bd_pins Msg_FIFO_In/din]
+connect_bd_net [get_bd_ports AV_FIFO_dout] [get_bd_pins AV_FIFO/dout]
+connect_bd_net [get_bd_ports AV_FIFO_write] [get_bd_pins AV_FIFO/wr_en]
+connect_bd_net [get_bd_ports AV_FIFO_read] [get_bd_pins AV_FIFO/rd_en]
+connect_bd_net [get_bd_ports AV_FIFO_din] [get_bd_pins AV_FIFO/din]
+connect_bd_net [get_bd_ports AV_FIFO_full] [get_bd_pins AV_FIFO/full]
+connect_bd_net [get_bd_ports AV_FIFO_empty] [get_bd_pins AV_FIFO/empty]
+regenerate_bd_layout
+save_bd_design
+generate_target all [get_files  /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd]
+catch { config_ip_cache -export [get_ips -all PE_IPs_blk_mem_gen_0_0] }
+catch { config_ip_cache -export [get_ips -all PE_IPs_blk_mem_gen_0_1] }
+catch { config_ip_cache -export [get_ips -all PE_IPs_blk_mem_gen_0_2] }
+catch { config_ip_cache -export [get_ips -all PE_IPs_fifo_generator_0_0] }
+catch { config_ip_cache -export [get_ips -all PE_IPs_Msg_FIFO_Out_0] }
+catch { config_ip_cache -export [get_ips -all PE_IPs_Msg_FIFO_In_0] }
+catch { config_ip_cache -export [get_ips -all PE_IPs_Msg_FIFO_In_1] }
+export_ip_user_files -of_objects [get_files /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd]
+launch_runs PE_IPs_blk_mem_gen_0_0_synth_1 PE_IPs_blk_mem_gen_0_1_synth_1 PE_IPs_blk_mem_gen_0_2_synth_1 PE_IPs_fifo_generator_0_0_synth_1 PE_IPs_Msg_FIFO_Out_0_synth_1 PE_IPs_Msg_FIFO_In_0_synth_1 PE_IPs_Msg_FIFO_In_1_synth_1 -jobs 10
+wait_on_run PE_IPs_blk_mem_gen_0_0_synth_1
+wait_on_run PE_IPs_blk_mem_gen_0_1_synth_1
+wait_on_run PE_IPs_blk_mem_gen_0_2_synth_1
+wait_on_run PE_IPs_fifo_generator_0_0_synth_1
+wait_on_run PE_IPs_Msg_FIFO_Out_0_synth_1
+wait_on_run PE_IPs_Msg_FIFO_In_0_synth_1
+wait_on_run PE_IPs_Msg_FIFO_In_1_synth_1
+export_simulation -of_objects [get_files /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd] -directory /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts -ip_user_files_dir /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files -ipstatic_source_dir /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/modelsim} {questa=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/questa} {xcelium=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/xcelium} {vcs=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/vcs} {riviera=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd] -top
+add_files -norecurse /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/PE_IPs/hdl/PE_IPs_wrapper.v
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+report_power -name {power_1}
+create_bd_design "VMU_FIFOs"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.2 fifo_generator_0
+endgroup
+set_property name WriteData_FIFO [get_bd_cells fifo_generator_0]
+set_property -dict [list CONFIG.Performance_Options {First_Word_Fall_Through} CONFIG.Input_Data_Width {256} CONFIG.Input_Depth {512} CONFIG.Output_Data_Width {256} CONFIG.Output_Depth {512} CONFIG.Use_Embedded_Registers {true} CONFIG.dynamic_power_saving {true} CONFIG.Data_Count_Width {9} CONFIG.Write_Data_Count_Width {9} CONFIG.Read_Data_Count_Width {9} CONFIG.Full_Threshold_Assert_Value {511} CONFIG.Full_Threshold_Negate_Value {510} CONFIG.Empty_Threshold_Assert_Value {4} CONFIG.Empty_Threshold_Negate_Value {5}] [get_bd_cells WriteData_FIFO]
+create_bd_port -dir I -type clk -freq_hz 250000000 clk
+connect_bd_net [get_bd_ports clk] [get_bd_pins WriteData_FIFO/clk]
+startgroup
+create_bd_port -dir I -type rst resetn
+endgroup
+current_bd_design [get_bd_designs PE_IPs]
+close_bd_design [get_bd_designs PE_IPs]
+create_bd_port -dir I sleep
+connect_bd_net [get_bd_ports sleep] [get_bd_pins WriteData_FIFO/sleep]
+set_property CONFIG.ASSOCIATED_RESET {resetn} [get_bd_ports /clk]
+set_property CONFIG.POLARITY ACTIVE_HIGH [get_bd_ports resetn]
+set_property name reset [get_bd_ports resetn]
+connect_bd_net [get_bd_ports reset] [get_bd_pins WriteData_FIFO/srst]
+save_bd_design
+regenerate_bd_layout
+regenerate_bd_layout
+create_bd_port -dir I WriteData_FIFO_write
+create_bd_port -dir I WriteData_FIFO_read
+create_bd_port -dir I -from 255 -to 0 -type data WriteData_FIFO_din
+create_bd_port -dir O -from 255 -to 0 -type data WriteData_FIFO_dout
+connect_bd_net [get_bd_ports WriteData_FIFO_dout] [get_bd_pins WriteData_FIFO/dout]
+set_property location {-19 -5} [get_bd_ports WriteData_FIFO_write]
+connect_bd_net [get_bd_ports WriteData_FIFO_write] [get_bd_pins WriteData_FIFO/wr_en]
+connect_bd_net [get_bd_ports WriteData_FIFO_din] [get_bd_pins WriteData_FIFO/din]
+connect_bd_net [get_bd_ports WriteData_FIFO_read] [get_bd_pins WriteData_FIFO/rd_en]
+regenerate_bd_layout
+save_bd_design
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/VMU_FIFOs.bd] -top
+add_files -norecurse /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.gen/sources_1/bd/VMU_FIFOs/hdl/VMU_FIFOs_wrapper.v
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/VMU_FIFOs.bd]
+catch { config_ip_cache -export [get_ips -all VMU_FIFOs_fifo_generator_0_0] }
+export_ip_user_files -of_objects [get_files /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/VMU_FIFOs.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/VMU_FIFOs.bd]
+launch_runs VMU_FIFOs_fifo_generator_0_0_synth_1 -jobs 10
+wait_on_run VMU_FIFOs_fifo_generator_0_0_synth_1
+export_simulation -of_objects [get_files /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/VMU_FIFOs/VMU_FIFOs.bd] -directory /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/sim_scripts -ip_user_files_dir /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files -ipstatic_source_dir /home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/modelsim} {questa=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/questa} {xcelium=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/xcelium} {vcs=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/vcs} {riviera=/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+close_bd_design [get_bd_designs VMU_FIFOs]
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_power -name {power_1}
+create_clock -period 10.000 -name clk -waveform {0.000 5.000} clk
+set_property target_constrs_file /home/austin01/vivado/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_ooc.xdc [current_fileset -constrset]
+report_power -name {power_1}
+report_power -name power_1
+report_utilization -name utilization_1
+open_bd_design {/home/austin01/vivado/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.srcs/sources_1/bd/PE_IPs/PE_IPs.bd}
+startgroup
+set_property -dict [list CONFIG.Write_Depth_A {3907}] [get_bd_cells Tracker]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Write_Depth_A {1125}] [get_bd_cells Cache]
+endgroup
+save_bd_design
+save_constraints

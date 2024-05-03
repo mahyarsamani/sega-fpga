@@ -1,0 +1,168 @@
+
+
+================================================================
+== Synthesis Summary Report of 'rtl_kernel_wizard_0'
+================================================================
++ General Information: 
+    * Date:           Wed Mar 27 22:51:17 2024
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+    * Project:        prj
+    * Solution:       sol (Vitis Kernel Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcu280-fsvh2892-2L-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+------------+-----+
+    |                      Modules                     | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |           |            |     |
+    |                      & Loops                     | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |     LUT    | URAM|
+    +--------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+------------+-----+
+    |+ rtl_kernel_wizard_0                             |     -|  6.42|        -|       -|         -|        -|     -|        no|     -|   -|  160 (~0%)|  1293 (~0%)|    -|
+    | + rtl_kernel_wizard_0_Pipeline_VITIS_LOOP_96_1   |     -|  6.42|        -|       -|         -|        -|     -|        no|     -|   -|    2 (~0%)|   341 (~0%)|    -|
+    |  o VITIS_LOOP_96_1                               |     -|  7.30|        -|       -|         1|        1|     -|       yes|     -|   -|          -|           -|    -|
+    | + rtl_kernel_wizard_0_Pipeline_VITIS_LOOP_96_11  |     -|  6.42|        -|       -|         -|        -|     -|        no|     -|   -|    2 (~0%)|   653 (~0%)|    -|
+    |  o VITIS_LOOP_96_1                               |     -|  7.30|        -|       -|         1|        1|     -|       yes|     -|   -|          -|           -|    -|
+    +--------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+-----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register  | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+-----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL      | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER      | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER    | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR    | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | Message_1 | 0x10   | 32    | W      | Data signal of Message           |                                                                      |
+| s_axi_control | Message_2 | 0x14   | 32    | W      | Data signal of Message           |                                                                      |
+| s_axi_control | PEControl | 0x1c   | 32    | W      | Data signal of PEControl         |                                                                      |
++---------------+-----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++------------+---------------+-------+-------+-------+--------+-------+--------+
+| Interface  | Register Mode | TDATA | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++------------+---------------+-------+-------+-------+--------+-------+--------+
+| axisDDRin  | both          | 512   | 64    | 1     | 1      | 64    | 1      |
+| axisDDRout | both          | 512   | 64    | 1     | 1      | 64    | 1      |
+| axisHBMin  | both          | 256   | 32    | 1     | 1      | 32    | 1      |
+| axisHBMout | both          | 256   | 32    | 1     | 1      | 32    | 1      |
++------------+---------------+-------+-------+-------+--------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+----------------------------------------------+
+| Argument   | Direction | Datatype                                     |
++------------+-----------+----------------------------------------------+
+| Message    | in        | long unsigned int                            |
+| PEControl  | in        | unsigned int                                 |
+| axisHBMin  | in        | stream<hls::axis<ap_uint<256>, 0, 0, 0>, 0>& |
+| axisDDRin  | in        | stream<hls::axis<ap_uint<512>, 0, 0, 0>, 0>& |
+| axisHBMout | out       | stream<hls::axis<ap_uint<256>, 0, 0, 0>, 0>& |
+| axisDDRout | out       | stream<hls::axis<ap_uint<512>, 0, 0, 0>, 0>& |
++------------+-----------+----------------------------------------------+
+
+* SW-to-HW Mapping
++------------+---------------+-----------+-------------------------------------+
+| Argument   | HW Interface  | HW Type   | HW Info                             |
++------------+---------------+-----------+-------------------------------------+
+| Message    | s_axi_control | register  | name=Message_1 offset=0x10 range=32 |
+| Message    | s_axi_control | register  | name=Message_2 offset=0x14 range=32 |
+| PEControl  | s_axi_control | register  | name=PEControl offset=0x1c range=32 |
+| axisHBMin  | axisHBMin     | interface |                                     |
+| axisDDRin  | axisDDRin     | interface |                                     |
+| axisHBMout | axisHBMout    | interface |                                     |
+| axisDDRout | axisDDRout    | interface |                                     |
++------------+---------------+-----------+-------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------------------+-----+--------+--------------+-----+--------+---------+
+| Name                                             | DSP | Pragma | Variable     | Op  | Impl   | Latency |
++--------------------------------------------------+-----+--------+--------------+-----+--------+---------+
+| + rtl_kernel_wizard_0                            | 0   |        |              |     |        |         |
+|  + rtl_kernel_wizard_0_Pipeline_VITIS_LOOP_96_1  | 0   |        |              |     |        |         |
+|    add_ln232_fu_123_p2                           | -   |        | add_ln232    | add | fabric | 0       |
+|    add_ln232_1_fu_139_p2                         | -   |        | add_ln232_1  | add | fabric | 0       |
+|    add_ln232_2_fu_155_p2                         | -   |        | add_ln232_2  | add | fabric | 0       |
+|    add_ln232_3_fu_171_p2                         | -   |        | add_ln232_3  | add | fabric | 0       |
+|    add_ln232_4_fu_187_p2                         | -   |        | add_ln232_4  | add | fabric | 0       |
+|    add_ln232_5_fu_203_p2                         | -   |        | add_ln232_5  | add | fabric | 0       |
+|    add_ln232_6_fu_219_p2                         | -   |        | add_ln232_6  | add | fabric | 0       |
+|    add_ln232_7_fu_235_p2                         | -   |        | add_ln232_7  | add | fabric | 0       |
+|  + rtl_kernel_wizard_0_Pipeline_VITIS_LOOP_96_11 | 0   |        |              |     |        |         |
+|    add_ln232_fu_155_p2                           | -   |        | add_ln232    | add | fabric | 0       |
+|    add_ln232_1_fu_171_p2                         | -   |        | add_ln232_1  | add | fabric | 0       |
+|    add_ln232_2_fu_187_p2                         | -   |        | add_ln232_2  | add | fabric | 0       |
+|    add_ln232_3_fu_203_p2                         | -   |        | add_ln232_3  | add | fabric | 0       |
+|    add_ln232_4_fu_219_p2                         | -   |        | add_ln232_4  | add | fabric | 0       |
+|    add_ln232_5_fu_235_p2                         | -   |        | add_ln232_5  | add | fabric | 0       |
+|    add_ln232_6_fu_251_p2                         | -   |        | add_ln232_6  | add | fabric | 0       |
+|    add_ln232_7_fu_267_p2                         | -   |        | add_ln232_7  | add | fabric | 0       |
+|    add_ln232_8_fu_283_p2                         | -   |        | add_ln232_8  | add | fabric | 0       |
+|    add_ln232_9_fu_299_p2                         | -   |        | add_ln232_9  | add | fabric | 0       |
+|    add_ln232_10_fu_315_p2                        | -   |        | add_ln232_10 | add | fabric | 0       |
+|    add_ln232_11_fu_331_p2                        | -   |        | add_ln232_11 | add | fabric | 0       |
+|    add_ln232_12_fu_347_p2                        | -   |        | add_ln232_12 | add | fabric | 0       |
+|    add_ln232_13_fu_363_p2                        | -   |        | add_ln232_13 | add | fabric | 0       |
+|    add_ln232_14_fu_379_p2                        | -   |        | add_ln232_14 | add | fabric | 0       |
+|    add_ln232_15_fu_395_p2                        | -   |        | add_ln232_15 | add | fabric | 0       |
++--------------------------------------------------+-----+--------+--------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-----------------------------------------+--------------------------------------------------------------------------+
+| Type      | Options                                 | Location                                                                 |
++-----------+-----------------------------------------+--------------------------------------------------------------------------+
+| interface | s_axilite port=Message bundle=control   | ../rtl_kernel_wizard_0_cmodel.cpp:119 in rtl_kernel_wizard_0, Message    |
+| interface | s_axilite port=PEControl bundle=control | ../rtl_kernel_wizard_0_cmodel.cpp:120 in rtl_kernel_wizard_0, PEControl  |
+| interface | s_axilite port=return bundle=control    | ../rtl_kernel_wizard_0_cmodel.cpp:121 in rtl_kernel_wizard_0, return     |
+| interface | ap_ctrl_hs port=return                  | ../rtl_kernel_wizard_0_cmodel.cpp:122 in rtl_kernel_wizard_0, return     |
+| interface | axis port=axisHBMin                     | ../rtl_kernel_wizard_0_cmodel.cpp:123 in rtl_kernel_wizard_0, axisHBMin  |
+| interface | axis port=axisDDRin                     | ../rtl_kernel_wizard_0_cmodel.cpp:124 in rtl_kernel_wizard_0, axisDDRin  |
+| interface | axis port=axisHBMout                    | ../rtl_kernel_wizard_0_cmodel.cpp:125 in rtl_kernel_wizard_0, axisHBMout |
+| interface | axis port=axisDDRout                    | ../rtl_kernel_wizard_0_cmodel.cpp:126 in rtl_kernel_wizard_0, axisDDRout |
++-----------+-----------------------------------------+--------------------------------------------------------------------------+
+
+
