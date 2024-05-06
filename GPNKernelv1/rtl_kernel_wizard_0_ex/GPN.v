@@ -461,6 +461,7 @@ localparam [2:0]
     REQUEST = 3'b011,
     WRITE   = 3'b100;
 
+// (1A)
 assign MemoryOffset[0] = MemoryOffset0;
 assign MemoryOffset[1] = MemoryOffset1;
 assign MemoryOffset[2] = MemoryOffset2;
@@ -495,6 +496,7 @@ assign MaxSuperblockAddress[13] = {(MemoryOffset14[17:3] - MemoryOffset13[17:3])
 assign MaxSuperblockAddress[14] = {(MemoryOffset15[17:3] - MemoryOffset14[17:3])};
 assign MaxSuperblockAddress[15] = {(MemoryOffset16[17:3] - MemoryOffset15[17:3])};
 
+// (2A)
 always @(posedge clk) begin
     if(FirstMessage[62:AXI_CHANNEL_PARTITION+UPDATE_WIDTH] < MemoryOffset[1]) PE_FirstMessage <= 0; // Lower Bound MemoryOffset0
         for(k=1;k<15;k=k+1) begin // Check MemoryOffset1-14
@@ -505,7 +507,7 @@ always @(posedge clk) begin
 end
 
 generate for(i=0;i<NUMBER_OF_PEs;i=i+1) begin
-// Grant Arbitor
+// Grant Arbitor (3A)
 always @(posedge clk) begin
     if(reset)
         Grant[i] <= {NUMBER_OF_PEs{1'b0}};
@@ -549,13 +551,13 @@ end
 end endgenerate
 
 generate for(i=0;i<NUMBER_OF_PEs;i=i+1) begin
-// PE FIFO Input Mux One Hot (Grant PE[i] -> PE[k])
+// PE FIFO Input Mux One Hot (Grant PE[i] -> PE[k]) (3B)
 always @(*) begin
     if(reset) begin
         MSGFIFO_Write_i[i] = 1'b0;
         MSGFIFO_WriteData_i[i] = 64'd0;
     end
-    else if(Start_Pulse && PE_FirstMessage==i) begin
+    else if(Start_Pulse && PE_FirstMessage==i) begin // (2B)
         MSGFIFO_Write_i[i] = 1'b1;
         MSGFIFO_WriteData_i[i] = {(FirstMessage[62:AXI_CHANNEL_PARTITION+UPDATE_WIDTH] - MemoryOffset[i]), FirstMessage[AXI_CHANNEL_PARTITION+UPDATE_WIDTH-1:0]};
     end
@@ -651,7 +653,7 @@ end
 end endgenerate
 
 generate for(i=0;i<NUMBER_OF_PEs;i=i+1) begin
-// PE FIFO Output Reader, Requester, Writer
+// PE FIFO Output Reader, Requester, Writer (5A)
 always @(posedge clk) begin
     if(reset)
         MSGFIFO_Read_o[i] <= 1'b0;
@@ -698,7 +700,7 @@ always @(posedge clk) begin
     else
         Message[i] <= Message[i];
 
-    if(reset)
+    if(reset) // (4A)
         Request[i] <= {NUMBER_OF_PEs{1'b0}};
     else if(~Grant[PE[i]][i] && state_Interconnect[i]==REQUEST)
         Request[PE[i]][i] <= 1'b1;
@@ -715,7 +717,7 @@ end
 end endgenerate
 
 generate for(i=0;i<NUMBER_OF_PEs;i=i+1) begin
-// FIFO Arbitor State 
+// FIFO Arbitor State (5B)
 always @(posedge clk) begin
 if(reset)
     state_Interconnect[i] <= IDLE;

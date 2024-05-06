@@ -153,7 +153,7 @@ begin
 		end
 		else UsingAXI   <= 1'b0;
 	end
-	READ:         // Read Edges from DDR4
+	READ:         // Read Edges from DDR4 (1A)
 	begin
 	   AVMFIFO_Read  <= 1'b0;
 	   if (AVMFIFO_ReadValid) begin
@@ -166,7 +166,7 @@ begin
             state <= READ_WAIT;
 		end
 	end
-	READ_WAIT:    // Wait for read to complete
+	READ_WAIT:    // Wait for read to complete (1B)
 	begin
 	    MSGFIFO_Write <= 1'b0;
 	    MSGFIFO_WriteData  <= {MsgWidth{1'b0}};
@@ -174,12 +174,12 @@ begin
 		StartRead       <= 1'b0;
 		if (EndRead) begin store_ReadData <= ReadData; state <= CHECK_EDGES; end
 	end
-	STORE_READ:
+	STORE_READ: // (1C)
 	begin
 	    store_ReadData <= ReadData;
 		state           <= CHECK_EDGES;
 	end
-    CHECK_EDGES:
+    CHECK_EDGES: // (2A)
     begin
             MSGFIFO_Write <= 1'b0;
             MSGFIFO_WriteData  <= {MsgWidth{1'b0}};
@@ -228,7 +228,7 @@ begin
             end
             endcase
     end
-    COMPUTE:
+    COMPUTE: // (2B)
     begin
         History_Address <= Active_Neighbor[13:4];
         HistoryTag     <= Active_Neighbor[32:14];
@@ -237,7 +237,7 @@ begin
         //state <= CHECK_CACHE;
     end
     WAIT: begin state <= CHECK_CACHE; end
-    CHECK_CACHE:
+    CHECK_CACHE: // (3A)
     begin
         if(~MSGFIFO_Full) begin
 //                MSGFIFO_WriteData   <= {Active_Neighbor[32:0], NewValue[30:0]};

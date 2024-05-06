@@ -249,6 +249,9 @@ else
     Start <= 1'b0;
 end
 
+//==================================
+//         FIFO Contoller (1A)
+//==================================
 // FSM
 always @(posedge clk) begin
 if(reset)
@@ -268,7 +271,7 @@ else case(state_FIFO)
     end
     default: state_FIFO <= FIFO_IDLE;
 endcase
-
+// Wires (1B)
 if(reset)
     MSGFIFO_Read <= 1'b0;
 else if(state_FIFO[FIFO_IDLE_BIT] && ~MSGFIFO_Empty && (state_A[CACHE_IDLE_BIT] || state_B[CACHE_IDLE_BIT]))
@@ -297,6 +300,9 @@ else if(state_FIFO[FIFO_IDLE_BIT] && ~MSGFIFO_Empty && (state_A[CACHE_IDLE_BIT] 
 else
     regMSG <= regMSG;
 
+//==================================
+//        Cache Contoller A (2A)
+//==================================
 if(reset)
     state_A <= CACHE_IDLE;
 else case(state_A)
@@ -357,6 +363,9 @@ else case(state_A)
     default: state_A <= CACHE_IDLE;
 endcase
 
+//==================================
+//        Cache Contoller B (3A)
+//==================================
 if(reset)
     state_B <= CACHE_IDLE;
 else case(state_B)
@@ -417,6 +426,9 @@ else case(state_B)
     default: state_B <= CACHE_IDLE;
 endcase
 
+//==================================
+//  Fetch/Writeback Contoller (4A)
+//==================================
 if(reset)
     state_FW <= FW_IDLE;
 else case(state_FW)
@@ -447,7 +459,7 @@ else case(state_FW)
 endcase
 end
 
-// FIFOs
+// Active Vertex FIFO (5A)
 always @(posedge clk) begin
 
     if(reset)
@@ -481,7 +493,7 @@ always @(posedge clk) begin
         AVFIFO_WriteData <= 33'd0;
     end
 end
-// Cache Port A
+// Cache Port A (2B)
 always @(posedge clk) begin
     if(reset)
         Cache_WriteEnA <= 1'b0;
@@ -529,7 +541,7 @@ always @(posedge clk) begin
     else
         Cache_WriteDataA <= Cache_WriteDataA;
 end
-// Cache Port B
+// Cache Port B (3B)
 always @(posedge clk) begin
     if(reset)
         Cache_WriteEnB <= 1'b0;
@@ -580,7 +592,7 @@ end
 
 // Shared Read Storage
 always @(posedge clk) begin
-    if(reset)
+    if(reset) // (2C)
         store_ReadDataA <= 256'd0;
     else if(state_A[CACHE_READ_BIT])
         store_ReadDataA <= {Cache_ReadDataA[255:0]};
@@ -589,7 +601,7 @@ always @(posedge clk) begin
     else
         store_ReadDataA <= store_ReadDataA;
 
-    if(reset)
+    if(reset) // (3C)
         store_ReadDataB <= 256'd0;
     else if(state_B[CACHE_READ_BIT])
         store_ReadDataB <= {Cache_ReadDataB[255:0]};
@@ -598,7 +610,7 @@ always @(posedge clk) begin
     else
         store_ReadDataB <= store_ReadDataB;
 end
-// MEMORY READ
+// MEMORY READ (4B)
 always @(posedge clk) begin
     if(reset)
         StartRead <= 1'b0;
@@ -630,7 +642,7 @@ always @(posedge clk) begin
     else
         FetchB <= 1'b0;
 end
-// MEMORY WRITE
+// MEMORY WRITE (4C)
 always @(posedge clk) begin
     if(reset)
         StartWrite <= 1'b0;
@@ -731,7 +743,7 @@ inst_ReductionEngine(
 endmodule
 
 //=====================================
-//         Reduction Engine
+//         Reduction Engine (6A)
 //=====================================
 module ReductionEngine #(
 	parameter VPROPWIDTH   = 32,
@@ -781,13 +793,4 @@ begin
 	UpdateB     <= BFS_Check_UpdateB;
 	SendB       <= BFS_Check_SendB;
 end
-
-//default:
-//begin
-//	result      = p;
-//	TempResult = temp_p;
-//	Active      = 1'b0;
-//end
-//endcase
-//end
 endmodule

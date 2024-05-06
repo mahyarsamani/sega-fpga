@@ -160,7 +160,7 @@ assign InActive = (state_T[T_IDLE_BIT] && AVFIFO_Empty);
 assign UsingAXI = (state_T[12:6]>7'd0);
 assign sleep = ~(state_T[MEM_READ_BIT] || state_T[TC_SUB_BIT] || state_T[MEM_WRITE_BIT]);
 //==========================
-//   Activate Module
+//    Activate Module (1D)
 //==========================
 reg        StartCheck;
 
@@ -175,7 +175,7 @@ end
 
 always @(posedge clk) begin
 //=======================
-//     Tracker FSM
+//     Tracker FSM (1A)
 //=======================
 if(reset)
     state_T <= T_IDLE;
@@ -274,7 +274,7 @@ else
 // Block WriteData
 if(reset)
     Superblock_WriteData <= 72'd0;
-else if(state_T[T_WRITE_BIT]) begin
+else if(state_T[T_WRITE_BIT]) begin // (2B)
     case(Superblock)
     3'b000: Superblock_WriteData <= {Superblock_ReadData[71:8], SuperblockCount};
     3'b001: Superblock_WriteData <= {Superblock_ReadData[71:16], SuperblockCount, Superblock_ReadData[7:0]};
@@ -286,7 +286,7 @@ else if(state_T[T_WRITE_BIT]) begin
     3'b111: Superblock_WriteData <= {Superblock_ReadData[71:64], SuperblockCount, Superblock_ReadData[55:0]};
     endcase
 end
-else if(state_T[TC_BLOCK_BIT]) begin
+else if(state_T[TC_BLOCK_BIT]) begin // (3A)
     case(Superblock)
     3'b000: Superblock_WriteData <= {Superblock_ReadData[71:8], 8'd0};
     3'b001: Superblock_WriteData <= {Superblock_ReadData[71:16], 16'd0};
@@ -312,7 +312,7 @@ else
 // BlockCount A/B
 if(reset)
     SuperblockCount <= 8'd0;
-else if(state_T[T_READ_BIT]) begin
+else if(state_T[T_READ_BIT]) begin // (3B)
     case(Superblock)
     3'b000: SuperblockCount <= Superblock_ReadData[7:0];
     3'b001: SuperblockCount <= Superblock_ReadData[15:8];
@@ -324,7 +324,7 @@ else if(state_T[T_READ_BIT]) begin
     3'b111: SuperblockCount <= Superblock_ReadData[63:56];
     endcase
 end
-else if(state_T[T_ADD_BIT])
+else if(state_T[T_ADD_BIT]) // (2C)
     SuperblockCount <= SuperblockCount + 1'b1;
 else if(state_T[TC_READ_BIT])
     SuperblockCount <= Superblock_ReadData[7:0];
@@ -339,12 +339,12 @@ else if(state_T[TC_NEXT_BLOCK_BIT])
     3'b110: SuperblockCount <= Superblock_ReadData[55:48];
     3'b111: SuperblockCount <= Superblock_ReadData[63:56];
     endcase
-else if(state_T[TC_SUB_BIT] && PartitionFinished[4])
+else if(state_T[TC_SUB_BIT] && PartitionFinished[4]) // (5A)
     SuperblockCount <= SuperblockCount - ActiveCount;
 else
     SuperblockCount <= SuperblockCount;
 
-// Tracker Active
+// Tracker Active (1B)
 if(reset)
     Active <= 1'b0;
 else if(state_T[TC_READ_BIT] && Superblock_Address==MaxSuperblockAddress)
@@ -355,7 +355,7 @@ else
     Active <= Active;
 
 
-// Finish Tracker Check due to no more active blocks or AVMFIFO full
+// Finish Tracker Check due to no more active blocks or AVMFIFO full (1C)
 if(reset)
     Finish <= 1'b0;
 else if((state_T[TC_READ_BIT] && (Superblock_Address==MaxSuperblockAddress || AVMFIFO_Full)) || (state_T[TC_NEXT_BLOCK_BIT] && AVMFIFO_Full))
@@ -364,7 +364,8 @@ else
     Finish <= 1'b0;
 
 
-// Memory Signals
+// Memory Signals 
+// (4A)
 if(reset)
     StartRead <= 1'b0;
 else if((state_T[TC_BLOCK_BIT] && SuperblockCount!=8'd0) || (state_T[MEM_WRITE_BIT] && EndWrite && SuperblockCount!=8'd0) || (state_T[TC_SUB_BIT] && ~Hit))
@@ -401,6 +402,7 @@ else if(state_T[MEM_READ_BIT] && ReadReady)
 else
     ReadBuffer_WriteData <= ReadBuffer_WriteData;
 
+// (6A)
 if(reset)
     StartWrite <= 1'b0;
 else if(state_T[TC_SUB_BIT] && PartitionFinished[4])
@@ -450,6 +452,7 @@ else if(state_T[MEM_WRITE_BIT] && WriteResp && ~EndWrite)
 else
     WriteBuffer_Read <= 1'b0;
 
+// (4B)
 if(reset)
     Clear <= 1'b0;
 else if(state_T[TC_SUB_BIT] && ~Hit)
@@ -457,6 +460,7 @@ else if(state_T[TC_SUB_BIT] && ~Hit)
 else
     Clear <= 1'b0;
 
+// (4C)
 if(reset)
     Hit <= 1'b0;
 else if(state_T[MEM_WRITE_BIT])
@@ -468,9 +472,9 @@ else
 
 end
 
-//=======================
-// Deactivating Vertices
-//=======================
+//============================
+// Deactivating Vertices (7A)
+//============================
 always @(posedge clk) begin
 if(reset)
     state_DV <= PARTITION_IDLE;
@@ -503,7 +507,7 @@ if(reset || Clear)
     ActiveCount <= 8'd0;
 else if(state_T[MEM_WRITE_BIT])
     ActiveCount <= 8'd0;
-else if((state_DV[PARTITION1_BIT] && ReadBuffer_ReadData[0]) || (state_DV[PARTITION2_BIT] && ReadBuffer_ReadData[128]))
+else if((state_DV[PARTITION1_BIT] && ReadBuffer_ReadData[0]) || (state_DV[PARTITION2_BIT] && ReadBuffer_ReadData[128])) // (5B)
     ActiveCount <= ActiveCount + 1'b1;
 else
     ActiveCount <= ActiveCount;
